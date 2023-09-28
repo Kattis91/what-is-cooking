@@ -30,6 +30,7 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['whatscooking.herokuapp.com', 'localhost']
 
 
 # Application definition
