@@ -37,3 +37,10 @@ class Comment(models.Model):
     def __str__(self):
         return f'Comment by {self.name}'
 
+
+class Category(models.Model):
+
+    title = models.CharField(max_length=100)
+
+    def __string__(self):
+        return self.title
