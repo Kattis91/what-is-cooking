@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Recipe, Comment
+from .models import Recipe, Comment, Category
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -25,3 +25,4 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 
+admin.site.register(Category)

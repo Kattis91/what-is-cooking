@@ -7,14 +7,14 @@ class Category(models.Model):
 
     name = models.CharField(max_length=100)
 
-    def __string__(self):
+    def __str__(self):
         return self.name
 
 
 class Recipe(models.Model):
     title = models.CharField(max_length=100, unique=True)
     category = models.ForeignKey(
-        Category, on_delete=models.PROTECT, related_name='category')
+        Category, on_delete=models.PROTECT, default=1, related_name='category')
     slug = models.SlugField(max_length=100, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='published_recipes')
