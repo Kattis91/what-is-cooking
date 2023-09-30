@@ -1,6 +1,19 @@
+/* Navbar styling */
 .navbar-brand {
     font-family: "Bitter", sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: whitesmoke;    
 }
+
+.nav-link {
+    color: whitesmoke;
+}
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #71777ce6;
+} 
 
