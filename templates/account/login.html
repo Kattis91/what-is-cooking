@@ -7,8 +7,6 @@
 
 {% block content %}
 
-<h1>{% trans "Sign In" %}</h1>
-
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
@@ -29,20 +27,28 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p>{% blocktrans %}Welcome back! Or is this your first visit here?</p> 
-<p>If you have not created an account yet and you wan to
-  be able to leave comments, like posts, and share your recipes, please
-  <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-{% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
+<div class="container d-flex justify-content-center vh-100 align-items-center" style="max-width: 33rem;">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h1>{% trans "Sign In" %}</h1>
+            <p>{% blocktrans %}Welcome back! Or is this your first visit here?</p>
+            <p>If you have not created an account yet and you want to
+              be able to leave comments, like posts, and share your recipes, please
+              <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+            {% endif %}
+
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+              {% csrf_token %}
+              {{ form.as_p }}
+              {% if redirect_field_value %}
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              {% endif %}
+              <button class="btn btn-success" type="submit">{% trans "Sign In" %}</button>
+              <a class="btn btn-danger" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+            </form>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

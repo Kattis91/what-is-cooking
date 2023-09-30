@@ -43,7 +43,6 @@ span {
 }
     
 /* To keep footer at the bottom of the page */
-
 html, body {
     height: 100vh;
 }
@@ -55,8 +54,28 @@ body {
 
 .content {
     flex: 1 0 auto;
+    background: url(https://res.cloudinary.com/dx0imlozl/image/upload/v1695745270/brooke-lark-wMzx2nBdeng-unsplash_kpa3hi.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .footer {
     flex-shrink: 0;
+}
+
+/* login form */
+
+.btn-success {
+    margin-right: 30px;
+}
+
+.card-body {
+    background-color: #71777ce6;   
+}
+
+.card-body > h1,p {
+    color: whitesmoke;
+}
+
+.card-body > a {
+    color: green;
 }
