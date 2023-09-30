@@ -17,3 +17,46 @@
     background-color: #71777ce6;
 } 
 
+/* Footer styling */
+
+footer {
+    text-align: center;
+    background-color: #71777ce6;
+} 
+    
+footer > a {
+    margin-right: 30px;
+    font-size: x-large; 
+    color: whitesmoke; 
+}
+
+footer > a:hover {
+    font-weight: bold;
+    color: rgb(59, 57, 57);
+}
+
+span {
+    font-family: "Bitter", sans-serif;
+    font-size: x-large;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+    
+/* To keep footer at the bottom of the page */
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
