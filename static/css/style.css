@@ -79,3 +79,9 @@ body {
 .card-body > a {
     color: green;
 }
+
+/* sign up form */
+
+label {
+    display: block;
+}
