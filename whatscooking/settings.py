@@ -29,9 +29,7 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
-
+ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost', '8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
 
@@ -43,12 +41,23 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'blog',
 ]
+
+SITES_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -130,7 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
