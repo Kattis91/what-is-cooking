@@ -28,31 +28,32 @@
     <title>What's Cooking?</title>
 </head>
 <body>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Whats's Cooking?</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Sign Up</a>
-                    <a class="nav-link" href="#">Login</a>
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Whats's Cooking?</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="#">Login</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Main Content -->
-    <main>
-        {% block content %}
-        <!-- Content from other templates goes here -->
-        {% endblock content %}
-    </main>   
+        <!-- Main Content -->
+        <main>
+            {% block content %}
+            <!-- Content from other templates goes here -->
+            {% endblock content %}
+        </main>
+    </div>   
 
     <!-- Footer --> 
     <footer class="social">
@@ -65,15 +66,7 @@
             aria-label="Find us on TikTok (link opens in a new tab)"><i class="fa-brands fa-tiktok"></i></a>
         <a href="https://youtube.com" rel="noopener" target="_blank"
            aria-label="Find us on YouTube(link opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-    </footer>
-
-        
-   
-           
-           
-      
-      
-       
-      
+    </footer> 
+             
 </body>
 </html>
