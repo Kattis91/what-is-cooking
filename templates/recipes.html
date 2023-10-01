@@ -2,10 +2,12 @@
 
 {% block content %}
 
+<div class="recipes-background"></div>
+
 <div class="container">
     <div class="row">
         {% for recipe in recipe_list %}
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="recipes col-12 col-sm-6 col-lg-3">
                 <div class="card">
                     {% if "placeholder" in recipe.featured_image.url %}
                     <img src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696161100/recipe_image_qtlwyu.avif" class="card-img-top" alt="">
@@ -15,6 +17,7 @@
                     <div class="card-body">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                         <p class="card-text">{{ recipe.created_on }}</p>
+                        <p class="card-text">{{ recipe.estimated_time }} min</p>
                     </div>
                 </div>
             </div> 
