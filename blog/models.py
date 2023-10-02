@@ -21,7 +21,7 @@ class Recipe(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     instructions = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    estimated_time = models.IntegerField('Estimated Time')
+    estimated_time = models.IntegerField('estimated_time')
     likes = models.ManyToManyField(
         User, related_name='recipe_likes', blank=True)
 
@@ -30,6 +30,19 @@ class Recipe(models.Model):
 
     def __str__(self):
         return f'{self.title} | {self.author}'
+
+    def number_of_likes(self):
+        return self.likes.count()
+
+
+class Ingredient(models.Model):
+    amount = models.CharField(max_length=100, unique=False)
+    name = models.CharField(max_length=100, unique=False)
+    recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE, related_name='recipe_ingredient')
+
+    def __str__(self):
+        return self.name
 
 
 class Comment(models.Model):
@@ -47,3 +60,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.name}'
+
