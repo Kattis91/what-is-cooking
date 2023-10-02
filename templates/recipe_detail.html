@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block additional_styles %}
+<style>
+    body {
+        background-image: url('https://res.cloudinary.com/dx0imlozl/image/upload/v1696282175/photo-1521193089946-7aa29d1fe776_amijzl.avif');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container details">
+    <div class="row align-items-start g-0">
+        <div class="col-12 col-lg-6">
+            {% if "placeholder" in recipe.featured_image.url %}
+            <img src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696161100/recipe_image_qtlwyu.avif">
+            {% else %}
+            <img class="card-img-top" src="{{ recipe.featured_image.url }}">
+            {% endif %}
+        </div>
+        <div class="col-12 col-lg-6 text-center align-self-center">
+            <h1>{{ recipe.title }}</h1>
+            <hr>
+            <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
+            <p>This recipe is published by {{ recipe.author }} <br> {{ recipe.created_on }}</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+{% endblock %}
