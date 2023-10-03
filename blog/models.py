@@ -22,6 +22,7 @@ class Recipe(models.Model):
     instructions = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     estimated_time = models.IntegerField('estimated_time')
+    servings = models.IntegerField('servings', default=4)
     likes = models.ManyToManyField(
         User, related_name='recipe_likes', blank=True)
 
