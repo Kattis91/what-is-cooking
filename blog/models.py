@@ -48,9 +48,21 @@ class Recipe(models.Model):
 
 
 class RecipeIngredient(models.Model):
+    UNITS = [
+        ('gr', 'Grams'),
+        ('kg', 'Kilogram'),
+        ('L', 'Litres'),
+        ('mL', 'Millilitres'),
+        ('tsp', 'Teaspoon'),
+        ('tbsp', 'Tablespoon'),
+        ('cup', 'Cup'),
+        ('pieces', 'Pieces'),
+        ('slices', 'Slices')
+    ]
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
     amount = models.FloatField()
+    unit = models.CharField(max_length=100, choices=UNITS, default='gr')
 
     def __str__(self):
         return f'{self.ingredient} for {self.recipe}'
