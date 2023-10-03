@@ -11,6 +11,13 @@ class Category(models.Model):
         return self.name
 
 
+class Ingredient(models.Model):
+    name = models.CharField(max_length=100, unique=False)
+
+    def __str__(self):
+        return self.name
+
+
 class Recipe(models.Model):
     title = models.CharField(max_length=100, unique=True)
     category = models.ForeignKey(
@@ -19,6 +26,10 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='published_recipes')
     featured_image = CloudinaryField('image', default='placeholder')
+    ingredients = models.ManyToManyField(
+        Ingredient, through='RecipeIngredient',
+        through_fields=('recipe', 'ingredient')
+        )
     instructions = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     estimated_time = models.IntegerField('estimated_time')
@@ -36,15 +47,14 @@ class Recipe(models.Model):
         return self.likes.count()
 
 
-class Ingredient(models.Model):
-    amount = models.CharField(max_length=100, unique=False)
-    name = models.CharField(max_length=100, unique=False)
-    recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name='recipe_ingredient')
+class RecipeIngredient(models.Model):
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
+    amount = models.FloatField()
 
     def __str__(self):
-        return self.name
-
+        return f'{self.ingredient} for {self.recipe}'
+    
 
 class Comment(models.Model):
 
