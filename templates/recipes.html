@@ -23,11 +23,10 @@
                     <img class="card-img-top" src="{{ recipe.featured_image.url }}">
                     {% endif %}
                     <div class="card-body">
-                        <a href="{% url 'recipe_detail' recipe.slug  %}">
-                            <h2 class="card-title">{{ recipe.title }}</h2>
-                            <p class="card-text">{{ recipe.created_on }}</p>
-                            <p class="card-text">{{ recipe.estimated_time }} min</p>
-                        </a>
+                        <h2 class="card-title">{{ recipe.title }}</h2>
+                        <p class="card-text">{{ recipe.created_on }}</p>
+                        <p class="card-text">{{ recipe.estimated_time }} min</p>
+                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-dark">View Recipe</a>   
                     </div>
                 </div>
             </div> 
