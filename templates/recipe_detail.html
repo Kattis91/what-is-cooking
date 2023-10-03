@@ -50,4 +50,24 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col align-self-center ">
+            <h3>Comments:</h3>
+            {% for comment in comments %}
+            <div class="comments">
+                <p> {{ comment.name }} wrote: <br> <small><i class="fa-solid fa-clock"></i>
+                        {{ comment.created_on}}</small></p>
+                <strong>{{ comment.content | linebreaks }}</strong>
+            </div>
+            {% empty %}
+            <p> Currently, there are no comments here. Please <a href="{% url 'account_login' %}">sign in</a> to be the
+                first to add a comment.</p>
+            <p>If you have not created an account yet, yo can do that <a href="{% url 'account_signup' %}">here</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}
