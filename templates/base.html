@@ -49,8 +49,8 @@
                 </button>
                 <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="{% url 'recipes' %}">Recipes</a>
+                        <a class="nav-link aktive" aria-current="page" href="{% url 'check_the_base' %}">Home</a>
+                        <a class="nav-link " href="{% url 'recipes' %}">Recipes</a>
                         {% if user.is_authenticated %}
                         <a class="nav-link" href="#">Add Recipe</a>
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -62,6 +62,20 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Alert Messages -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert" id="msg">
+                        {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
 
         <!-- Main Content -->
         <main>
@@ -83,6 +97,15 @@
         <a href="https://youtube.com" rel="noopener" target="_blank"
            aria-label="Find us on YouTube(link opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
     </footer> 
+    
+    <!-- Timeout function for alert messages -->
+    <script>
+        setTimeout(function() {
+            let msg = document.getElementById("msg");
+            let alert = new bootstrap.Alert(msg);
+            alert.close();
+        }, 3000);
+    </script>
              
 </body>
 </html>
