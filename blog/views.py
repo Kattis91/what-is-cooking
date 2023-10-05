@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView
 from .models import Recipe, Category, Ingredient, RecipeIngredient
 from .forms import RecipeForm, IngredientForm
 from django.forms import formset_factory
+from django.template.defaultfilters import slugify
 
 
 def check_the_base(request):
@@ -61,6 +62,8 @@ class AddRecipe(CreateView):
             IngredientForm, extra=10)
         
         ingredient_formset = Ingredient_formset(request.POST)
+
+        recipe_form.instance.slug = slugify(request.POST['title'])
 
         if recipe_form.is_valid():
             recipe_form.save(commit=True)
