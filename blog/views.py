@@ -39,6 +39,23 @@ class RecipeDetail(View):
         )
 
 
+class AddRecipe(CreateView):
+    """
+    A class view for adding a recipe
+    """
+
+    def get(self, request, *args, **kwargs):
+        recipe_form = RecipeForm()
+        Ingredient_formset = formset_factory(
+            IngredientForm, extra=10)
+
+        context = {
+            'recipe_form': recipe_form,
+            'ingredient_form': IngredientForm(),
+        }
+        return render(request, 'add_recipe.html', context)
+
+
 class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.all()
