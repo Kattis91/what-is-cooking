@@ -54,6 +54,27 @@ class AddRecipe(CreateView):
             'ingredient_form': IngredientForm(),
         }
         return render(request, 'add_recipe.html', context)
+    
+    def post(self, request, *args, **kwargs):
+        recipe_form = RecipeForm(request.POST)
+        Ingredient_formset = formset_factory(
+            IngredientForm, extra=10)
+        
+        ingredient_formset = Ingredient_formset(request.POST)
+
+        if recipe_form.is_valid():
+            recipe_form.save(commit=True)
+            if ingredient_formset.is_valid():
+                for ingredient_form in ingredient_formset:
+                    ingredient.save(commit=True)
+            return render(
+                request,
+                'add_recipe.html',
+                {
+                    'recipe_form': recipe_form,
+                    'ingredient_form': IngredientForm(),
+                }
+            )
 
 
 class CategoryList(generic.ListView):
