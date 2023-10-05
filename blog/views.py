@@ -1,6 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.views.generic.edit import CreateView
 from .models import Recipe, Category, Ingredient, RecipeIngredient
+from .forms import RecipeForm, IngredientForm
+from django.forms import formset_factory
 
 
 def check_the_base(request):
@@ -41,3 +44,6 @@ class CategoryList(generic.ListView):
     queryset = Category.objects.all()
     template_name = "index.html"
 
+
+
+              
