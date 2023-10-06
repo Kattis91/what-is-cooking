@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from .models import Recipe, Category
 from .forms import RecipeForm
 from django.urls import reverse_lazy
@@ -41,6 +41,17 @@ class AddRecipe(CreateView):
     model = Recipe
     form_class = RecipeForm
     template_name = 'add_recipe.html'
+    success_url = reverse_lazy('recipes')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
+class UpdateRecipeView(UpdateView):
+    model = Recipe
+    template_name = 'update_recipe.html'
+    form_class = RecipeForm
     success_url = reverse_lazy('recipes')
 
     def form_valid(self, form):
