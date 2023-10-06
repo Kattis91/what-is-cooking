@@ -1,4 +1,4 @@
-from .models import Recipe, RecipeIngredient
+from .models import Recipe
 from django import forms
 
 
@@ -6,11 +6,5 @@ class RecipeForm(forms.ModelForm):
     class Meta:
         model = Recipe
         fields = (
-            'title', 'category', 'featured_image', 'author',
+            'title', 'category', 'featured_image', 'author', 'ingredients',
             'instructions', 'estimated_time', 'servings',)
-
-
-class IngredientForm(forms.ModelForm):
-    class Meta:
-        model = RecipeIngredient
-        fields = ('ingredient', 'amount', 'unit',)
