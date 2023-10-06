@@ -1,16 +1,16 @@
 from django.contrib import admin
-from .models import Recipe, Comment, Category, Ingredient, RecipeIngredient
+from .models import Recipe, Comment, Category
 from django_summernote.admin import SummernoteModelAdmin
 
 
 @admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
     
-    list_display = ('title', 'author', 'category', 'created_on')
+    list_display = ('title', 'author', 'category', 'created_on', 'slug')
     search_fields = ('title', 'category')
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('created_on',)
-    summernote_fields = ('instructions')
+    summernote_fields = ('ingredients', 'instructions')
 
 
 @admin.register(Comment)
@@ -26,8 +26,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Category)
-
-admin.site.register(Ingredient)
-
-admin.site.register(RecipeIngredient)
 
