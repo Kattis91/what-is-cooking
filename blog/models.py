@@ -11,14 +11,8 @@ class Category(models.Model):
         return self.name
 
 
-class Ingredient(models.Model):
-    name = models.CharField(max_length=100, unique=False)
-
-    def __str__(self):
-        return self.name
-
-
 class Recipe(models.Model):
+
     title = models.CharField(max_length=100, unique=True)
     category = models.ForeignKey(
         Category, on_delete=models.PROTECT, default=1, related_name='category')
@@ -26,14 +20,11 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='published_recipes')
     featured_image = CloudinaryField('image', default='placeholder')
-    ingredients = models.ManyToManyField(
-        Ingredient, through='RecipeIngredient',
-        through_fields=('recipe', 'ingredient')
-        )
-    instructions = models.TextField()
+    ingredients = models.TextField(blank=False, null=True)
+    instructions = models.TextField(blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
-    estimated_time = models.IntegerField('estimated_time')
-    servings = models.IntegerField('servings', default=4)
+    estimated_time = models.PositiveIntegerField('estimated_time')
+    servings = models.PositiveIntegerField('servings')
     likes = models.ManyToManyField(
         User, related_name='recipe_likes', blank=True)
 
@@ -46,27 +37,6 @@ class Recipe(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-
-class RecipeIngredient(models.Model):
-    UNITS = [
-        ('gr', 'Grams'),
-        ('kg', 'Kilogram'),
-        ('L', 'Litres'),
-        ('mL', 'Millilitres'),
-        ('tsp', 'Teaspoon'),
-        ('tbsp', 'Tablespoon'),
-        ('cup', 'Cup'),
-        ('pieces', 'Pieces'),
-        ('slices', 'Slices')
-    ]
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
-    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
-    amount = models.FloatField()
-    unit = models.CharField(max_length=100, choices=UNITS, default='gr')
-
-    def __str__(self):
-        return f'{self.ingredient} for {self.recipe}'
-    
 
 class Comment(models.Model):
 
@@ -83,4 +53,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.name}'
-
