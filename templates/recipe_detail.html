@@ -16,13 +16,19 @@
     <div class="row align-items-start">
         <div class="col-12 col-lg-6">
             {% if "placeholder" in recipe.featured_image.url %}
-            <img class="picture" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif">
+            <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif">
             {% else %}
             <img class="card-img-top" src="{{ recipe.featured_image.url }}">
             {% endif %}
         </div>
         <div class="col-12 col-lg-6 text-center align-self-center">
             <h1>{{ recipe.title }}</h1>
+            {% if user.id == recipe.author.id %}
+                <hr>
+                <button class="btn btn-info" type="button">
+                    <a href="{% url 'update' recipe.slug %}">Edit</a>
+                </button>
+            {% endif %}
             <hr>
             <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
             <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
@@ -32,23 +38,22 @@
     </div>
 </div>
 
+
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-6 align-self-center">
             <h2>Ingredients:</h2>
             <ul>
-                {% for ingredient in ingredients %}
-                    <li>{{ ingredient.amount }} {{ ingredient.unit }} {{ ingredient.ingredient.name }}</li>
-                {% endfor %}  
-            </ul>
-        </div>
-       
+                <li>{{ recipe.ingredients }}</li>  
+            </ul>         
+        </div>  
         <div class="col-12 col-lg-6 mt-3">
             <h2 class="text-center">Instructions:</h2>
             <p>{{ recipe.instructions | safe }} </p>
         </div>
     </div>
 </div>
+
 
 <div class="container">
     <div class="row">
