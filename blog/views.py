@@ -46,6 +46,8 @@ class AddRecipe(CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        success_message = "Your recipe has been posted successfully."
+        messages.add_message(self.request, messages.SUCCESS, success_message)
         return super().form_valid(form)
 
 
@@ -57,6 +59,8 @@ class UpdateRecipeView(UpdateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
+        success_message = "Your recipe has been updated successfully."
+        messages.add_message(self.request, messages.SUCCESS, success_message)
         return super().form_valid(form)
 
 
@@ -69,9 +73,10 @@ class DeleteRecipeView(DeleteView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+        
 
 
 class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.all()
-    template_name = "index.html"
+    template_name = "index.html" 
