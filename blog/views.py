@@ -75,8 +75,20 @@ class DeleteRecipeView(DeleteView):
         return super().form_valid(form)
         
 
-
 class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.all()
     template_name = "index.html" 
+
+
+class CategoryListView(generic.ListView):
+    template_name = "category.html"
+    context_object_name = "catlist"
+
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Recipe.objects.filter(
+                category__name=self.kwargs['category'])
+        }
+        return content
