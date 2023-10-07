@@ -2,8 +2,6 @@
 
 {% block content %}
 
-<div class="background-image"></div>
-
 <div class="container d-flex align-items-center" id="welcome" style="max-width: 33rem;">
     <div class="card text-bg-secondary mb-3">
         <div class="card-body">
@@ -22,18 +20,15 @@
         <div class="col-6 col-sm-4 col-lg-2">
             <div class="card">
                 <div class="card-body">
-                    <p class="card-text">{{ category.name }}</p>
+                    <a href="/category/{{ category }}">
+                        <p class="card-text">{{ category.name }}</p>
+                    </a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
-
-
-    
-
-     
 
 
 {% endblock %}
