@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Recipe, Category
 from .forms import RecipeForm
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 
 def check_the_base(request):
@@ -59,8 +60,18 @@ class UpdateRecipeView(UpdateView):
         return super().form_valid(form)
 
 
+class DeleteRecipeView(DeleteView):
+    model = Recipe
+    template_name = 'delete_recipe.html'
+    form_class = RecipeForm
+    success_url = reverse_lazy('recipes')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
 class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.all()
     template_name = "index.html"
-
