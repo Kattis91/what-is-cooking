@@ -2,14 +2,15 @@
 
 {% block content %}
 
-<div class="container">
+
+<div class="container d-flex align-items-center">
     <div class="row">
         <div class="col-12 mb-4 mt-4">
             <h1> Here is a list of recipes in the <strong>{{ catlist.cat }}</strong> category:</h1>
         </div>
         {% for recipe in catlist.posts %}
         <div class="recipes col-12 col-sm-6 col-lg-3">
-            <div class="card">
+            <div class="card text-bg-secondary mb-3">
                 {% if "placeholder" in recipe.featured_image.url %}
                 <img src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif" class="card-img-top" alt="">
                 {% else %}
@@ -23,6 +24,17 @@
                 </div>
             </div>
         </div> 
+        {% empty %}   
+        <p>There are no recipes in this category yet. Do you want to be the first to share something here?</p>
+        {% if user.is_authenticated%}
+        <p>Then you can do that by following the link: <a href="{% url 'add_recipe' %}">
+            <strong>Add Recipe</strong></a></p>
+        {% else %}
+        <p>You need to login first. You can do that by following the link: 
+            <a href="{% url 'account_login' %}"><strong>Sign in</strong></a></p>
+        <p>Haven't created an account yet? Follow the link and become our new member: 
+            <a href="{% url 'account_signup' %}"><strong>Sign up</strong></a></p>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
