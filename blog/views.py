@@ -5,6 +5,7 @@ from .models import Recipe, Category
 from .forms import RecipeForm
 from django.urls import reverse_lazy
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 def check_the_base(request):
@@ -64,15 +65,17 @@ class UpdateRecipeView(UpdateView):
         return super().form_valid(form)
 
 
-class DeleteRecipeView(DeleteView):
+class DeleteRecipeView(SuccessMessageMixin, DeleteView):
     model = Recipe
     template_name = 'delete_recipe.html'
     form_class = RecipeForm
     success_url = reverse_lazy('recipes')
 
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        return super().form_valid(form)
+    success_message = "Your recipe has been deleted successfully"
+
+    def delete(self, request, *args, **kwargs):
+        messages.warning(self.request, self.success_message)
+        return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
         
 
 class CategoryList(generic.ListView):
