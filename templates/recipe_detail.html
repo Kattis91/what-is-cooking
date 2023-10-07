@@ -28,6 +28,9 @@
                 <button class="btn btn-info" type="button">
                     <a href="{% url 'update' recipe.slug %}">Edit</a>
                 </button>
+                <button class="btn btn-danger" type="button">
+                    <a href="{% url 'delete' recipe.slug %}">Delete</a>
+                </button>
             {% endif %}
             <hr>
             <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
