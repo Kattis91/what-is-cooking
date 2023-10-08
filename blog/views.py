@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Recipe, Category
@@ -6,6 +6,7 @@ from .forms import RecipeForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
+from django.http import HttpResponseRedirect
 
 
 class CategoryList(generic.ListView):
@@ -124,3 +125,14 @@ class CategoryListView(generic.ListView):
                 category__name=self.kwargs['category'])
         }
         return content
+
+
+class RecipeLike(View):
+    def post(self, request, slug, *args, **kwargs):
+        recipe = get_object_or_404(Recipe, slug=slug)
+
+        if recipe.likes.filter(id=request.user.id).exists():
+            recipe.likes.remove(request.user)
+        else:
+            recipe.likes.add(request.user)
+        return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
