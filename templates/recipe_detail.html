@@ -38,6 +38,23 @@
             <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
             <p><i class="fa-solid fa-bowl-food"></i> {{ recipe.servings }} servings</p>
             <p>This recipe is published by {{ recipe.author }} <br> {{ recipe.created_on }}</p>
+
+            <div class="row">
+                <div class="col text-center">
+                    {% if user.is_authenticated %}
+                    <form method="POST" class="d-inline" action="{% url 'recipe_like' recipe.slug %}">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" class="btn-like"><i
+                            class="fa-solid fa-heart"></i></button>
+                        {% else %}
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" class="btn-like"><i 
+                            class="fa-regular fa-heart"></i></button>
+                        {% endif %}
+                    </form>
+                    {% endif %}
+                </div>
+            </div> 
         </div>
     </div>
 </div>
