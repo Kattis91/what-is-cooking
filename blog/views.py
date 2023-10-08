@@ -8,8 +8,10 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 
 
-def check_the_base(request):
-    return render(request, 'index.html')
+class CategoryList(generic.ListView):
+    model = Category
+    queryset = Category.objects.all()
+    template_name = "index.html"
 
 
 class RecipeList(generic.ListView):
@@ -76,12 +78,6 @@ class DeleteRecipeView(SuccessMessageMixin, DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.warning(self.request, self.success_message)
         return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
-        
-
-class CategoryList(generic.ListView):
-    model = Category
-    queryset = Category.objects.all()
-    template_name = "index.html" 
 
 
 class CategoryListView(generic.ListView):
