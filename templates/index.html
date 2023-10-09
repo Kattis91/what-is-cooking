@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<div class="container d-flex align-items-center" id="welcome" style="max-width: 33rem;">
-    <div class="card text-bg-secondary mb-3">
+<div class="container" id="msg-box" style="max-width: 33rem;">
+    <div class="card text-bg-secondary text-center mb-3">
         <div class="card-body">
-            <h4 class="card-title">Hello there! Welcome to "What's Cooking?"</h4>
-            <p class="card-text">So nice to have you here! Are you ready to cook some delicious food and get some new skills in the kitchen?</p>
-            <p class="card-text">Here you can find a collection of recipes from food-loving people all across the globe.</p>
-            <p class="card-text">Feel free to post your own recipes for others to share as well.</p>
-            <strong class="card-text">Sharing is caring, right? &#128512;</strong>
+            <h4 class="card-title welcome">Hello there! Welcome to "What's Cooking?"</h4>
+            <p class="card-text msg">So nice to have you here! Are you ready to cook some delicious food and get some new skills in the kitchen?</p>
+            <p class="card-text msg">Here you can find a collection of recipes from food-loving people all across the globe.</p>
+            <p class="card-text msg">Feel free to post your own recipes for others to share as well.</p>
+            <strong class="card-text msg">Sharing is caring, right? &#128512;</strong>
         </div>
     </div>
 </div>
@@ -29,6 +29,5 @@
         {% endfor %}
     </div>
 </div>
-
 
 {% endblock %}

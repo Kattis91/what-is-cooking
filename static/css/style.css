@@ -79,6 +79,27 @@ body {
     flex-shrink: 0;
 }
 
+/* Home page */
+
+#msg-box {
+    margin-top: 220px; 
+    margin-bottom: 50px;
+} 
+
+.text-bg-secondary {
+    border: 2px solid whitesmoke;
+    border-radius: 5%;
+}
+
+.welcome {
+    font-family: "Bitter", sans-serif;
+}
+
+.msg {
+    font-family: "Open Sans", sans-serif;
+}
+
+
 /* login form */
 
 .btn-success {
@@ -86,10 +107,10 @@ body {
 }
 
 .card-body {
-    background-color: #71777ce6;  
+    background-color: #71777ce6;
 }
 
-card-body > h1,p {
+.card-body > h1,p {
     color: whitesmoke;
 } 
 
@@ -110,8 +131,10 @@ label {
     margin-top: 50px;
 }
 
-/* For small screen sizes below 400px width */
-@media screen and (max-width: 400px) {
+/* Media queries */
+
+/* For small screen sizes below 430px width */
+@media screen and (max-width: 430px) {
     
     footer > a {
         margin-right: 10px;
@@ -121,4 +144,17 @@ label {
     #follow {
         font-size: large;
     }
+
+    #msg-box {
+        margin-top: 75px;
+    }
+}
+
+/* For larger screen sizes over 1300 px width */
+@media screen and (min-width: 1300px) {
+
+    #msg-box {
+        margin-top: 300px; 
+        margin-bottom: 100px;
+    } 
 }
