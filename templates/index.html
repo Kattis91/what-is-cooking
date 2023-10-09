@@ -18,9 +18,9 @@
     <div class="row tex">
         {% for category in category_list %}
         <div class="col-6 col-sm-4 col-lg-2">
-            <div class="card">
+            <div class="card cat-boxes">
                 <div class="card-body">
-                    <a href="/category/{{ category }}">
+                    <a href="/category/{{ category }}" class="categories">
                         <p class="card-text">{{ category.name }}</p>
                     </a>
                 </div>

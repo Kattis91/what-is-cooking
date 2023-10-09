@@ -99,6 +99,27 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.card {
+    --bs-card-bg: none; 
+}
+
+.categories {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cat-boxes {
+    transition: transform .1s;
+} 
+
+.cat-boxes:hover { 
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
 
 /* login form */
 
@@ -133,8 +154,21 @@ label {
 
 /* Media queries */
 
-/* For small screen sizes below 430px width */
-@media screen and (max-width: 430px) {
+/* For smaller screen sizes below 1000px width */
+@media screen and (max-width: 1000px) {
+
+    .cat-boxes {
+        margin-bottom: 45px;
+    }
+
+    #msg-box {
+        margin-bottom: 100px;
+    }
+
+}
+
+/* For small screen sizes below 450px width */
+@media screen and (max-width: 450px) {
     
     footer > a {
         margin-right: 10px;
@@ -150,7 +184,7 @@ label {
     }
 }
 
-/* For larger screen sizes over 1300 px width */
+/* For larger screen sizes over 1300px width */
 @media screen and (min-width: 1300px) {
 
     #msg-box {
