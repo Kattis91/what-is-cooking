@@ -26,6 +26,7 @@ class RecipeDetail(View):
     def get(self, request, slug, *args, **kvargs):
         queryset = Recipe.objects
         recipe = get_object_or_404(queryset, slug=slug)
+        ingredients = recipe.ingredients.split(',')
         comments = recipe.comments.filter(approved=True).order_by('created_on')
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
@@ -36,6 +37,7 @@ class RecipeDetail(View):
             'recipe_detail.html',
             {
                 'recipe': recipe,
+                'ingredients': recipe.ingredients.split(','),
                 'comments': comments,
                 'commented': False,
                 'liked': liked,

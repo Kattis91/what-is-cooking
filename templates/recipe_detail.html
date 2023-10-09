@@ -75,12 +75,14 @@
         <div class="col-12 col-lg-6 align-self-center">
             <h2>Ingredients:</h2>
             <ul>
-                <li>{{ recipe.ingredients }}</li>  
-            </ul>       
+            {% for ingredient in ingredients %}
+            <li>{{ ingredient }}</li>
+            {% endfor %}
+            </ul>
         </div>  
         <div class="col-12 col-lg-6 mt-3">
             <h2 class="text-center">Instructions:</h2>
-            <p>{{ recipe.instructions | safe }} </p>
+            <p>{{ recipe.instructions }} </p>
         </div>
     </div>
 </div>
