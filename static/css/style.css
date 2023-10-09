@@ -1,4 +1,5 @@
 /* Navbar styling */
+
 .navbar-brand {
     font-family: "Bitter", sans-serif;
     text-transform: uppercase;
@@ -6,21 +7,34 @@
     color: whitesmoke;    
 }
 
-.nav-link {
-    color: whitesmoke;
+.navbar-brand:hover {
+    color: #ffc107;
 }
+
+.nav-link {
+    font-family: "Bitter", sans-serif;
+    color: whitesmoke;
+    margin-right: 8px;
+    font-size: large;   
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show  {
+    color: #ffc107;
+}
+
 .navbar {
     padding: 0;
+}
+
+.nav-link:hover {
+    color: #ffc107;
 }
 
 .container-fluid {
     background-color: #71777ce6;
 } 
 
-#welcome {
-    margin-top: 300px; 
-    margin-bottom: 50px;
-}
 
 /* Footer styling */
 
@@ -35,9 +49,9 @@ footer > a {
     color: whitesmoke; 
 }
 
-footer > a:hover {
+.social-links:hover {
+    color: #ffc107;
     font-weight: bold;
-    color: rgb(59, 57, 57);
 }
 
 span {
@@ -75,13 +89,13 @@ body {
     background-color: #71777ce6;  
 }
 
-.card-body > h1,p {
+card-body > h1,p {
     color: whitesmoke;
-}
+} 
 
 .card-body > a {
     color: green;
-}
+}  
 
 /* sign up form */
 
