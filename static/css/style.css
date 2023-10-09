@@ -54,7 +54,7 @@ footer > a {
     font-weight: bold;
 }
 
-span {
+#follow {
     font-family: "Bitter", sans-serif;
     font-size: x-large;
     margin-right: 20px;
@@ -108,4 +108,17 @@ label {
 
 .recipes {
     margin-top: 50px;
+}
+
+/* For small screen sizes below 400px width */
+@media screen and (max-width: 400px) {
+    
+    footer > a {
+        margin-right: 10px;
+        font-size: large;
+    }
+
+    #follow {
+        font-size: large;
+    }
 }
