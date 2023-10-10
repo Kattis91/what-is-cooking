@@ -4,6 +4,43 @@
 
 This interactive platform is designed to be an inspiration for those days when you don't know what to cook or simply want to try something new.
 
+## Database Diagram
+
+The database model diagram was designed using [Lucidchart]("https://www.lucidchart.com/pages/sv"). The first draft of the entity relationship diagram is nearly the same as the models used in the final database. However, during the project, my modules underwent changes that can be divided in three stages: planning, middle, and the final result.
+
+### Planning
+
+![image](static/images/models_in_the_beginning.jpg)
+
+At this stage, the ingredients field is missing.
+
+### Middle Stage
+
+![image](static/images/models_in_the_middle.jpg)
+
+Here I got instructions and inspiration from [Stack Overflow]("https://stackoverflow.com/questions/61618882/best-way-to-organize-models-for-django-recipe-app-with-ingredients-recipes-and").
+
+The idea was to use a Recipe model to create new recipes, an Ingredient model to include all the ingredients (that could be used in different recipes), and a RecipeIngredient model to establish a connection between the specific recipe and ingredients needed for that recipe. 
+
+When I tried to retrieve ingredients from a user form on the site, I encountered issues, even though it worked well on the admin site. After reaching out to Tutor Assistance and trying to find a solution on Stack Overflow, Slack, and other platforms, I decided to proceed to step 3.
+
+### Final Result
+
+![image](static/images/final_models.jpg)
+
+#### Recipe Model
+  - The main model that contains all the fields needed for the recipe to be complete. Of course you can add other fields (like cooking time, difficulty level, nutritional value, and so on), but that values are not vital for the site to work and can be added later.
+  - Is based on the "I think therefore I blog" walkthrough project. Some adjustments and additions were made to fit the needs of my project.
+
+#### Comment Model
+  - Enable logged-in users to add comments to different recipes.
+  - Is based on the "I think therefore I blog" walkthrough project.
+
+#### Category Model
+  - The custom model.
+  - Enable users to place recipes in different categories.
+  - Make it possible to "sort" recipes by categories.
+
 
 ## Testing
 
