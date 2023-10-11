@@ -88,13 +88,13 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 mt-3">
             <h3>Comments:</h3>
             {% for comment in comments %}
-            <div class="comments">
+            <div>
                 <p> {{ comment.name }} wrote: <br> <small><i class="fa-solid fa-clock"></i>
                         {{ comment.created_on}}</small></p>
-                <strong>{{ comment.content | linebreaks }}</strong>
+                <p>{{ comment.content | linebreaks }}</p>
             </div>
             {% empty %}
             <p> Currently, there are no comments here. Please <a href="{% url 'account_login' %}">sign in</a> to be the
@@ -102,7 +102,7 @@
             <p>If you have not created an account yet, yo can do that <a href="{% url 'account_signup' %}">here</a></p>
             {% endfor %}
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 mt-3 mb-4">
             {% if commented %}
             <div class="alert alert-success" role="alert">
                 Your comment is awaiting approval...
