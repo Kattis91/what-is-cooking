@@ -17,27 +17,27 @@
     <div class="row align-items-start">
         <div class="col-12 col-lg-6">
             {% if "placeholder" in recipe.featured_image.url %}
-            <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif">
+            <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif" alt="default food image">
             {% else %}
-            <img class="card-img-top" src="{{ recipe.featured_image.url }}">
+            <img class="card-image-top" src="{{ recipe.featured_image.url }}" alt="image of the recipe" height="auto" width="100%">
             {% endif %}
         </div>
         <div class="col-12 col-lg-6 text-center align-self-center">
             <h1>{{ recipe.title }}</h1>
             {% if user.id == recipe.author.id %}
-                <hr>
-                <button class="btn btn-info" type="button">
-                    <a href="{% url 'update' recipe.slug %}">Edit</a>
+                <button class="btn btn-secondary" id="edit-button" type="button">
+                    <a href="{% url 'update' recipe.slug %}" class="links">Edit</a>
                 </button>
-                <button class="btn btn-danger" type="button">
-                    <a href="{% url 'delete' recipe.slug %}">Delete</a>
+                <button class="btn btn-secondary" id="delete-button" type="button">
+                    <a href="{% url 'delete' recipe.slug %}" class="links">Delete</a>
                 </button>
             {% endif %}
-            <hr>
-            <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
-            <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
-            <p><i class="fa-solid fa-bowl-food"></i> {{ recipe.servings }} servings</p>
-            <p>This recipe is published by {{ recipe.author }} <br> {{ recipe.created_on }}</p>
+            <div id="info">
+                <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
+                <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p> 
+                <p><i class="fa-solid fa-bowl-food"></i> {{ recipe.servings }} servings</p>
+                <p>This recipe is published by {{ recipe.author }} <br> {{ recipe.created_on }}</p>
+            </div>
 
             <div class="row">
                 <div class="col text-center">
@@ -45,21 +45,19 @@
                     <form method="POST" class="d-inline" action="{% url 'recipe_like' recipe.slug %}">
                         {% csrf_token %}
                         {% if liked %}
-                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" class="btn-like"><i
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" aria-label="liked"><i
                             class="fa-solid fa-heart"></i></button>
                         {% else %}
-                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" class="btn-like"><i 
+                        <button type="submit" name="recipepost_id" value="{{recipe.slug}}" aria-label="unliked"><i 
                             class="fa-regular fa-heart"></i></button>
                         {% endif %}
                     </form>
                     {% else %}
-                    <span class="text-secondary"><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-regular fa-heart" aria-label="like"></i></span>
                     {% endif %}
-                    <span class="text-secondary">{{ recipe.number_of_likes }}</span>
-                </div>
-                <div class="col text-center">
+                    <span>{{ recipe.number_of_likes }}</span>
                     {% with comments.count as total_comments %}
-                    <span class="text-secondary"><i class="fa-regular fa-comments"></i>
+                    <span id="number-of-comments"><i class="fa-solid fa-comments"></i>
                         {{ total_comments }}
                     </span>
                     {% endwith %}
@@ -73,16 +71,16 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-6 align-self-center">
-            <h2>Ingredients:</h2>
+            <h2 id="ingredients">Ingredients:</h2>
             <ul>
             {% for ingredient in ingredients %}
-            <li>{{ ingredient }}</li>
+            <li>{{ ingredient }}</li> 
             {% endfor %}
             </ul>
         </div>  
         <div class="col-12 col-lg-6 mt-3">
-            <h2 class="text-center">Instructions:</h2>
-            <p>{{ recipe.instructions }} </p>
+            <h2 id="instructions">Instructions:</h2>
+            <p>{{ recipe.instructions | safe }} </p>
         </div>
     </div>
 </div>
