@@ -83,14 +83,9 @@ body {
 /* Home page */
 
 #msg-box {
-    margin-top: 220px; 
-    margin-bottom: 50px;
-} 
-
-/* .text-bg-secondary {
-    border: 2px solid;
-    border-radius: 5%;
-} */
+    margin-top: 225px; 
+    margin-bottom: 55px;
+}
 
 .welcome {
     font-family: "Bitter", sans-serif;
@@ -137,6 +132,7 @@ body {
     color: black;
 }
 
+
 /* sign up form */
 
 label {
@@ -151,10 +147,20 @@ label {
 }
 
 
+
 /* Media queries */
 
+/* For larger screen sizes over 1300px width */
+@media screen and (min-width: 1600px) {
+
+    #msg-box {
+        margin-top: 300px; 
+        margin-bottom: 100px;
+    } 
+} 
+
 /* For smaller screen sizes below 1000px width */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 
     .cat-boxes {
         margin-bottom: 45px;
@@ -181,13 +187,4 @@ label {
     #msg-box {
         margin-top: 75px;
     }
-}
-
-/* For larger screen sizes over 1300px width */
-@media screen and (min-width: 1300px) {
-
-    #msg-box {
-        margin-top: 300px; 
-        margin-bottom: 100px;
-    } 
 }
