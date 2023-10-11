@@ -121,7 +121,7 @@ body {
 }
 
 .card-body {
-    background-color: #BAA6B1;
+    background-color: #9aa5af;
 }
 
 .card-body > h1,p {
@@ -144,8 +144,35 @@ label {
 
 .recipes {
     margin-top: 50px;
+    margin-bottom: 25px;
 }
 
+.btn-secondary {
+    --bs-btn-color: black;
+    --bs-btn-bg: #BAA6B1;
+    --bs-btn-hover-color: #850000;
+    --bs-btn-hover-bg: #BAA6B1;
+    } 
+    
+.card {
+    border: none;
+}
+
+.recipe-card {
+    --bs-card-bg: none; 
+    transition: transform .1s;
+} 
+
+.recipe-card:hover { 
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+img {
+    width: 100%; 
+    height: auto;
+}
 
 
 /* Media queries */
