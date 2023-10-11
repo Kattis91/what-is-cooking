@@ -5,15 +5,11 @@
 <div class="container details form align-items-center">
     <div class="row">
         <div class="col-md-10 offset-md-1">
-            <form action="{% url 'add_recipe' %}" method="POST">
+            <form action="{% url 'add_recipe' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
                 <div class="card card-body">
                     <h1>Create a Recipe</h1>
-                    {{ recipe_form | crispy }}
-                </div>
-                <div class="card card-body">
-                    <h1>Add ingredients</h1>
-                    {{ ingredient_form | crispy }}
+                    {{ form | safe }}
                 </div>
                 <div class="row">
                     <div class="col-6">
