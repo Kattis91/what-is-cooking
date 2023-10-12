@@ -50,6 +50,7 @@ p {
 footer {
     text-align: center;
     background-color: #BAA6B1;
+    padding: 5px;
 } 
     
 footer > a {
@@ -214,10 +215,40 @@ label {
     margin-left: 20px;
 }
 
-#ingredients, 
-#instructions {
+#ingredients {
     text-decoration: underline;
 }
+
+#instructions {
+    text-decoration: underline;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Add recipe page */
+
+.form {
+    margin-top: 50px;
+}
+
+#id_instructions_iframe {
+    height: auto;
+    max-width: 100%;
+}
+
+.btn-success {
+    background-color: green;
+    padding: 7px 25px;
+    margin-bottom: 25px;
+    margin-right: 0;
+}
+
+#back {
+    background-color: #850000;
+    padding: 7px 25px;
+    margin-bottom: 25px;
+}
+
 
 /* Media queries */
 
@@ -230,8 +261,8 @@ label {
     } 
 } 
 
-/* For smaller screen sizes below 1000px width */
-@media screen and (max-width: 1000px) {
+/* For smaller screen sizes below 991px width */
+@media screen and (max-width: 991px) {
 
     .cat-boxes {
         margin-bottom: 45px;
@@ -245,8 +276,13 @@ label {
         margin: 20px 0;
     }
 
-    #ingredients {
+    #ingredients, 
+    #instructions {
         margin-top: 30px;
+    }
+
+    #instructions {
+        text-align: left;
     }
 
 }
