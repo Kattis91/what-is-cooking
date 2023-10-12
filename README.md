@@ -42,6 +42,36 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
   - Make it possible to "sort" recipes by categories.
 
 
+## Features
+
+### Navigation Bar
+
+- The navigation bar is complete and responsive. It appears consistently on every page, making navigation more convenient.
+
+- This section facilitates seamless navigation between pages, eliminating the need to rely on the "back button".
+
+- Clicking on the Logo and "Home" will always redirect the user to the home page.
+
+- When the user clicks on "Recipes", they will be directed to a page containing all available recipes,
+
+- Logo and links to the home and recipes pages are **available for all users**. However, there are some differences in how the navigation bar looks for non-logged and logged-in users.
+ 
+  - **Non-logged users:**
+
+    ![image](static/images/navigation_bar_login.jpg)
+    
+    - The navigation bar contains links for the Logo, Home, Recipes, Sign Up, and Login pages.
+    - Clicking "Sign Up" or "Login" directs users to the pages with respective forms.
+
+  - **Logged-in users:**
+    
+    ![image](static/images/navigation_bar_logout.png)
+
+    - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
+    - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
+    - Clicking "Logout" directs users to the confirmation page.
+    
+
 ## Testing
 
 ### Manual Testing
