@@ -28,7 +28,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 
-<div class="container d-flex justify-content-center vh-100 align-items-center" style="max-width: 33rem;">
+<div class="container d-flex justify-content-center vh-100 align-items-center">
     <div class="card mb-3">
         <div class="card-body">
             <h1>{% trans "Sign In" %}</h1>
@@ -46,7 +46,6 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
               <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
               {% endif %}
               <button class="btn btn-success" type="submit">{% trans "Sign In" %}</button>
-              <a class="btn btn-danger" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
             </form>
         </div>
     </div>
