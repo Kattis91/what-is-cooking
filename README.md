@@ -70,7 +70,32 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
     - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
     - Clicking "Logout" directs users to the confirmation page.
-    
+
+### Welcome message
+
+![image](static/images/welcome_message.jpg)
+
+- This section welcomes users to the blog.
+
+- Tells users that:
+  - It is a recipe blog.
+  - It is possible to publish own recipes.
+
+### Categories
+
+![image](static/images/categories.jpg)
+
+- This section shows all the categories available right now.
+
+- Clicking on a category redirects the user to all recipes in that category.
+
+### Footer
+
+![image](static/images/footer.jpg)
+
+- This section contains links to the appropriate social media platforms. By clicking on them, they will open in a new tab.
+
+- The footer remains consistent across all pages.
 
 ## Testing
 
