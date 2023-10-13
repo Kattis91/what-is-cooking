@@ -295,6 +295,10 @@ label {
 /* For smaller screen sizes below 991px width */
 @media screen and (max-width: 991px) {
 
+    .nav-link {
+        margin-right: 0;
+    }
+
     .cat-boxes {
         margin-bottom: 45px;
     }
@@ -321,6 +325,11 @@ label {
 /* For small screen sizes below 450px width */
 @media screen and (max-width: 450px) {
     
+    .container-fluid,
+    .social {
+        padding: 10px;
+    }
+
     footer > a {
         margin-right: 10px;
         font-size: large;
