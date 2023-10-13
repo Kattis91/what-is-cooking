@@ -9,7 +9,7 @@
             <p class="card-text msg">So nice to have you here! Are you ready to cook some delicious food and get some new skills in the kitchen?</p>
             <p class="card-text msg">Here you can find a collection of recipes from food-loving people all across the globe.</p>
             <p class="card-text msg">Feel free to post your own recipes for others to share as well.</p>
-            <strong class="card-text msg">Sharing is caring, right? &#128512;</strong>
+            <strong class="card-text strong">Sharing is caring, right? &#128512;</strong>
         </div>
     </div>
 </div>
@@ -19,8 +19,8 @@
         {% for category in category_list %}
         <div class="col-6 col-sm-4 col-lg-2">
             <div class="card cat-boxes">
-                <div class="card-body">
-                    <a href="/category/{{ category }}" class="categories">
+                <div class="card-body categories">
+                    <a href="/category/{{ category }}" class="category-name">
                         <p class="card-text">{{ category.name }}</p>
                     </a>
                 </div>

@@ -178,9 +178,13 @@ body {
     color: black;
 }
 
-.categories {
+.category-name {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.categories:hover {
+    background-color: #BAA6B1;
 }
 
 .cat-boxes {
