@@ -196,6 +196,15 @@ body {
 
 /* login and sign up forms */
 
+#id_login,
+#id_password,
+#id_username,
+#id_email,
+#id_password1,
+#id_password2 {
+    min-width: 100%;
+}
+
 label {
     display: block;
 }
