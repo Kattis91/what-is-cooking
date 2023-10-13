@@ -10,7 +10,10 @@ class RecipeForm(forms.ModelForm):
             'title', 'category', 'featured_image', 'ingredients',
             'instructions', 'estimated_time', 'servings',)
         widgets = {
-            'instructions': SummernoteWidget()
+            'instructions': SummernoteWidget(),
+            'ingredients': forms.Textarea(
+                attrs={'placeholder':
+                       'Please write one ingredient per line'}),
         }
 
 
