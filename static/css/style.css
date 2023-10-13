@@ -28,6 +28,8 @@ p {
     --bs-btn-border-color: none;
     --bs-btn-hover-color: #850000;
     --bs-btn-hover-bg: #BAA6B1;
+    --bs-btn-active-bg: #BAA6B1;
+    --bs-btn-active-color: #850000;
 } 
 
 #edit-button {
@@ -239,13 +241,16 @@ label {
 .card-img-top {
     width: 100%; 
     height: auto;
-    border-radius: 5%;
 }
 
 /* recipe_detail page */
 
 .details {
     margin-top: 25px;
+}
+
+.image {
+    border-radius: 5%;
 }
 
 .links {
