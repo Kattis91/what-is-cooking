@@ -4,14 +4,14 @@
 
 <form method="POST">
     {% csrf_token %}
-    <div class="container d-flex align-items-center" id="welcome" style="max-width: 33rem;">
+    <div class="container d-flex justify-content-center vh-100 align-items-center">
         <div class="card text-bg-secondary mb-3">
             <div class="card-body">
                 <h4 class="card-title">Delete your recipe</h4>
                 <p class="card-text">Are you sure you want to delete <strong>{{ recipe.title }}</strong>?</p>
-                <button class="btn btn-danger">DELETE RECIPE</button>
-                <button class="btn btn-success">
-                    <a class="text-white" href="{% url 'recipe_detail' recipe.slug %}">GO BACK</a>
+                <button class="btn red links">Delete Recipe</button>
+                <button class="btn green">
+                    <a class="text-white links" href="{% url 'recipe_detail' recipe.slug %}">Go back</a>
                 </button>
             </div>
         </div>

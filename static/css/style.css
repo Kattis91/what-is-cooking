@@ -6,6 +6,81 @@ p {
     font-family: "Open Sans", sans-serif;
 }
 
+/* styling for all the cards */
+
+.card-body {
+    background-color: #9aa5af;
+}
+
+.card-body > h1,p {
+    color: black;
+} 
+
+.card-title {
+    color: black;
+}
+
+/* styling for buttons */
+
+.btn-secondary {
+    --bs-btn-color: black;
+    --bs-btn-bg: #BAA6B1;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #850000;
+    --bs-btn-hover-bg: #BAA6B1;
+} 
+
+#edit-button {
+    padding: 7px 25px;
+    background-color: green;
+    margin: 8px 5px 15px 0;
+}
+
+#delete-button {
+    padding: 7px 25px;
+    background-color: #850000;
+    margin: 8px 0 15px 0;
+}
+
+#edit-button:hover,
+#delete-button:hover {
+    background-color: #BAA6B1;
+}
+
+.btn-success {
+    background-color: green;
+    padding: 7px 25px;
+    margin-bottom: 25px;
+    margin-right: 0;
+    --bs-btn-hover-bg: green;
+}
+
+.back {
+    background-color: #850000;
+    padding: 7px 25px;
+    margin-bottom: 25px;
+    --bs-btn-hover-bg: #850000;
+}
+
+.red {
+    background-color: #850000;
+    padding: 7px 25px;
+    --bs-btn-hover-bg: #850000;
+}
+
+.green{
+    background-color: green;
+    padding: 7px 25px;
+    --bs-btn-hover-bg: green;
+}
+
+.btn-success:hover, 
+.back:hover,
+.red:hover,
+.green:hover {
+    border: 1px solid black;
+}
+
 /* Navbar styling */
 
 .navbar-brand {
@@ -43,7 +118,6 @@ p {
 .container-fluid {
     background-color: #BAA6B1;
 } 
-
 
 /* Footer styling */
 
@@ -120,26 +194,7 @@ body {
     transform: scale(1.1); 
 }
 
-/* login form */
-
-.btn-success {
-    margin-right: 30px;
-}
-
-.card-body {
-    background-color: #9aa5af;
-}
-
-.card-body > h1,p {
-    color: black;
-} 
-
-.card-title {
-    color: black;
-}
-
-
-/* sign up form */
+/* login and sign up forms */
 
 label {
     display: block;
@@ -152,13 +207,6 @@ label {
     margin-top: 50px;
     margin-bottom: 25px;
 }
-
-.btn-secondary {
-    --bs-btn-color: black;
-    --bs-btn-bg: #BAA6B1;
-    --bs-btn-hover-color: #850000;
-    --bs-btn-hover-bg: #BAA6B1;
-    } 
     
 .card {
     border: none;
@@ -185,23 +233,6 @@ label {
 
 .details {
     margin-top: 25px;
-}
-
-#edit-button {
-    padding: 7px 25px;
-    background-color: green;
-    margin: 8px 5px 15px 0;
-}
-
-#delete-button {
-    padding: 7px 25px;
-    background-color: #850000;
-    margin: 8px 0 15px 0;
-}
-
-#edit-button:hover,
-#delete-button:hover {
-    background-color: #BAA6B1;
 }
 
 .links {
@@ -234,19 +265,6 @@ label {
 #id_instructions_iframe {
     height: auto;
     max-width: 100%;
-}
-
-.btn-success {
-    background-color: green;
-    padding: 7px 25px;
-    margin-bottom: 25px;
-    margin-right: 0;
-}
-
-#back {
-    background-color: #850000;
-    padding: 7px 25px;
-    margin-bottom: 25px;
 }
 
 
