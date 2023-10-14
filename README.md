@@ -112,6 +112,60 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
 
 - By clicking on each recipe, the user redirects to a page containing detailed information about that specific recipe.
 
+### Recipe detail page
+
+The recipe detail page includes the following information:
+
+  - The recipe image (or the default image if the recipe image doesn't load).
+  
+  - Information field containing some extra information for recipe authors.
+    
+    - Available for all users:
+    
+      ![image](static/images/recipe_view_visitors.jpg)
+
+      - recipe title;
+      - estimated time of cooking;
+      - category;
+      - number of servings;
+      - recipe author;
+      - create date;
+      - likes icon:
+        - logged-in users can like recipes;
+        - no-logged users can only see the number of likes.
+      - comment icon that shows the number of comments on the selected recipe.
+    
+    - Extra functionality for the recipe authors:
+   
+      ![image](static/images/recipe_view_author.jpg)
+
+      - EDIT
+        - By clicking the "EDIT" button, the user is redirected to the page with a form where they can edit the recipe posted by them.
+      - DELETE
+        - By clicking the "DELETE" button, the user is redirected to the page where they get a question about whether they are sure that they want to delete the recipe.
+
+  - Ingredients section.
+
+  - Instructions section.
+
+  - Comments section:
+    
+    - There are some comments left:
+
+      ![image](static/images/comments.jpg)
+    
+    - There are NO comments left:
+
+      ![image](static/images/no_comments.jpg)
+
+    - Leave a comment (available ONLY for logged-in users):
+
+      ![image](static/images/leave_a_comment.jpg)
+
+    
+
+
+
 
 ## Testing
 
