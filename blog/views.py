@@ -27,6 +27,7 @@ class RecipeDetail(View):
         queryset = Recipe.objects
         recipe = get_object_or_404(queryset, slug=slug)
         ingredients = recipe.ingredients.splitlines()
+        print(ingredients)
         comments = recipe.comments.filter(approved=True).order_by('created_on')
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
@@ -37,7 +38,7 @@ class RecipeDetail(View):
             'recipe_detail.html',
             {
                 'recipe': recipe,
-                'ingredients': recipe.ingredients.split(','),
+                'ingredients': recipe.ingredients.splitlines(),
                 'comments': comments,
                 'commented': False,
                 'liked': liked,
