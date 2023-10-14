@@ -97,6 +97,22 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
 
 - The footer remains consistent across all pages.
 
+### Recipes page
+
+![image](static/images/recipes_page.jpg)
+
+- This page shows a list of all the published recipes.
+
+- Information displayed:
+  - recipe image;
+  - recipe title;
+  - create date;
+  - estimated time of cooking;
+  - "View Recipe" button.
+
+- By clicking on each recipe, the user redirects to a page containing detailed information about that specific recipe.
+
+
 ## Testing
 
 ### Manual Testing
