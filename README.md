@@ -162,7 +162,40 @@ The recipe detail page includes the following information:
 
       ![image](static/images/leave_a_comment.jpg)
 
-    
+### Add a Recipe page
+
+- This page includes a form that allows users who are logged in to publish their own recipes.
+
+- Available fields:
+  - Title
+  ![image](static/images/form_title.png)
+  - Category (Dropdown menu)
+  ![image](static/images/form_category.jpg)
+  - Image
+  ![image](static/images/form_featured_image.jpg)
+  - Ingredients
+  ![image](static/images/form_ingredients.jpg)
+  - Instructions (Summernote field)
+  ![image](static/images/form_instructions.jpg)
+  - Estimated time
+  ![image](static/images/form_estimated_time.jpg)
+  - Servings
+  ![image](static/images/form_servings.jpg)
+  
+- "Save" button
+
+  ![image](static/images/form_save.jpg)
+
+  - After correctly submitting the form, the user will be redirected to the recipes page upon clicking the save button.
+
+  - A success message is displayed to the user.
+
+- "Go back" button
+
+  ![image](static/images/form_go_back.jpg)
+
+  - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
+
 
 
 
