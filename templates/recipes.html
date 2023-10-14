@@ -3,7 +3,7 @@
 {% block additional_styles %}
 <style>
     body {
-    background-image: url("https://res.cloudinary.com/dx0imlozl/image/upload/v1696242568/matthias-cooper-r3tjnNRMadY-unsplash_g21xdr.jpg");
+    background-image: url("https://res.cloudinary.com/dx0imlozl/image/upload/v1696976887/photo-1656274404439-b8b463c73194_lmed06.avif");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -16,17 +16,17 @@
     <div class="row">
         {% for recipe in recipe_list %}
             <div class="recipes col-12 col-sm-6 col-lg-3">
-                <div class="card">
+                <div class="card recipe-card">
                     {% if "placeholder" in recipe.featured_image.url %}
-                    <img src="https://res.cloudinary.com/dx0imlozl/image/upload/v1696500297/photo-1554998171-706e730d721d_u8rayg.avif" class="card-img-top" alt="">
+                    <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="the default image">
                     {% else %}
-                    <img class="card-img-top" src="{{ recipe.featured_image.url }}">
+                    <img class="card-img-top" src="{{ recipe.featured_image.url }}" alt="image of recipe">
                     {% endif %}
                     <div class="card-body">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                         <p class="card-text">{{ recipe.created_on }}</p>
-                        <p class="card-text">{{ recipe.estimated_time }} min</p>
-                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-dark">View Recipe</a>   
+                        <p><strong class="card-text"><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</strong></p>
+                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-secondary">View Recipe</a>   
                     </div>
                 </div>
             </div> 
