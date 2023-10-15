@@ -5,9 +5,7 @@
 {% block additional_styles %}
 <style>
     body {
-        background-image: url('https://res.cloudinary.com/dx0imlozl/image/upload/v1696282175/photo-1521193089946-7aa29d1fe776_amijzl.avif');
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-color: rgb(225, 221, 221);
     }
 </style>
 {% endblock %}
@@ -18,7 +16,7 @@
             <form action="{% url 'add_recipe' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
                 <div class="card card-body">
-                    <h1>Create a Recipe</h1>
+                    <h1>Add a Recipe</h1>
                     {{ form | crispy }}
                 </div>
                 <div class="buttons">
