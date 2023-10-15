@@ -97,6 +97,47 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
 
 - The footer remains consistent across all pages.
 
+### Sign Up
+
+![image](static/images/sign_up_form.jpg)
+
+- The form enables users to register and create an account.
+
+- The form includes following fields:
+  - Username
+  - Email
+  - Password
+  - Password (again)
+
+- Email field is optional.
+
+### Login
+
+![image](static/images/sign_in_form.jpg)
+
+- The form enables users to log in.
+
+- When a user logs in, they gain the ability to:
+  - comment on existing recipes,
+  - create new recipes.
+  - edit/delete their own recipes.
+
+- A message indicating that the operation was successful is shown on the screen.
+
+### Logout
+
+![image](static/images/sign_out.jpg)
+
+- When the user clicks on Logout in the navbar, they are redirected to a page displaying a confirmation message above.
+
+  - Sign Out:
+    - The user redirects to the home page.
+    - A message indicating that the operation was successful is shown on the screen.
+
+  - Go Back:
+    - The user redirects to the home page.
+
+
 ### Recipes page
 
 ![image](static/images/recipes_page.jpg)
@@ -195,9 +236,6 @@ The recipe detail page includes the following information:
   ![image](static/images/form_go_back.jpg)
 
   - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
-
-
-
 
 
 ## Testing
