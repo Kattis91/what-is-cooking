@@ -42,6 +42,31 @@ When I tried to retrieve ingredients from a user form on the site, I encountered
   - Make it possible to "sort" recipes by categories.
 
 
+## Design
+
+### Colour Scheme
+
+The choice of colors depends on the background image chosen for home, sign up, login, and logout pages.
+
+![image](static/images/colour_scheme.jpg)
+
+ - **9AA5AF** is the primary color used throughout the pages:
+   - Welcome message.
+   - Category boxes on the home page.
+   - Recipe cards.
+   - Add | Edit recipe forms.
+   - Sign Up | Login | Logout forms.
+   - Confirmation message when choosing to delete a recipe.
+  
+ - **BAA6B1** is used to style the navbar, the footer and the "View Recipe" button.
+
+ - **000000** is the primary text color used throughout the pages.
+
+ - **850000** is used for links and hover styling on navbar and footer. The color was chosen with the help of [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) (provided by Lighthouse testing) in order for background and foreground colors to have a sufficient contrast ratio.
+
+ - **E1DDDD** is used as the background color for all recipe-related pages including recipes, recipe details, add recipe, edit recipe and categories.
+
+
 ## Features
 
 ### Navigation Bar
@@ -284,4 +309,3 @@ The recipe detail page includes the following information:
 | Comment possibility for logged-in users | All logged-in users should be able to comment all published recipes. A message saying "Your comment is awaiting approval..." should be displayed on the screen. | Log in, go to the recipes page and click on the "View Recipe" button associated with the recipe that you want to view. Write a comment and click "Submit". | "Your comment is awaiting approval..." message appears on the screen. | Pass
 | Edit posibility for recipe authors | Recipe authors should be able to edit their recipes by updating the prepopulated form accessed through the "EDIT" button located under the recipe title. | Log in and publish a recipe. Click on the newly published recipe, then click "EDIT" to update and "SAVE". | The updated version of the recipe is published on the blog. | Pass
 | Delete posibility for recipe authors | Recipe authors should be able to delete their recipes by clicking the "DELETE" button located under the recipe title. The user should be redirected to a confirmation page where they are asked whether they are sure they want to delete the recipe or not. | Log in and publish a recipe. Click on the newly published recipe, then click "DELETE" button and "DELETE RECIPE" button on the confirmation page. | The recipe is successfully deleted. | Pass
-
