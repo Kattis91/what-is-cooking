@@ -51,9 +51,10 @@ p {
 
 .btn-success {
     background-color: green;
-    padding: 7px 25px;
+    padding: 7px 35px;
     margin-bottom: 25px;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-top: 25px;
     --bs-btn-hover-bg: green;
 }
 
@@ -61,6 +62,7 @@ p {
     background-color: #850000;
     padding: 7px 25px;
     margin-bottom: 25px;
+    margin-top: 25px;
     --bs-btn-hover-bg: #850000;
 }
 
@@ -246,7 +248,7 @@ label {
 /* recipe_detail page */
 
 .details {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .image {
@@ -272,6 +274,12 @@ label {
     text-decoration: underline;
     margin-top: 50px;
     text-align: center;
+}
+
+.title-container h1,
+.ingredients-container li, 
+.instructions-container p { 
+    word-wrap: break-word;
 }
 
 /* Add recipe page */
@@ -347,4 +355,8 @@ label {
     #msg-box {
         margin-top: 75px;
     }
+}
+
+.click {
+    color: #850000;
 }
