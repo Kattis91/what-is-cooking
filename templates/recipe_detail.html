@@ -4,9 +4,7 @@
 {% block additional_styles %}
 <style>
     body {
-        background-image: url('https://res.cloudinary.com/dx0imlozl/image/upload/v1696282175/photo-1521193089946-7aa29d1fe776_amijzl.avif');
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-color: rgb(225, 221, 221);
     }
 </style>
 {% endblock %}
@@ -17,7 +15,7 @@
     <div class="row align-items-start">
         <div class="col-12 col-lg-6">
             {% if "placeholder" in recipe.featured_image.url %}
-            <img class="card-img-top image" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="default food image">
+            <img class="card-img-top image" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="the default food image">
             {% else %}
             <img class="card-img-top image" src="{{ recipe.featured_image.url }}" height="auto" width="100%" alt="image of the recipe">
             {% endif %}
