@@ -168,4 +168,3 @@ class RecipeLike(View):
         else:
             recipe.likes.add(request.user)
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
-
