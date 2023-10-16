@@ -14,6 +14,8 @@ class RecipeForm(forms.ModelForm):
             'ingredients': forms.Textarea(
                 attrs={'placeholder':
                        'Please write one ingredient per line'}),
+            'estimated_time': forms.NumberInput(
+                attrs={'placeholder': 'Estimated time is counted in minutes'})
         }
 
 
