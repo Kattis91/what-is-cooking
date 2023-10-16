@@ -330,6 +330,7 @@ The recipe detail page includes the following information:
   - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
     - used to control rendering behaviour of Django forms.
 
+<<<<<<< HEAD
   - [Gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/)
     - Python HTTP server for WSGI applications.
   
@@ -362,3 +363,6 @@ The recipe detail page includes the following information:
   
   - [Lucidchart](https://www.lucidchart.com/pages/sv)
     - The diagramming application used to create ERD diagrams.
+=======
+  
+>>>>>>> refs/remotes/origin/main
