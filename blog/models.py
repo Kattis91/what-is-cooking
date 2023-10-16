@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
+from django.core.validators import MaxValueValidator
 
 
 class Category(models.Model):
@@ -21,7 +22,7 @@ def validate_nonzero(value):
     """
     if value == 0:
         raise ValidationError(
-            ('Please input a value that is greater than zero'),
+            ('Please enter a value that is greater than zero'),
             params={'value': value},
         )
 
@@ -41,9 +42,10 @@ class Recipe(models.Model):
     instructions = models.TextField(blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     estimated_time = models.PositiveIntegerField(
-        'estimated_time', validators=[validate_nonzero])
+        'estimated_time', validators=[
+            validate_nonzero, MaxValueValidator(600)])
     servings = models.PositiveIntegerField(
-        'servings', validators=[validate_nonzero])
+        'servings', validators=[validate_nonzero, MaxValueValidator(50)])
     likes = models.ManyToManyField(
         User, related_name='recipe_likes', blank=True)
 
@@ -56,6 +58,7 @@ class Recipe(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
+    # Source: https://stackoverflow.com/questions/837828/how-do-i-create-a-slug-in-django # noqa
     def save(self, *args, **kwargs):
         """
         A method to generate slug for recipes
