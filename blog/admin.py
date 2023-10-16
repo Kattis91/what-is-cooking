@@ -5,11 +5,11 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
-    
+
     list_display = ('title', 'author', 'category', 'created_on', 'slug')
     search_fields = ('title', 'category')
     prepopulated_fields = {'slug': ('title',)}
-    list_filter = ('created_on',)
+    list_filter = ('created_on', 'category')
     summernote_fields = ('ingredients', 'instructions')
 
 
@@ -26,4 +26,3 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Category)
-
