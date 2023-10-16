@@ -309,3 +309,56 @@ The recipe detail page includes the following information:
 | Comment possibility for logged-in users | All logged-in users should be able to comment all published recipes. A message saying "Your comment is awaiting approval..." should be displayed on the screen. | Log in, go to the recipes page and click on the "View Recipe" button associated with the recipe that you want to view. Write a comment and click "Submit". | "Your comment is awaiting approval..." message appears on the screen. | Pass
 | Edit posibility for recipe authors | Recipe authors should be able to edit their recipes by updating the prepopulated form accessed through the "EDIT" button located under the recipe title. | Log in and publish a recipe. Click on the newly published recipe, then click "EDIT" to update and "SAVE". | The updated version of the recipe is published on the blog. | Pass
 | Delete posibility for recipe authors | Recipe authors should be able to delete their recipes by clicking the "DELETE" button located under the recipe title. The user should be redirected to a confirmation page where they are asked whether they are sure they want to delete the recipe or not. | Log in and publish a recipe. Click on the newly published recipe, then click "DELETE" button and "DELETE RECIPE" button on the confirmation page. | The recipe is successfully deleted. | Pass
+
+
+## Technologies used
+
+### Languages
+ 
+  - HTML
+  - CSS
+  - Python
+  - JavaScript
+
+### Frameworks, Libraries and Programs
+
+  - [Django](https://www.djangoproject.com/)
+   
+  - [Django-Allauth](https://docs.allauth.org/en/latest/)
+    - used for User authenticaion (sign up, sign in and sign out features).
+
+  - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - used to control rendering behaviour of Django forms.
+
+  - [Gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/)
+    - Python HTTP server for WSGI applications.
+  
+  - [psycopg2](https://pypi.org/project/psycopg2/)
+    - PostgreSQL database adapter for the Python programming language.
+  
+  - [Summernote](https://summernote.org/)
+    - WYSIWYG editor. Used for ingredients and instruction fields on the Admin site and instructions field in the "Add a recipe" form.
+
+  - [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html)
+    - The library that allows the web app to serve its static files.
+
+  - [ElepantSQL](https://www.elephantsql.com/)
+    - The database used by the deployed project on Heroku.
+
+  - [Cloudinary](https://cloudinary.com/)
+    - The cloud platform used to store static media files.
+
+  - [Git](https://git-scm.com/)
+    - used for version controll.
+
+  - [GitPod](https://www.gitpod.io/)
+    - The IDE used to create the site.
+
+  - [GitHub](https://github.com/)
+    - The code hosting platform used to save and store the files for the website.
+
+  - [Heroku](https://www.heroku.com/)
+    - The cloud platform used to deploy the project into live environment.
+  
+  - [Lucidchart](https://www.lucidchart.com/pages/sv)
+    - The diagramming application used to create ERD diagrams.
