@@ -219,8 +219,14 @@ The recipe detail page includes the following information:
 
       - EDIT
         - By clicking the "EDIT" button, the user is redirected to the page with a form where they can edit the recipe posted by them.
+        - The form has the same fields as the "Add a Recipe" form.
+        - All the form fields are prepopulated.
+      
       - DELETE
         - By clicking the "DELETE" button, the user is redirected to the page where they get a question about whether they are sure that they want to delete the recipe.
+        ![image](static/images/delete_confirmation.jpg)
+          - The recipe gets deleted when the user clicks the "DELETE RECIPE" button. The user is redirected to the home page.
+          - The user is redirected to the home page when clicked the "GO BACK" button.
 
   - Ingredients section.
 
