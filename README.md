@@ -330,7 +330,6 @@ The recipe detail page includes the following information:
   - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
     - used to control rendering behaviour of Django forms.
 
-<<<<<<< HEAD
   - [Gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/)
     - Python HTTP server for WSGI applications.
   
@@ -363,6 +362,33 @@ The recipe detail page includes the following information:
   
   - [Lucidchart](https://www.lucidchart.com/pages/sv)
     - The diagramming application used to create ERD diagrams.
-=======
-  
->>>>>>> refs/remotes/origin/main
+
+
+## Credits
+
+### Content
+
+- The main code of this project is based on the Code Institute tutorial ["I Think Therefore I Blog"](https://github.com/Code-Institute-Solutions/Django3blog) with changes made to suit my project.
+
+- The option to sort recipes by category was implemented following [Very Academy](https://www.youtube.com/watch?v=S9-Bt1JgRjQ&t=2137s) tutorial. I made some modifications in order to show my categories in the form of clickable "boxes" instead of displaying them in the navbar.
+
+- Instructions on how to put different background images/background colors on different pages were taken from [Stack Overflow](https://stackoverflow.com/questions/61434945/putting-a-different-background-image-on-a-different-page-in-a-website).
+
+- [Stack Overflow](https://stackoverflow.com/questions/46617375/how-do-i-show-an-active-link-in-a-django-navigation-bar-dropdown-list) was even the source of instructions on how to make navbar links active depending on the page a user is viewing.
+
+- The CSS code for category boxes to zoom/scale in on hover was borrowed from [W3Schools](https://www.w3schools.com/howto/howto_css_zoom_hover.asp).
+
+- [Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate Django Secret Key.
+
+- Ability to create/update and delete recipes while getting a success message displayed is achieved by following instructions in two different Stack Overflow articles.
+  - [Create/update](https://stackoverflow.com/questions/67366138/django-display-message-after-creating-a-post);
+  - [Delete](https://stackoverflow.com/questions/47636968/django-messages-for-a-successfully-delete-add-or-edit-item).
+
+- PositiveIntegerFields (estimated_time and servings) were validated by following instructions in this [Stack Overflow](https://stackoverflow.com/questions/2248617/0-value-in-django-positiveintegerfield) article.
+
+- Thanks to Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap.
+
+
+
+
+
