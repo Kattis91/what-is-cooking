@@ -112,7 +112,19 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - This section shows all the categories available right now.
 
-- Clicking on a category redirects the user to all recipes in that category.
+- Clicking on a category redirects the user to all recipes within that category. The "BACK" button takes the user back to the homepage.
+  
+  - There are some recipes available:
+    ![image](static/images/category_recipes.jpg)
+
+  - No recipes are available within the selected category.
+     
+    - Logged-in users:
+      ![image](static/images/category_no_recipes_logged_in.jpg)
+
+    - Unlogged users:
+      ![image](static/images/category_no_recipes_unlogged_users.jpg)
+
 
 ### Footer
 
