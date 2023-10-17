@@ -28,7 +28,7 @@
                     <h2 class="card-title">{{ recipe.title }}</h2>
                     <p class="card-text">{{ recipe.created_on }}</p>
                     <p class="card-text">{{ recipe.estimated_time }} min</p>
-                    <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-secondary">View Recipe</a>   
+                    <a href="{% url 'recipe_detail' recipe.slug %}" class="btn view">View Recipe</a>   
                 </div>
             </div>
         </div>

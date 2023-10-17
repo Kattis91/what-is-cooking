@@ -27,6 +27,7 @@ p {
     --bs-btn-hover-bg: #BAA6B1;
     --bs-btn-border-color: none;
     --bs-btn-active-bg: #BAA6B1;
+    --bs-btn-hover-color: black;
 } 
 
 #edit-button {
