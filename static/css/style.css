@@ -22,14 +22,11 @@ p {
 
 /* styling for buttons */
 
-.btn-secondary {
-    --bs-btn-color: black;
-    --bs-btn-bg: #BAA6B1;
-    --bs-btn-border-color: none;
-    --bs-btn-hover-color: #850000;
+.view {
+    background-color: #BAA6B1;
     --bs-btn-hover-bg: #BAA6B1;
+    --bs-btn-border-color: none;
     --bs-btn-active-bg: #BAA6B1;
-    --bs-btn-active-color: #850000;
 } 
 
 #edit-button {
@@ -58,24 +55,31 @@ p {
     --bs-btn-hover-bg: green;
 }
 
+.green{
+    background-color: green;
+    padding: 7px 25px;
+    --bs-btn-hover-bg: green;
+    --bs-btn-active-bg: green;
+    --bs-btn-border-color: green;
+}
+
 .back {
     background-color: #850000;
     padding: 7px 25px;
     margin-bottom: 25px;
     margin-top: 25px;
     --bs-btn-hover-bg: #850000;
+    --bs-btn-active-bg: #850000;
+    --bs-btn-border-color: #850000;
 }
 
 .red {
     background-color: #850000;
     padding: 7px 25px;
     --bs-btn-hover-bg: #850000;
-}
-
-.green{
-    background-color: green;
-    padding: 7px 25px;
-    --bs-btn-hover-bg: green;
+    --bs-btn-border-color: #850000;
+    --bs-btn-active-bg: #850000;
+    margin-right: 25px;
 }
 
 .btn-success:hover, 
@@ -91,7 +95,8 @@ p {
     font-family: "Bitter", sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: black;    
+    color: black;  
+    padding-left: 10px;  
 }
 
 .navbar-brand:hover {
@@ -121,6 +126,7 @@ p {
 
 .container-fluid {
     background-color: #BAA6B1;
+    padding: 5px;
 } 
 
 /* Footer styling */
