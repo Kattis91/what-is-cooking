@@ -285,6 +285,11 @@ The recipe detail page includes the following information:
 
 ### Validator Testing
 
+
+- **CSS**. Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
+  
+  ![image](static/images/jigsaw_validator.jpg)
+
 - **PYTHON**. Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 Only files with custom-written Python code have been verified with the validator. All the files tested got the result below.
 
