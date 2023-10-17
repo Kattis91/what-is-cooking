@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
-{% block content %}
 
+{% block additional_styles %}
+<style>
+    body {
+        background-color: rgb(225, 221, 221);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
 
 <div class="container details form align-items-center">
     <div class="row">
