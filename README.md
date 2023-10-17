@@ -56,6 +56,38 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
  - **E1DDDD** is used as the background color for all recipe-related pages including recipes, recipe details, add recipe, edit recipe and categories.
 
+ ### Button styling
+
+ Colors: GREEN | WHITE | #850000
+
+- Sign up: 
+    
+  ![image](static/images/sign_up_button.jpg)
+
+- Sign in:
+   
+  ![image](static/images/sign_in_button.jpg)
+  
+- Logout:
+
+  ![image](static/images/buttons_sign_out.jpg)
+
+- Add a recipe:
+
+  ![image](static/images/buttons_add_a_recipe_form.jpg)
+
+- Update a recipe:
+
+  ![image](static/images/buttons_update_a_recipe.jpg)
+
+- Delete confirmation:
+
+  ![image](static/images/buttons_delete_recipe.jpg)
+
+- Edit | Delete:
+
+  ![image](static/images/buttons_edit_delete.jpg)
+
 
 ## Features
 
