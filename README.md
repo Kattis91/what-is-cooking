@@ -6,23 +6,13 @@ This interactive platform is designed to be an inspiration for those days when y
 
 ## Database Diagram
 
-The database model diagram was designed using [Lucidchart]("https://www.lucidchart.com/pages/sv"). The first draft of the entity relationship diagram is nearly the same as the models used in the final database. However, during the project, my modules underwent changes that can be divided in three stages: planning, middle, and the final result.
+The database model diagram was designed using [Lucidchart]("https://www.lucidchart.com/pages/sv"). The first draft of the entity relationship diagram is nearly the same as the models used in the final database. 
 
 ### Planning
 
 ![image](static/images/models_in_the_beginning.jpg)
 
-At this stage, the ingredients field is missing.
-
-### Middle Stage
-
-![image](static/images/models_in_the_middle.jpg)
-
-Here I got instructions and inspiration from [Stack Overflow]("https://stackoverflow.com/questions/61618882/best-way-to-organize-models-for-django-recipe-app-with-ingredients-recipes-and").
-
-The idea was to use a Recipe model to create new recipes, an Ingredient model to include all the ingredients (that could be used in different recipes), and a RecipeIngredient model to establish a connection between the specific recipe and ingredients needed for that recipe. 
-
-When I tried to retrieve ingredients from a user form on the site, I encountered issues, even though it worked well on the admin site. After reaching out to Tutor Assistance and trying to find a solution on Stack Overflow, Slack, and other platforms, I decided to proceed to step 3.
+At this stage, the ingredients an servings fields are missing.
 
 ### Final Result
 
@@ -536,8 +526,3 @@ Only files with custom-written Python code have been verified with the validator
 - PositiveIntegerFields (estimated_time and servings) were validated by following instructions in this [Stack Overflow](https://stackoverflow.com/questions/2248617/0-value-in-django-positiveintegerfield) article.
 
 - Thanks to Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap.
-
-
-
-
-
