@@ -17,18 +17,14 @@
             {% if "placeholder" in recipe.featured_image.url %}
             <img class="card-img-top image" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="the default food image">
             {% else %}
-            <img class="card-img-top image" src="{{ recipe.featured_image.url }}" height="auto" width="100%" alt="image of the recipe">
+            <img class="card-img-top image" src="{{ recipe.featured_image.url }}" alt="image of the recipe">
             {% endif %}
         </div>
         <div class="title-container col-12 col-lg-6 text-center align-self-center">
             <h1>{{ recipe.title }}</h1>
             {% if user.id == recipe.author.id %}
-                <button class="btn btn-secondary" id="edit-button" type="button">
-                    <a href="{% url 'update' recipe.slug %}" class="links">Edit</a>
-                </button>
-                <button class="btn btn-secondary" id="delete-button" type="button">
-                    <a href="{% url 'delete' recipe.slug %}" class="links">Delete</a>
-                </button>
+                <a href="{% url 'update' recipe.slug %}" id="edit-button" class="btn links">Edit</a>
+                <a href="{% url 'delete' recipe.slug %}" id="delete-button" class="btn links">Delete</a>
             {% endif %}
             <div id="info">
                 <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
@@ -51,7 +47,7 @@
                         {% endif %}
                     </form>
                     {% else %}
-                    <span><i class="fa-regular fa-heart" aria-label="like"></i></span>
+                    <span><i class="fa-regular fa-heart"></i></span>
                     {% endif %}
                     <span>{{ recipe.number_of_likes }}</span>
                     {% with comments.count as total_comments %}
@@ -78,7 +74,7 @@
         </div>  
         <div class="instructions-container col-12 col-lg-6 mt-3">
             <h2 id="instructions">Instructions:</h2>
-            <p>{{ recipe.instructions | safe }} </p>
+            {{ recipe.instructions | safe }}
         </div>
     </div>
 </div>
@@ -92,12 +88,12 @@
             <div>
                 <p> {{ comment.name }} wrote: <br> <small><i class="fa-solid fa-clock"></i>
                         {{ comment.created_on}}</small></p>
-                <p>{{ comment.content | linebreaks }}</p>
+                {{ comment.content | linebreaks }}
             </div>
             {% empty %}
             <p> Currently, there are no comments here. Please <a class="click" href="{% url 'account_login' %}">sign in</a> to be the
                 first to add a comment.</p>
-            <p>If you have not created an account yet, yo can do that <a class="click" href="{% url 'account_signup' %}">here</a></p>
+            <p>If you have not created an account yet, you can do that <a class="click" href="{% url 'account_signup' %}">here</a></p>
             {% endfor %}
         </div>
         <div class="col-12 col-lg-6 mt-3 mb-4">
