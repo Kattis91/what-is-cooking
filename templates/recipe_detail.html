@@ -21,7 +21,7 @@
             {% endif %}
         </div>
         <div class="title-container col-12 col-lg-6 text-center align-self-center">
-            <h1>{{ recipe.title }}</h1>
+            <h1 id="title">{{ recipe.title }}</h1>
             {% if user.id == recipe.author.id %}
                 <a href="{% url 'update' recipe.slug %}" id="edit-button" class="btn links">Edit</a>
                 <a href="{% url 'delete' recipe.slug %}" id="delete-button" class="btn links">Delete</a>
@@ -93,7 +93,7 @@
             {% empty %}
             <p> Currently, there are no comments here. Please <a class="click" href="{% url 'account_login' %}">sign in</a> to be the
                 first to add a comment.</p>
-            <p>If you have not created an account yet, you can do that <a class="click" href="{% url 'account_signup' %}">here</a></p>
+            <p>If you have not created an account yet, you can do that by clicking the link: <a class="click" href="{% url 'account_signup' %}">sign up</a></p>
             {% endfor %}
         </div>
         <div class="col-12 col-lg-6 mt-3 mb-4">
@@ -105,12 +105,12 @@
             </div>
             {% else %}
             {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>
+            <h3 class="mt-3">Leave a comment:</h3>
             <p>Posting as: {{ user.username }}</p>
             <form method="post" style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-success links">Submit</button>
             </form>
             {% endif %}
             {% endif %}
