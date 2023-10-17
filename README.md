@@ -283,6 +283,31 @@ The recipe detail page includes the following information:
 
 ## Testing
 
+### Validator Testing
+
+- **PYTHON**. Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
+Only files with custom-written Python code have been verified with the validator. All the files tested got the result below.
+
+  ![image](static/images/ci_python_linter.jpg)
+ 
+  - **admin.py** 
+    - All clear, no errors found.
+  
+  - **models.py**
+    - All clear, no errors found.
+
+  - **forms.py**
+    - All clear, no errors found.
+
+  - **views.py**
+    - All clear, no errors found.
+
+  - **whatscooking/urls.py**
+    - All clear, no errors found.
+
+  - **blog/urls.py**
+    - All clear, no errors found.
+
 ### Manual Testing
 
 #### Navigation bar and footer (base.html)
