@@ -285,6 +285,33 @@ The recipe detail page includes the following information:
 
 ### Validator Testing
 
+- **HTML**. Validator: [W3C Validator](https://validator.w3.org/).
+  
+  - **Home Page**
+    - Document checking completed. No errors or warnings to show.
+
+  - **Sign Up**
+    - Document checking completed. No errors or warnings to show.
+
+  - **Login**
+    - Document checking completed. No errors or warnings to show.
+  
+  - **Logout**
+    - Document checking completed. No errors or warnings to show.
+    
+  - **Recipes Page**
+    - Document checking completed. No errors or warnings to show.
+
+  - **Recipe detail page**
+    - Document checking completed. No errors or warnings to show.
+
+  - **Category**
+      
+    Documents checking completed. No errors or warnings to show for either of these three cases:
+    - There are recipes within the selected category.
+    - There are no recipes within the selected category. The user is logged in.
+    - There are no recipes within the selected category. The user is not logged in.
+
 
 - **CSS**. Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
   
