@@ -290,6 +290,12 @@ The recipe detail page includes the following information:
   
   ![image](static/images/jigsaw_validator.jpg)
 
+- **JavaScript**. Validator: [JSHint Validator](https://jshint.com/).
+  - No errors were found when passing through the validator.
+  - Validator gave warnings about one undefined variable(Bootstrap). No action is taken because this custom bootstrap variable does not need to be defined within the script.
+
+    ![image](static/images/jshint_undefined_variable.jpg)
+
 - **PYTHON**. Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 Only files with custom-written Python code have been verified with the validator. All the files tested got the result below.
 
