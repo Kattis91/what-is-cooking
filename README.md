@@ -359,6 +359,44 @@ The recipe detail page includes the following information:
 | "Are you sure you want to sign out?". **Go Back** | Choosing to go back, the user should just be directed to the homepage. | Click the "Go back" button. | The user is directed to the homepage. The user is still logged in. | Pass |
 
 
+## Fixed Bugs
+
+  - Static files were not loading in the deployed Heroku app. The local preview looked just the way it should, but checking the deployed site, none of the styling was there, and the images weren't loading.
+    - **Fix**: Install [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) and put some lines of code in settings.py as mentioned in the link.
+
+  - Chosen colors (#71777ce6, whitesmoke and #ffc107) didn't have sufficient contrast ratio. 
+    - **Fix**: Use [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) provided by Lighthouse testing to find new colors working good together (see more in the Design section).
+
+  - "Add a Recipe" form.
+    
+    - When filling out the form, users were presented with a drop-down menu that allowed them to select an author for their recipe. The menu displayed the usernames of every registered user on the website. However, despite the selection made by the user, the recipe was still published under their own name. This bug caused confusion, leading to a poorer user experience.
+      - **Fix**: Delete the "author" field from the RecipeForm. The recipe is still published in the user's name without causing any issues or confusion for the user.
+    
+    - The recipe image failed to display. The default image appeared instead whenever a recipe was published.
+      - **Fix**: It turned out that the enctype attribute was missed. I added *enctype="multipart/form-data"* to be able to upload images.
+
+    - The slug wouldn't generate for the recipes submitted via the form.
+      - **Fix**: Import slugify and include the helper method into the Recipe model.
+
+        ![image](static/images/slugify.jpg)
+
+    - It was possible to choose zero and enter very large numbers into the estimated_time and servings fields.
+      
+      ![image](static/images/max_value_validator.jpg)
+      
+      - **Fix**: Add validate_nonzero function. Import and add MaxValueValidator.
+        
+        ![image](static/images/validate_nozero.jpg)
+
+    - The layout of the recipe detail page was affected when a user entered a single long word. For example, the one long word typed in the Ingredients field overflowed into the Instructions field and continued beyond the right boundary of the page until the word was finished, causing the page's layout to break. 
+      - **Fix**: 
+        - Wrap the fields in the container. 
+        - Use the word-wrap property with the value of break-word to be able to break the long words and wrap them onto the next line.
+    
+  - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
+    - **Fix**: Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM'] to settings.py
+
+  
 ## Technologies used
 
 ### Languages
