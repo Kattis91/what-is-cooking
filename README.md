@@ -5,32 +5,35 @@
 This interactive platform is designed to be an inspiration for those days when you don't know what to cook or simply want to try something new.
 
 # Table of Contents
- - [Database Diagram](#database-diagram)
-    - [Planning](#planning)
-    - [Final Result](#final-result)
+- [Database Diagram](#database-diagram)
+  - [Planning](#planning)
+  - [Final Result](#final-result)
 
- - [Design](#design)
-    - [Colour Scheme](#colour-scheme)
-    - [Button Styling](#button-styling)
+- [Design](#design)
+  - [Colour Scheme](#colour-scheme)
+  - [Button Styling](#button-styling)
 
- - [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+- [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
- - [Features](#features)
-   - [Existing Features](#existing-features)
-   - [Future Features](#future-features)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Future Features](#future-features)
 
- - [Testing](#testing)
-    - [Validator Testing](#validator-testing)
-    - [Manual Testing](#manual-testing)
-    - [Testing of User Stories](#testing-of-user-stories)
+- [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+  - [Manual Testing](#manual-testing)
+  - [Testing of User Stories](#testing-of-user-stories)
 - [Fixed Bugs](#fixed-bugs)
 
- - [Credits](#credits)
-    - [Media](#media)
-    - [Content](#content)
-    - [Acknowledgements](#acknowledgements)
+- [Credits](#credits)
+  - [Media](#media)
+  - [Content](#content)
+  - [Acknowledgements](#acknowledgements)
+
+- [Deployment](#deployment)
+
   
 ## Database Diagram
 
@@ -636,7 +639,7 @@ I used Milestones to keep track on my Epics.
         - Use the word-wrap property with the value of break-word to be able to break the long words and wrap them onto the next line.
     
   - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
-    - **Fix**: Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM'] to settings.py
+    - **Fix**: `Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM']`` to settings.py
 
 
 ## Credits
@@ -685,3 +688,187 @@ I would like to aknowledge the following people:
   - Kay (the facilitator in my team) for always patiently answering all my questions during our Monday sessions &#128512;
 
   - Karolis_5P (Peer Code Review) who took time to look at my project, check the functionality and come up with valuable feedback.
+
+
+## Deployment
+
+### Installing Django and supporting libraries
+
+- Install **Gunicorn**(the server that is used to run Django on Heroku): `pip3 install django gunicorn`
+
+- Install **dj_database_url** and **pyscopg2**(connect to PostegreSQL): `pip 3 install dj_database_url pyscopg2`
+
+- Install **Cloudinary** (The cloud platform used to store static media files): `pip3 install dj3-cloudinary-storage`
+
+- Install **Whitenoise** (The library that allows the web app to serve its static files.): `pip3 install whitenoise`
+
+
+### Create App
+
+- Create Project.
+
+- Create App.
+
+- Add App to installed apps in **settings.py**:
+
+  ````
+  INSTALLED_APPS = [
+    ...
+    'APP_NAME',
+  ]
+  ````
+
+### Create a new external database
+
+- Navigate to **ElephantSQL.com** and click **“Get a managed database today”**.
+
+- Click **Create New Instance**.
+
+- Set up your plan:
+  - give your plan a Name;
+  - select the Tiny Turtle (Free) plan.
+
+- Click **“Select Region”** and select a data center near you.
+
+- Click **"Review"**, check that your details are correct and click **“Create instance”**.
+
+- Return to the dashboard and click on the database instance name for this project.
+
+- Copy the database URL.
+
+
+### Create the Heroku app
+
+ - Sign up for Heroku and accept terms of service.
+
+ - Click the **"Create a new app"** button.
+
+ - Give your app a name and select the region closest to you. A name must be unique.
+  
+
+### Create an env.py file
+
+- Create **env.py** file and check that the file is included in the **.gitignore file**.
+
+- Import os library: `import os`.
+
+- Set environment variables:
+  - **DATABASE_URL** with the value you just copied from ElephantSQL: `os.environ["DATABASE_URL"]="<copiedURL>`
+  - **SECRET_KEY**: `os.environ["SECRET_KEY"] = "randomSecretKey"` ([Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate a secret key).
+
+
+### Update settings.py
+
+- Add the following code:
+
+  ````
+  import os
+  import dj_database_url
+  if os.path.isfile('env.py'):
+      import env
+  ````
+
+- Remove the insecure secret key provided by Django. Change your SECRET_KEY variable to the following: `SECRET_KEY = os.environ.get('SECRET_KEY')`
+
+- Comment out the original **DATABASES** variable and add the code below:
+
+  ````
+  DATABASES = {
+      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }
+  ````
+
+- Save all files and make migrations: `python3 manage.py migrate`
+
+
+### Connecting Heroku to the database
+
+- Go back to the Heroku dashboard and open the **Settings** tab:
+
+- Create _Config Vars_:
+  - KEY: **PORT** | VALUE: **8000**.
+  - KEY: **SECRET_KEY** | VALUE: **randomSecretKey**(the value that is in env.py)
+  - KEY: **DATABASE_URL** | VALUE: **ElephantSQL database url**(no quotation marks needed)
+  - KEY: **DISABLE_COLLECTSTATIC** | VALUE: **1** (Temporary to be able to deploy the project as we do not have any static files yet)
+
+
+### Get static and media files stored on Cloudinary
+
+- Create a Cloudinary account (steps can be found in the [Code Institutes](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/9236975633b64a12a61a00e0cca7c47d/?child=first) tutorial in LMS).
+
+- Copy **API Environment Variable** in the Cloudinary dashboard.
+
+- Go back to **env.py** and add a new environment vriable:
+  - **CLOUDINARY_URL** with the value just copied from the dashboard ⇧(remove CLOUDINARY_URL in the beginning).
+
+- HEROKU: Add a new _Config Var_ with the KEY **CLOUDINARY_URL**, and the same value(URL) as in the step above.
+
+- **settings.py**:
+
+  - Add Cloudinary Libraries to installed apps (the order is important):
+
+    ````
+    INSTALLED_APPS = [
+      ...,
+      'cloudinary_storage',
+      'django.contrib.staticfiles',
+      'cloudinary',
+      ...,
+    ]
+    ````
+  
+  - Tell Django to use Cloudinary to store media and static files:
+   
+    ````
+    STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    MEDIA_URL = '/media/'
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    ````
+ 
+### Tell Django where templates will be stored
+
+  - Link file to the templates directory in Heroku. _Place under the BASE_DIR line_:
+
+    `TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`
+
+  - Change the templates directory to TEMPLATES_DIR:
+
+    ````
+    TEMPLATES = [
+    {
+      ...,
+      'DIRS': [TEMPLATES_DIR],
+      ...,
+          ],
+        },
+      },
+    ]
+    ````
+
+### Add Heroku Hostname to ALLOWED_HOSTS
+
+  ````
+  ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
+  ````
+
+### Create a Procfile
+
+`web: gunicorn whatscooking.wsgi`
+
+
+### Go back to Heroku
+
+- Click on the **"Deploy"** section on the top of the page.
+
+- Select **GitHub** as deployment method and click the **"Connect to GitHub"** button.
+
+- Search for the repository for this project, _what-is-cooking_. 
+
+- Click **"Connect"** to link up Heroku app to the GitHub repository.
+
+- Click on **"Deploy Branch"**.
+
+- Click the **"Enable Automatic Deploys"** button to make it possible for Heroku to rebuild the app a new change is pushed to GitHub repository.
