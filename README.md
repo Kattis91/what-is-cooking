@@ -4,6 +4,28 @@
 
 This interactive platform is designed to be an inspiration for those days when you don't know what to cook or simply want to try something new.
 
+# Table of Contents
+ - [Database Diagram](#database-diagram)
+    - [Planning](#planning)
+    - [Final Result](#final-result)
+ - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Button Styling](#button-styling)
+ - [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+ - [Features](#features)
+   - [Existing Features](#existing-features)
+   - [Future Features](#future-features)
+ - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Manual Testing](#manual-testing)
+- [Fixed Bugs](#fixed-bugs)
+ - [Credits](#credits)
+    - [Media](#media)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgements)
+  
 ## Database Diagram
 
 The database model diagram was designed using [Lucidchart]("https://www.lucidchart.com/pages/sv"). The first draft of the entity relationship diagram is nearly the same as the models used in the final database. 
@@ -31,6 +53,7 @@ At this stage, the ingredients an servings fields are missing.
   - Enable users to place recipes in different categories.
   - Make it possible to "sort" recipes by categories.
 
+[Go back to the top](#table-of-contents)
 
 ## Design
 
@@ -89,9 +112,64 @@ The choice of colors depends on the background image chosen for home, sign up, l
   ![image](static/images/buttons_edit_delete.jpg)
 
 
+## Technologies Used
+
+### Languages
+ 
+  - HTML
+  - CSS
+  - Python
+  - JavaScript
+
+### Frameworks, Libraries and Programs
+
+  - [Django](https://www.djangoproject.com/)
+   
+  - [Django-Allauth](https://docs.allauth.org/en/latest/)
+    - used for User authenticaion (sign up, sign in and sign out features).
+
+  - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - used to control rendering behaviour of Django forms.
+
+  - [Gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/)
+    - Python HTTP server for WSGI applications.
+  
+  - [psycopg2](https://pypi.org/project/psycopg2/)
+    - PostgreSQL database adapter for the Python programming language.
+  
+  - [Summernote](https://summernote.org/)
+    - WYSIWYG editor. Used for ingredients and instruction fields on the Admin site and instructions field in the "Add a recipe" form.
+
+  - [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html)
+    - The library that allows the web app to serve its static files.
+
+  - [ElepantSQL](https://www.elephantsql.com/)
+    - The database used by the deployed project on Heroku.
+
+  - [Cloudinary](https://cloudinary.com/)
+    - The cloud platform used to store static media files.
+
+  - [Git](https://git-scm.com/)
+    - used for version controll.
+
+  - [GitPod](https://www.gitpod.io/)
+    - The IDE used to create the site.
+
+  - [GitHub](https://github.com/)
+    - The code hosting platform used to save and store the files for the website.
+
+  - [Heroku](https://www.heroku.com/)
+    - The cloud platform used to deploy the project into live environment.
+  
+  - [Lucidchart](https://www.lucidchart.com/pages/sv)
+    - The diagramming application used to create ERD diagrams.
+
+
 ## Features
 
-### Navigation Bar
+### Existing Features
+
+#### Navigation Bar
 
 - The navigation bar is complete and responsive. It appears consistently on every page, making navigation more convenient.
 
@@ -118,7 +196,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
     - Clicking "Logout" directs users to the confirmation page.
 
-### Welcome message
+#### Welcome message
 
 ![image](static/images/welcome_message.jpg)
 
@@ -128,7 +206,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
   - It is a recipe blog.
   - It is possible to publish own recipes.
 
-### Categories
+#### Categories
 
 ![image](static/images/categories.jpg)
 
@@ -148,7 +226,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
       ![image](static/images/category_no_recipes_unlogged_users.jpg)
 
 
-### Footer
+#### Footer
 
 ![image](static/images/footer.jpg)
 
@@ -156,7 +234,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - The footer remains consistent across all pages.
 
-### Sign Up
+#### Sign Up
 
 ![image](static/images/sign_up_form.jpg)
 
@@ -170,7 +248,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - Email field is optional.
 
-### Login
+#### Login
 
 ![image](static/images/sign_in_form.jpg)
 
@@ -183,7 +261,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - A message indicating that the operation was successful is shown on the screen.
 
-### Logout
+#### Logout
 
 ![image](static/images/sign_out.jpg)
 
@@ -197,7 +275,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
     - The user redirects to the home page.
 
 
-### Recipes page
+#### Recipes page
 
 ![image](static/images/recipes_page.jpg)
 
@@ -212,7 +290,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - By clicking on each recipe, the user redirects to a page containing detailed information about that specific recipe.
 
-### Recipe detail page
+#### Recipe detail page
 
 The recipe detail page includes the following information:
 
@@ -268,7 +346,7 @@ The recipe detail page includes the following information:
 
       ![image](static/images/leave_a_comment.jpg)
 
-### Add a Recipe page
+#### Add a Recipe page
 
 - This page includes a form that allows users who are logged in to publish their own recipes.
 
@@ -302,6 +380,16 @@ The recipe detail page includes the following information:
 
   - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
 
+
+### Future Features
+
+- Make it possible for logged-in users to save recipes as their favorites.
+
+- Add a feature that allows users to click on the author's name and view all the recipes published by that author.
+
+- Add some other choices, like difficulty level, meal type, cuisine.
+
+- Enable users to log in using their social media accounts.
 
 ## Testing
 
@@ -493,59 +581,6 @@ Only files with custom-written Python code have been verified with the validator
     
   - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
     - **Fix**: Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM'] to settings.py
-
-  
-## Technologies used
-
-### Languages
- 
-  - HTML
-  - CSS
-  - Python
-  - JavaScript
-
-### Frameworks, Libraries and Programs
-
-  - [Django](https://www.djangoproject.com/)
-   
-  - [Django-Allauth](https://docs.allauth.org/en/latest/)
-    - used for User authenticaion (sign up, sign in and sign out features).
-
-  - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-    - used to control rendering behaviour of Django forms.
-
-  - [Gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/)
-    - Python HTTP server for WSGI applications.
-  
-  - [psycopg2](https://pypi.org/project/psycopg2/)
-    - PostgreSQL database adapter for the Python programming language.
-  
-  - [Summernote](https://summernote.org/)
-    - WYSIWYG editor. Used for ingredients and instruction fields on the Admin site and instructions field in the "Add a recipe" form.
-
-  - [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html)
-    - The library that allows the web app to serve its static files.
-
-  - [ElepantSQL](https://www.elephantsql.com/)
-    - The database used by the deployed project on Heroku.
-
-  - [Cloudinary](https://cloudinary.com/)
-    - The cloud platform used to store static media files.
-
-  - [Git](https://git-scm.com/)
-    - used for version controll.
-
-  - [GitPod](https://www.gitpod.io/)
-    - The IDE used to create the site.
-
-  - [GitHub](https://github.com/)
-    - The code hosting platform used to save and store the files for the website.
-
-  - [Heroku](https://www.heroku.com/)
-    - The cloud platform used to deploy the project into live environment.
-  
-  - [Lucidchart](https://www.lucidchart.com/pages/sv)
-    - The diagramming application used to create ERD diagrams.
 
 
 ## Credits
