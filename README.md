@@ -24,7 +24,7 @@ This interactive platform is designed to be an inspiration for those days when y
  - [Testing](#testing)
     - [Validator Testing](#validator-testing)
     - [Manual Testing](#manual-testing)
-    
+    - [Testing of User Stories](#testing-of-user-stories)
 - [Fixed Bugs](#fixed-bugs)
 
  - [Credits](#credits)
@@ -570,6 +570,36 @@ Only files with custom-written Python code have been verified with the validator
 | "Are you sure you want to sign out?". **Sign Out** | Choosing to sign out, the user should be signed out and directed to the homepage, where they can access links through the navigation menu available for all users. | Click the "Sign Out" button. | The user is directed to the homepage. "Home | Recipes | Add Recipe | Logout" links change to "Home | Recipes | Sign Up | Login". | Pass |
 | "Are you sure you want to sign out?". **Go Back** | Choosing to go back, the user should just be directed to the homepage. | Click the "Go back" button. | The user is directed to the homepage. The user is still logged in. | Pass |
 </details> 
+
+### Testing of User Stories
+
+I used Milestones to keep track on my Epics.
+
+**EPIC: Authentication:**
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a Site User I can register an account so that I can access publishing, commenting, and liking features. | The user can easily register by creating a username and password. The email field is optional. Upon successful registration, the user is automatically logged in. |
+| As a Site User I can sign in with my username and password so that I can share my recipes and like/comment on others' | The user can log in using their registered username and password. The "Add Recipe" link appears in the navbar along with options to like/comment on recipes. |
+| As a logged-in user I can easily log out so that I can avoid somebody else accessing my account. | The user can easily log out. User needs to confirm that they want to log out before it is done. |
+
+
+**EPIC: CRUD functionality:**
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a logged-in User I can create/publish recipes so that I can share something I find delicious with others. | When logged in, the user can easily publish a recipe by clicking the "Add Recipe" link in the navbar and filling out the form. |
+| As a Site user I can read published recipes so that I can get some inspiration. | The "Recipes" page is easily accessible from the navbar and provides detailed information for each recipe (the user just needs to click the "View Recipe" button).|
+| As a logged-in User I can see what I have published so that I can correct and add information. | After publishing a recipe, the user is automatically redirected to the "Recipes" page where their recipe is displayed as the first one on the page. To update or add information to the recipe, the user can click on the "View Recipe" button followed by the "EDIT" button. This will take the user to a prepopulated form where they can make the desired changes.|
+| As a logged-in User I can delete my recipes so that they are no longer published on the site. | If a user wants to delete a recipe they have published, they can simply choose the recipe, click on the "View Recipe" button, and then click on the "DELETE" button. After clicking on the "DELETE" button, the user will be taken to a confirmation page where they will have the option to either delete the recipe or go back to the detailed page. |
+
+
+**EPIC: Administration:**
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a Site Admin I can create, read, update and delete posts so that I can manage my blog content. | The admin of the site can publish recipes, and update/delete all the recipes regardless of who published them. |
+| As a Site Admin I can view, approve, and delete comments so that I can remove any inappropriate content. | The admin of the site can easily view, approve, and delete comments. Comments are only published after admin approval. These features are accessible when logged in at "/admin". |
 
 ## Fixed Bugs
 
