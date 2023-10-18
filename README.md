@@ -386,6 +386,19 @@ Only files with custom-written Python code have been verified with the validator
 | Link to TikTok (icon) | When clicked, links to a Tiktok page in a new tab. | Click on the TikTok icon in the footer of the page. | TikTok page opens in a new tab. | Pass |
 | Link to YouTube (icon) | When clicked, links to a YoutTube page in a new tab.| Click on the Youtube icon in the footer of the page. | YouTube page opens in a new tab. | Pass |
 
+#### Success messages (feedback to the user)
+
+*All the messages automatically disappear after 3 seconds.
+
+| Feature | Expect | Action | Result | Pass/Fail |
+|---------|--------|--------|--------|-----------|
+| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](static/images/successfully_sign_up.jpg) | Pass |
+| Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](static/images/successfully_sign_up.jpg) | Pass |
+| Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](static/images/successfull_sign_out.jpg) | Pass |
+| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](static/images/successfully_posted_recipe.jpg) | Pass |
+| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](static/images/successfully_updated_recipe.jpg) | Pass |
+| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](static/images/successfully_deleted_recipe.jpg) | Pass |
+
 #### Home page
 
 | Feature | Expect | Action | Result | Pass/Fail |
