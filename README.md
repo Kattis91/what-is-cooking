@@ -23,6 +23,7 @@ This interactive platform is designed to be an inspiration for those days when y
 
 - [Testing](#testing)
   - [Validator Testing](#validator-testing)
+  - [Responsivness & Browser Compability Testing](#responsivness--browser-compability-testing)
   - [Manual Testing](#manual-testing)
   - [Testing of User Stories](#testing-of-user-stories)
 
@@ -500,6 +501,20 @@ Only files with custom-written Python code have been verified with the validator
 
   - **blog/urls.py**
     - All clear, no errors found.
+
+### Responsivness & Browser Compability Testing
+
+- In order to thoroughly test my website, I conducted a series of tests on various browsers including Google Chrome, Safari, and Mozilla Firefox.
+
+- I also tested on multiple devices such as:
+  - Laptop:
+    - Dell xps 13.
+  - Mobile Devices:
+    - iPhone XS, 
+    - iPhone 13 Pro, 
+    - Samsung Galaxy S10.
+
+- I made sure to check every page using Google Chrome developer tools to confirm their responsiveness on various screen sizes.
 
 ### Manual Testing
 
