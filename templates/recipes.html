@@ -23,6 +23,7 @@
                     <div class="card-body">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                         <p class="card-text">{{ recipe.created_on }}</p>
+                        <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
                         <p><strong class="card-text"><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</strong></p>
                         <a href="{% url 'recipe_detail' recipe.slug %}" class="btn view">View Recipe</a>
                     </div>
