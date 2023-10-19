@@ -47,13 +47,13 @@ The database model diagram was designed using [Lucidchart]("https://www.lucidcha
 
 ### Planning
 
-![image](static/images/models_in_the_beginning.jpg)
+![image](media/models_in_the_beginning.jpg)
 
 At this stage, the ingredients an servings fields are missing.
 
 ### Final Result
 
-![image](static/images/final_models.jpg)
+![image](media/final_models.jpg)
 
 #### Recipe Model
   - The main model that contains all the fields needed for the recipe to be complete. Of course you can add other fields (like cooking time, difficulty level, nutritional value, and so on), but that values are not vital for the site to work and can be added later.
@@ -76,7 +76,7 @@ At this stage, the ingredients an servings fields are missing.
 
 The choice of colors depends on the background image chosen for home, sign up, login, and logout pages.
 
-![image](static/images/colour_scheme.jpg)
+![image](media/colour_scheme.jpg)
 
  - **9AA5AF** is the primary color used throughout the pages:
    - Welcome message.
@@ -100,31 +100,31 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 - Sign up: 
     
-  ![image](static/images/sign_up_button.jpg)
+  ![image](media/sign_up_button.jpg)
 
 - Sign in:
    
-  ![image](static/images/sign_in_button.jpg)
+  ![image](media/sign_in_button.jpg)
   
 - Logout:
 
-  ![image](static/images/buttons_sign_out.jpg)
+  ![image](media/buttons_sign_out.jpg)
 
 - Add a recipe:
 
-  ![image](static/images/buttons_add_a_recipe_form.jpg)
+  ![image](media/buttons_add_a_recipe_form.jpg)
 
 - Update a recipe:
 
-  ![image](static/images/buttons_update_a_recipe.jpg)
+  ![image](media/buttons_update_a_recipe.jpg)
 
 - Delete confirmation:
 
-  ![image](static/images/buttons_delete_recipe.jpg)
+  ![image](media/buttons_delete_recipe.jpg)
 
 - Edit | Delete:
 
-  ![image](static/images/buttons_edit_delete.jpg)
+  ![image](media/buttons_edit_delete.jpg)
 
 
 ## Technologies Used
@@ -201,14 +201,14 @@ The choice of colors depends on the background image chosen for home, sign up, l
  
   - **Non-logged users:**
 
-    ![image](static/images/navigation_bar_login.jpg)
+    ![image](media/navigation_bar_login.jpg)
     
     - The navigation bar contains links for the Logo, Home, Recipes, Sign Up, and Login pages.
     - Clicking "Sign Up" or "Login" directs users to the pages with respective forms.
 
   - **Logged-in users:**
     
-    ![image](static/images/navigation_bar_logout.png)
+    ![image](media/navigation_bar_logout.png)
 
     - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
@@ -216,7 +216,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Welcome message
 
-![image](static/images/welcome_message.jpg)
+![image](media/welcome_message.jpg)
 
 - This section welcomes users to the blog.
 
@@ -226,27 +226,27 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Categories
 
-![image](static/images/categories.jpg)
+![image](media/categories.jpg)
 
 - This section shows all the categories available right now.
 
 - Clicking on a category redirects the user to all recipes within that category. The "BACK" button takes the user back to the homepage.
   
   - There are some recipes available:
-    ![image](static/images/category_recipes.jpg)
+    ![image](media/category_recipes.jpg)
 
   - No recipes are available within the selected category.
      
     - Logged-in users:
-      ![image](static/images/category_no_recipes_logged_in.jpg)
+      ![image](media/category_no_recipes_logged_in.jpg)
 
     - Unlogged users:
-      ![image](static/images/category_no_recipes_unlogged_users.jpg)
+      ![image](media/category_no_recipes_unlogged_users.jpg)
 
 
 #### Footer
 
-![image](static/images/footer.jpg)
+![image](media/footer.jpg)
 
 - This section contains links to the appropriate social media platforms. By clicking on them, they will open in a new tab.
 
@@ -254,7 +254,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Sign Up
 
-![image](static/images/sign_up_form.jpg)
+![image](media/sign_up_form.jpg)
 
 - The form enables users to register and create an account.
 
@@ -268,7 +268,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Login
 
-![image](static/images/sign_in_form.jpg)
+![image](media/sign_in_form.jpg)
 
 - The form enables users to log in.
 
@@ -281,7 +281,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Logout
 
-![image](static/images/sign_out.jpg)
+![image](media/sign_out.jpg)
 
 - When the user clicks on Logout in the navbar, they are redirected to a page displaying a confirmation message above.
 
@@ -295,7 +295,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 #### Recipes page
 
-![image](static/images/recipes_page.jpg)
+![image](media/recipes_page.jpg)
 
 - This page shows a list of all the published recipes.
 
@@ -318,7 +318,7 @@ The recipe detail page includes the following information:
     
     - Available for all users:
     
-      ![image](static/images/recipe_view_visitors.jpg)
+      ![image](media/recipe_view_visitors.jpg)
 
       - recipe title;
       - estimated time of cooking;
@@ -333,7 +333,7 @@ The recipe detail page includes the following information:
     
     - Extra functionality for the recipe authors:
    
-      ![image](static/images/recipe_view_author.jpg)
+      ![image](media/recipe_view_author.jpg)
 
       - EDIT
         - By clicking the "EDIT" button, the user is redirected to the page with a form where they can edit the recipe posted by them.
@@ -342,7 +342,7 @@ The recipe detail page includes the following information:
       
       - DELETE
         - By clicking the "DELETE" button, the user is redirected to the page where they get a question about whether they are sure that they want to delete the recipe.
-        ![image](static/images/delete_confirmation.jpg)
+        ![image](media/delete_confirmation.jpg)
           - The recipe gets deleted when the user clicks the "DELETE RECIPE" button. The user is redirected to the home page.
           - The user is redirected to the home page when clicked the "GO BACK" button.
 
@@ -354,15 +354,15 @@ The recipe detail page includes the following information:
     
     - There are some comments left:
 
-      ![image](static/images/comments.jpg)
+      ![image](media/comments.jpg)
     
     - There are NO comments left:
 
-      ![image](static/images/no_comments.jpg)
+      ![image](media/no_comments.jpg)
 
     - Leave a comment (available ONLY for logged-in users):
 
-      ![image](static/images/leave_a_comment.jpg)
+      ![image](media/leave_a_comment.jpg)
 
 #### Add a Recipe page
 
@@ -370,23 +370,23 @@ The recipe detail page includes the following information:
 
 - Available fields:
   - Title
-  ![image](static/images/form_title.png)
+  ![image](media/form_title.png)
   - Category (Dropdown menu)
-  ![image](static/images/form_category.jpg)
+  ![image](media/form_category.jpg)
   - Image
-  ![image](static/images/form_featured_image.jpg)
+  ![image](media/form_featured_image.jpg)
   - Ingredients
-  ![image](static/images/form_ingredients.jpg)
+  ![image](media/form_ingredients.jpg)
   - Instructions (Summernote field)
-  ![image](static/images/form_instructions.jpg)
+  ![image](media/form_instructions.jpg)
   - Estimated time
-  ![image](static/images/form_estimated_time.jpg)
+  ![image](media/form_estimated_time.jpg)
   - Servings
-  ![image](static/images/form_servings.jpg)
+  ![image](media/form_servings.jpg)
   
 - "Save" button
 
-  ![image](static/images/form_save.jpg)
+  ![image](media/form_save.jpg)
 
   - After correctly submitting the form, the user will be redirected to the recipes page upon clicking the save button.
 
@@ -394,7 +394,7 @@ The recipe detail page includes the following information:
 
 - "Go back" button
 
-  ![image](static/images/form_go_back.jpg)
+  ![image](media/form_go_back.jpg)
 
   - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
 
@@ -417,31 +417,31 @@ The recipe detail page includes the following information:
   
   - **Home Page**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
   - **Sign Up**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
   - **Login**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
   
   - **Logout**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
     
   - **Recipes Page**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
   - **Recipe detail page**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
   - **Category**
       
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
     
     No errors or warnings to show for either of these three cases:
     - There are recipes within the selected category.
@@ -456,33 +456,33 @@ The recipe detail page includes the following information:
 
     <summary>Click here to see the errors.</summary>
       
-      ![image](static/images/summernote_errors.jpg)
+      ![image](media/summernote_errors.jpg)
 
     </details>
   
   - **Delete recipe page**
 
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
   - **404.html**
     
-    ![image](static/images/html_validator.jpg)
+    ![image](media/html_validator.jpg)
 
 
 - **CSS**. Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
   
-  ![image](static/images/jigsaw_validator.jpg)
+  ![image](media/jigsaw_validator.jpg)
 
 - **JavaScript**. Validator: [JSHint Validator](https://jshint.com/).
   - No errors were found when passing through the validator.
   - Validator gave warnings about one undefined variable(Bootstrap). No action is taken because this custom bootstrap variable does not need to be defined within the script.
 
-    ![image](static/images/jshint_undefined_variable.jpg)
+    ![image](media/jshint_undefined_variable.jpg)
 
 - **PYTHON**. Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 Only files with custom-written Python code have been verified with the validator. All the files tested got the result below.
 
-  ![image](static/images/ci_python_linter.jpg)
+  ![image](media/ci_python_linter.jpg)
  
   - **admin.py** 
     - All clear, no errors found.
@@ -542,12 +542,12 @@ Only files with custom-written Python code have been verified with the validator
 
 | Feature | Expect | Action | Result | Pass/Fail |
 |---------|--------|--------|--------|-----------|
-| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](static/images/successfully_sign_up.jpg) | Pass |
+| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](media/successfully_sign_up.jpg) | Pass |
 | Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](static/images/successfully_sign_up.jpg) | Pass |
 | Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](static/images/successfull_sign_out.jpg) | Pass |
-| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](static/images/successfully_posted_recipe.jpg) | Pass |
-| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](static/images/successfully_updated_recipe.jpg) | Pass |
-| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](static/images/successfully_deleted_recipe.jpg) | Pass |
+| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](media/successfully_posted_recipe.jpg) | Pass |
+| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](media/successfully_updated_recipe.jpg) | Pass |
+| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](media/successfully_deleted_recipe.jpg) | Pass |
 </details>
 
 <details> 
@@ -644,7 +644,7 @@ Only files with custom-written Python code have been verified with the validator
 | As a Site User I can register an account so that I can access publishing, commenting, and liking features. | The user can easily register by creating a username and password. The email field is optional. Upon successful registration, the user is automatically logged in. |
 | As a Site User I can sign in with my username and password so that I can share my recipes and like/comment on others' | The user can log in using their registered username and password. The "Add Recipe" link appears in the navbar along with options to like/comment on recipes. |
 | As a logged-in user I can easily log out so that I can avoid somebody else accessing my account. | The user can easily log out. User needs to confirm that they want to log out before it is done. |
-| As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](static/images/username_already_exists.jpg) |
+| As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](media/username_already_exists.jpg) |
 
 **EPIC: CRUD functionality:**
 
@@ -667,7 +667,7 @@ Only files with custom-written Python code have been verified with the validator
 | User Story | How are they achieved? |
 |------------|------------------------|
 | As a Site User I can find navigation links at the top so that I easily can navigate the site. | Navbar links at the top of the page have easily understandable names. The navbar looks different for logged-in and unlogged users. Navbar is responsive and is presented in the form of a hamburger menu on smaller devices. |
-| As a Site User I can get corresponding feedback after taking an action so that I know whether my actions were successfully run or not. | ![image](static/images/successfully_sign_up.jpg) ![image](static/images/successfull_sign_out.jpg) ![image](static/images/successfully_posted_recipe.jpg) ![image](static/images/successfully_updated_recipe.jpg) ![image](static/images/successfully_deleted_recipe.jpg) |
+| As a Site User I can get corresponding feedback after taking an action so that I know whether my actions were successfully run or not. | ![image](media/successfully_sign_up.jpg) ![image](media/successfull_sign_out.jpg) ![image](media/successfully_posted_recipe.jpg) ![image](media/successfully_updated_recipe.jpg) ![image](media/successfully_deleted_recipe.jpg) |
 
 
 **"SHOULD_HAVES"**:
@@ -677,7 +677,7 @@ Only files with custom-written Python code have been verified with the validator
 | As a Site User I can choose between different categories so that I can decide what I would like to prepare and when. | All the categories are presented on the home page. Clicking on each category will take the user to a page that displays all the recipes within that category. If there are no recipes available in the selected category, the user will be presented with a clear message inviting them to be the first to post. |
 | As a logged-in User I can like/unlike others' recipes so that I can interact with the content. | All logged-in users are able like/unlike all published recipes. The number of likes increases when liking and decrease when pressing again. |
 | As a Site User I can view comments on an individual post so that I can read the conversation. | All the users can view comments that have been approved by the admin. If there are no comments yet, the user will be presented with a clear message about that. |
-| As a logged-in User I can leave comments on recipes so that I can share my opinion/ask questions. | The comment form is visible to all logged-in users. After submission, a comment needs to be approved by the admin before it appears on the site. ![image](static/images/comment_is_waiting_approval.jpg) |
+| As a logged-in User I can leave comments on recipes so that I can share my opinion/ask questions. | The comment form is visible to all logged-in users. After submission, a comment needs to be approved by the admin before it appears on the site. ![image](media/comment_is_waiting_approval.jpg) |
 
 **"COULD_HAVES"**:
 
@@ -707,15 +707,15 @@ Only files with custom-written Python code have been verified with the validator
     - The slug wouldn't generate for the recipes submitted via the form.
       - **Fix**: Import slugify and include the helper method into the Recipe model.
 
-        ![image](static/images/slugify.jpg)
+        ![image](media/slugify.jpg)
 
     - It was possible to choose zero and enter very large numbers into the estimated_time and servings fields.
       
-      ![image](static/images/max_value_validator.jpg)
+      ![image](media/max_value_validator.jpg)
       
       - **Fix**: Add validate_nonzero function. Import and add MaxValueValidator.
         
-        ![image](static/images/validate_nozero.jpg)
+        ![image](media/validate_nozero.jpg)
 
     - The layout of the recipe detail page was affected when a user entered a single long word. For example, the one long word typed in the Ingredients field overflowed into the Instructions field and continued beyond the right boundary of the page until the word was finished, causing the page's layout to break. 
       - **Fix**: 
