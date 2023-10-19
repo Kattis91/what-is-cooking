@@ -407,29 +407,57 @@ The recipe detail page includes the following information:
 - **HTML**. Validator: [W3C Validator](https://validator.w3.org/).
   
   - **Home Page**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
 
   - **Sign Up**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
 
   - **Login**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
   
   - **Logout**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
     
   - **Recipes Page**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
 
   - **Recipe detail page**
-    - Document checking completed. No errors or warnings to show.
+    
+    ![image](static/images/html_validator.jpg)
 
   - **Category**
       
-    Documents checking completed. No errors or warnings to show for either of these three cases:
+    ![image](static/images/html_validator.jpg)
+    
+    No errors or warnings to show for either of these three cases:
     - There are recipes within the selected category.
     - There are no recipes within the selected category. The user is logged in.
     - There are no recipes within the selected category. The user is not logged in.
+
+  - **Add recipe page | Update Recipe page**
+  
+    All errors listed by W3Validator are related to Summernote, and not any code written by me. Errors are the same for both "Add Recipe" page and "Update Recipe" page.Research conducted within the Code Institute community indicates that this is a common occurrence, and therefore it should be noted. However, no action needs to be taken in response.
+
+    <details>
+
+    <summary>Click here to see the errors.</summary>
+      
+      ![image](static/images/summernote_errors.jpg)
+
+    </details>
+  
+  - **Delete recipe page**
+
+    ![image](static/images/html_validator.jpg)
+
+  - **404.html**
+    
+    ![image](static/images/html_validator.jpg)
 
 
 - **CSS**. Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
