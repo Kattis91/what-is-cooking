@@ -96,7 +96,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
  ### Button styling
 
- Colors: GREEN | WHITE | #850000
+ Colors: `GREEN | WHITE | #850000`
 
 - Sign up: 
     
@@ -125,6 +125,10 @@ The choice of colors depends on the background image chosen for home, sign up, l
 - Edit | Delete:
 
   ![image](media/buttons_edit_delete.jpg)
+
+- Submit (when leaving a comment):
+
+  ![image](media/button_submit.jpg)
 
 
 ## Technologies Used
@@ -201,14 +205,14 @@ The choice of colors depends on the background image chosen for home, sign up, l
  
   - **Non-logged users:**
 
-    ![image](media/navigation_bar_login.jpg)
+    ![image](media/navigation_bar_logout.jpg)
     
     - The navigation bar contains links for the Logo, Home, Recipes, Sign Up, and Login pages.
     - Clicking "Sign Up" or "Login" directs users to the pages with respective forms.
 
   - **Logged-in users:**
     
-    ![image](media/navigation_bar_logout.png)
+    ![image](media/navigation_bar_login.jpg)
 
     - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
@@ -303,6 +307,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
   - recipe image;
   - recipe title;
   - create date;
+  - category;
   - estimated time of cooking;
   - "View Recipe" button.
 
@@ -384,19 +389,18 @@ The recipe detail page includes the following information:
   - Servings
   ![image](media/form_servings.jpg)
   
-- "Save" button
+  - Buttons:
+  ![image](media/buttons_add_a_recipe_form.jpg)
+   
+    - SAVE:
 
-  ![image](media/form_save.jpg)
+      - After correctly submitting the form, the user will be redirected to the recipes page upon clicking the save button.
 
-  - After correctly submitting the form, the user will be redirected to the recipes page upon clicking the save button.
+      - A success message is displayed to the user.
 
-  - A success message is displayed to the user.
+    - "CANCEL" button:
 
-- "Go back" button
-
-  ![image](media/form_go_back.jpg)
-
-  - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
+       - When the user clicks on the 'go back' button, they will be redirected to the recipes page.
 
 
 ### Future Features
