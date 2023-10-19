@@ -10,9 +10,7 @@
                 <h4 class="card-title">Delete your recipe</h4>
                 <p class="card-text">Are you sure you want to delete <strong>{{ recipe.title }}</strong>?</p>
                 <button class="btn red links">Delete Recipe</button>
-                <button class="btn green">
-                    <a class="text-white links" href="{% url 'recipe_detail' recipe.slug %}">Go back</a>
-                </button>
+                <a href="{% url 'recipe_detail' recipe.slug %}" class="btn green text-white links">Go back</a>
             </div>
         </div>
     </div>
