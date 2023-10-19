@@ -36,7 +36,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
             <p>If you have not created an account yet <br> and you want to
               be able to leave comments, <br> like posts, and share your recipes,
               please <br>
-              <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+              <a href="{{ signup_url }}" class="sign">sign up</a> first.{% endblocktrans %}</p>
             {% endif %}
 
             <form class="login" method="POST" action="{% url 'account_login' %}">
