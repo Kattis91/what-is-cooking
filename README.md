@@ -585,6 +585,7 @@ I used Milestones to keep track on my Epics.
 | As a Site User I can register an account so that I can access publishing, commenting, and liking features. | The user can easily register by creating a username and password. The email field is optional. Upon successful registration, the user is automatically logged in. |
 | As a Site User I can sign in with my username and password so that I can share my recipes and like/comment on others' | The user can log in using their registered username and password. The "Add Recipe" link appears in the navbar along with options to like/comment on recipes. |
 | As a logged-in user I can easily log out so that I can avoid somebody else accessing my account. | The user can easily log out. User needs to confirm that they want to log out before it is done. |
+| As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](static/images/username_already_exists.jpg) |
 
 
 **EPIC: CRUD functionality:**
@@ -603,6 +604,32 @@ I used Milestones to keep track on my Epics.
 |------------|------------------------|
 | As a Site Admin I can create, read, update and delete posts so that I can manage my blog content. | The admin of the site can publish recipes, and update/delete all the recipes regardless of who published them. |
 | As a Site Admin I can view, approve, and delete comments so that I can remove any inappropriate content. | The admin of the site can easily view, approve, and delete comments. Comments are only published after admin approval. These features are accessible when logged in at "/admin". |
+
+**"MUST_HAVES"**:
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a Site User I can find navigation links at the top so that I easily can navigate the site. | Navbar links at the top of the page have easily understandable names. The navbar looks different for logged-in and unlogged users. Navbar is responsive and is presented in the form of a hamburger menu on smaller devices. |
+| As a Site User I can get corresponding feedback after taking an action so that I know whether my actions were successfully run or not. | ![image](static/images/successfully_sign_up.jpg) ![image](static/images/successfull_sign_out.jpg) ![image](static/images/successfully_posted_recipe.jpg) ![image](static/images/successfully_updated_recipe.jpg) ![image](static/images/successfully_deleted_recipe.jpg) |
+
+
+**"SHOULD_HAVES"**:
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a Site User I can choose between different categories so that I can decide what I would like to prepare and when. | All the categories are presented on the home page. Clicking on each category will take the user to a page that displays all the recipes within that category. If there are no recipes available in the selected category, the user will be presented with a clear message inviting them to be the first to post. |
+| As a logged-in User I can like/unlike others' recipes so that I can interact with the content. | All logged-in users are able like/unlike all published recipes. The number of likes increases when liking and decrease when pressing again. |
+| As a Site User I can view comments on an individual post so that I can read the conversation. | All the users can view comments that have been approved by the admin. If there are no comments yet, the user will be presented with a clear message about that. |
+| As a logged-in User I can leave comments on recipes so that I can share my opinion/ask questions. | The comment form is visible to all logged-in users. After submission, a comment needs to be approved by the admin before it appears on the site. ![image](static/images/comment_is_waiting_approval.jpg) |
+
+**"COULD_HAVES"**:
+
+| User Story | How are they achieved? |
+|------------|------------------------|
+| As a Site User I can easily see the approximate required time to prepare each meal so that I can choose recipes and allocate my time accordingly. | The estimated time for preparing meals is visible on the page with all the recipes without the user needing to go to the detailed page. |
+| As a Site User I can click on links to the site's social media so that I can explore more of its content and context. | Social media links (icons) are displayed in the footer of all pages. Each link opens in new tab. |
+| As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral. | The number of likes is visible for all users on the recipe's detail page. Like fuctionality is accessible for olnly logged-in users though. |
+
 
 ## Fixed Bugs
 
@@ -639,7 +666,7 @@ I used Milestones to keep track on my Epics.
         - Use the word-wrap property with the value of break-word to be able to break the long words and wrap them onto the next line.
     
   - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
-    - **Fix**: `Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM']`` to settings.py
+    - **Fix**: `Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM']` to settings.py
 
 
 ## Credits
