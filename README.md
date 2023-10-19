@@ -174,6 +174,9 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
   - [Heroku](https://www.heroku.com/)
     - The cloud platform used to deploy the project into live environment.
+
+  - [Bootstrap](https://getbootstrap.com/)
+    - The front-end development framework used for styling along with custom CSS.
   
   - [Lucidchart](https://www.lucidchart.com/pages/sv)
     - The diagramming application used to create ERD diagrams.
