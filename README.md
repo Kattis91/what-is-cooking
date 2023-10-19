@@ -25,6 +25,7 @@ This interactive platform is designed to be an inspiration for those days when y
   - [Validator Testing](#validator-testing)
   - [Manual Testing](#manual-testing)
   - [Testing of User Stories](#testing-of-user-stories)
+
 - [Fixed Bugs](#fixed-bugs)
 
 - [Credits](#credits)
@@ -33,6 +34,10 @@ This interactive platform is designed to be an inspiration for those days when y
   - [Acknowledgements](#acknowledgements)
 
 - [Deployment](#deployment)
+
+- [Development](#development)
+  - [Fork](#fork)
+  - [Clone](#clone)
 
   
 ## Database Diagram
@@ -604,7 +609,15 @@ Only files with custom-written Python code have been verified with the validator
 
 ### Testing of User Stories
 
-I used Milestones to keep track on my Epics.
+- **I used Milestones to keep track on my EPICS**.
+
+- Some of the "should-haves" and "could-haves" were completed before "must-haves" because that suited the workflow better. Despite this, I always kept track to ensure I didn't miss any of my "must-haves".
+
+- I moved the "Choose between categories" User story from the "To Do" list to the "Doing" list twice. This was because I initially placed the category boxes on the homepage (no functionality here) before developing the view, adding a new URL, and creating the category.html page. It is still the same User story, but doing it the way I did made it easier for me to track my progress.
+
+- One User story remains incomplete: "Sign in with Social Networks". This User story will not be done this time. This particular feature is not crucial or vital and can be postponed until the next opportunity. However, this functionality has been added to future features.
+
+**To make it easier to follow, I tested User Stories in groups. First, those that belong to different Epics, then "must-haves", "should-haves" and last "could-haves."**
 
 **EPIC: Authentication:**
 
@@ -615,7 +628,6 @@ I used Milestones to keep track on my Epics.
 | As a logged-in user I can easily log out so that I can avoid somebody else accessing my account. | The user can easily log out. User needs to confirm that they want to log out before it is done. |
 | As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](static/images/username_already_exists.jpg) |
 
-
 **EPIC: CRUD functionality:**
 
 | User Story | How are they achieved? |
@@ -624,7 +636,6 @@ I used Milestones to keep track on my Epics.
 | As a Site user I can read published recipes so that I can get some inspiration. | The "Recipes" page is easily accessible from the navbar and provides detailed information for each recipe (the user just needs to click the "View Recipe" button).|
 | As a logged-in User I can see what I have published so that I can correct and add information. | After publishing a recipe, the user is automatically redirected to the "Recipes" page where their recipe is displayed as the first one on the page. To update or add information to the recipe, the user can click on the "View Recipe" button followed by the "EDIT" button. This will take the user to a prepopulated form where they can make the desired changes.|
 | As a logged-in User I can delete my recipes so that they are no longer published on the site. | If a user wants to delete a recipe they have published, they can simply choose the recipe, click on the "View Recipe" button, and then click on the "DELETE" button. After clicking on the "DELETE" button, the user will be taken to a confirmation page where they will have the option to either delete the recipe or go back to the detailed page. |
-
 
 **EPIC: Administration:**
 
