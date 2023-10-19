@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="buttons">
                         <button class="btn btn-success links" type="submit">Update</button>
-                        <a href="{% url 'recipes' %}" class="btn btn-danger back links">Cancel</a>
+                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-danger back links">Cancel</a>
                     </div>
                 </div>  
             </form>
