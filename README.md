@@ -927,3 +927,35 @@ I would like to aknowledge the following people:
 - Click on **"Deploy Branch"**.
 
 - Click the **"Enable Automatic Deploys"** button to make it possible for Heroku to rebuild the app a new change is pushed to GitHub repository.
+
+
+## Development 
+
+## Fork
+
+- Log in to **GitHub** and ind the repository for this project, [_Kattis91/what-is-cooking_](https://github.com/Kattis91/what-is-cooking).
+
+- In the top-right corner of the page, click **Fork**.
+
+- Type some new name into the "Repository name" field to distinguish your fork from the upstream repository.
+
+- Click **Create Fork**.
+
+- The fork is now in your personal account and can be changed in the way you want.
+
+## Clone
+
+- On **GitHub**, navigate to your fork of the _what-is-cooking_ repository.
+
+- Above the list of files, click **<>Code**.
+
+- Copy the **URL** for the repository. Repository can be cloned in three different ways:
+  - **HTTPS**;
+  - **SSH**;
+  - **GitHub CLI**.
+
+- Open Terminal and change the current working directory to the location where you want the cloned directory.
+
+- Type `git clone`, and paste the URL you copied earlier. Press **Enter**
+
+
