@@ -97,7 +97,18 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
  ### Button styling
 
- Colors: `GREEN | WHITE | #850000`
+All buttons throughout the pages have the same styling, ensuring uniformity and providing a seamless user experience. 
+ 
+I went with following colors:
+  - `GREEN` that usually is associated with "YES" | "SAVE" | "OK".
+  - `#850000` that usually is associated with "NO" | "CANCEL" | "GO BACK".
+  - `WHITE` for the text in order to get a sufficient contrast ratio.
+
+    ![image](media/buttons_edit_delete.jpg)
+  
+<details>
+
+<summary>Click here to see all the buttons</summary>
 
 - Sign up: 
     
@@ -130,6 +141,21 @@ The choice of colors depends on the background image chosen for home, sign up, l
 - Submit (when leaving a comment):
 
   ![image](media/button_submit.jpg)
+
+</details>
+
+#### Typography
+
+[Google Fonts](https://fonts.google.com/) was used to import the chosen fonts for use in the site. 
+[Typ.io](https://typ.io/) was used to see what fonts go together.
+
+- I have used **"Bitter"** for all the headings throughout the pages.
+
+  ![image](media/bitter_font.jpg)
+
+- For the paragraphs I went with **"Opens Sans"**
+
+  ![image](media/open_sans_font.jpg)
 
 
 ## Technologies Used
