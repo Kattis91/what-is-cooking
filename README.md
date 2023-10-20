@@ -573,14 +573,14 @@ Only files with custom-written Python code have been verified with the validator
 
 *All the messages automatically disappear after 3 seconds.
 
-| Feature | Expect | Action | Result | Pass/Fail |
-|---------|--------|--------|--------|-----------|
-| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](media/successfully_sign_up.jpg) | Pass |
-| Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](static/images/successfully_sign_up.jpg) | Pass |
-| Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](static/images/successfull_sign_out.jpg) | Pass |
-| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](media/successfully_posted_recipe.jpg) | Pass |
-| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](media/successfully_updated_recipe.jpg) | Pass |
-| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](media/successfully_deleted_recipe.jpg) | Pass |
+| Feature | Expect | Action | Result |
+|---------|--------|--------|--------|
+| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](media/successfully_sign_up.jpg) |
+| Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](media/successfully_sign_up.jpg) | 
+| Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](media/successfull_sign_out.jpg) | 
+| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](media/successfully_posted_recipe.jpg) | 
+| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](media/successfully_updated_recipe.jpg) |
+| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](media/successfully_deleted_recipe.jpg) | 
 </details>
 
 <details> 
@@ -635,7 +635,7 @@ Only files with custom-written Python code have been verified with the validator
 
 | Feature | Expect | Action | Result | Pass/Fail |
 |---------|--------|--------|--------|-----------|
-| Submit | After successfully submitting the sign up form, the user should be redirected to the homepage, where they can access links through the navigation menu available only for logged-in users. | Click on the "Sign Up" link in the navigation bar, fill in the form and click "Sign Up". | The user is directed to the homepage. "Home | Recipes | Sign Up | Login" links change to "Home | Recipes | Add Recipe | Logout". | Pass | 
+| Submit | After successfully submitting the sign up form, the user should be redirected to the homepage, where they can access links through the navigation menu available only for logged-in users. | Click on the "Sign Up" link in the navigation bar, fill in the form and click "Sign Up". | The user is directed to the homepage. "Home / Recipes / Sign Up / Login" links change to "Home / Recipes / Add Recipe / Logout". | Pass | 
 | Submit without filling in the mandadory fields | When trying to submit the form without filling in mandatory fields, the user should get an ":exclamation: Please fill out this field" error message. | Click on the "Sign In" link in the navigation bar and then click the "Sign Up" button without filling in username, password or password(again) fields. | The ":exclamation: Please fill out this field" error message appears on the screen | Pass |
 </details>
 
@@ -644,7 +644,7 @@ Only files with custom-written Python code have been verified with the validator
 
 | Feature | Expect | Action | Result | Pass/Fail |
 |---------|--------|--------|--------|-----------|
-| Sign In | After successfully filling in the sign in form, the user should be redirected to the homepage, where they can access links through the navigation menu available only for logged-in users. | Click on the "Login" link in the navigation bar, fill in the form, and click "Sign In". | The user is directed to the homepage. "Home | Recipes | Sign Up | Login" links change to "Home | Recipes | Add Recipe | Logout". | Pass | 
+| Sign In | After successfully filling in the sign in form, the user should be redirected to the homepage, where they can access links through the navigation menu available only for logged-in users. | Click on the "Login" link in the navigation bar, fill in the form, and click "Sign In". | The user is directed to the homepage. "Home / Recipes / Sign Up / Login" links change to "Home / Recipes / Add Recipe / Logout". | Pass | 
 | Sign In without filling in the mandadory fields | When trying to submit the form without filling in mandatory fields, the user should get an ":exclamation: Please fill out this field" error message. | Click on the "Login" link in the navigation bar and then click the "Sign in" button without filling in username or password fields. | The ":exclamation: Please fill out this field" error message appears on the screen | Pass |
 </details>
 
@@ -654,8 +654,8 @@ Only files with custom-written Python code have been verified with the validator
 | Feature | Expect | Action | Result | Pass/Fail |
 |---------|--------|--------|--------|-----------|
 | Sign Out | By clicking on the Logout link, the user should be redirected to the confirmation page. | Click on the "Logout" link in the navigation bar. | The user is directed to the "Sign Out" page asking "Are you sure you want to sign out?". | Pass 
-| "Are you sure you want to sign out?". **Sign Out** | Choosing to sign out, the user should be signed out and directed to the homepage, where they can access links through the navigation menu available for all users. | Click the "Sign Out" button. | The user is directed to the homepage. "Home | Recipes | Add Recipe | Logout" links change to "Home | Recipes | Sign Up | Login". | Pass |
-| "Are you sure you want to sign out?". **Go Back** | Choosing to go back, the user should just be directed to the homepage. | Click the "Go back" button. | The user is directed to the homepage. The user is still logged in. | Pass |
+| "Are you sure you want to sign out?". **Sign Out** | Choosing to sign out, the user should be signed out and directed to the homepage, where they can access links through the navigation menu available for all users. | Click the "Sign Out" button. | The user is directed to the homepage. "Home / Recipes / Add Recipe / Logout" links change to "Home / Recipes / Sign Up / Login". | Pass |
+| "Are you sure you want to sign out?". **Remain logged in** | Choosing to go back, the user should just be directed to the homepage. | Click the "Remain logged in" button. | The user is directed to the homepage. The user is still logged in. | Pass |
 </details> 
 
 ### Testing of User Stories
