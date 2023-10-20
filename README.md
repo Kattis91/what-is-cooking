@@ -26,6 +26,7 @@ This interactive platform is designed to be an inspiration for those days when y
   - [Responsivness & Browser Compability Testing](#responsivness--browser-compability-testing)
   - [Manual Testing](#manual-testing)
   - [Testing of User Stories](#testing-of-user-stories)
+  - [Lighthouse Testing](#lighthouse)
 
 - [Fixed Bugs](#fixed-bugs)
 
@@ -78,7 +79,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
 ![image](media/colour_scheme.jpg)
 
- - **9AA5AF** is the primary color used throughout the pages:
+ - **`9AA5AF`** is the primary color used throughout the pages:
    - Welcome message.
    - Category boxes on the home page.
    - Recipe cards.
@@ -86,13 +87,13 @@ The choice of colors depends on the background image chosen for home, sign up, l
    - Sign Up | Login | Logout forms.
    - Confirmation message when choosing to delete a recipe.
   
- - **BAA6B1** is used to style the navbar, the footer and the "View Recipe" button.
+ - **`BAA6B1`** is used to style the navbar, the footer and the "View Recipe" button.
 
- - **000000** is the primary text color used throughout the pages.
+ - **`000000`** is the primary text color used throughout the pages.
 
- - **850000** is used for links and hover styling on navbar and footer. The color was chosen with the help of [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) (provided by Lighthouse testing) in order for background and foreground colors to have a sufficient contrast ratio.
+ - **`850000`** is used for links and hover styling on navbar and footer. The color was chosen with the help of [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) (provided by Lighthouse testing) in order for background and foreground colors to have a sufficient contrast ratio.
 
- - **E1DDDD** is used as the background color for all recipe-related pages including recipes, recipe details, add recipe, edit recipe and categories.
+ - **`E1DDDD`** is used as the background color for all recipe-related pages including recipes, recipe details, add recipe, edit recipe and categories.
 
  ### Button styling
 
@@ -347,7 +348,8 @@ The recipe detail page includes the following information:
       
       - DELETE
         - By clicking the "DELETE" button, the user is redirected to the page where they get a question about whether they are sure that they want to delete the recipe.
-        ![image](media/delete_confirmation.jpg)
+       
+          ![image](media/delete_confirmation.jpg)
           - The recipe gets deleted when the user clicks the "DELETE RECIPE" button. The user is redirected to the home page.
           - The user is redirected to the home page when clicked the "GO BACK" button.
 
@@ -389,8 +391,9 @@ The recipe detail page includes the following information:
   - Servings
   ![image](media/form_servings.jpg)
   
-  - Buttons:
-  ![image](media/buttons_add_a_recipe_form.jpg)
+  - Buttons
+
+    ![image](media/buttons_add_a_recipe_form.jpg)
    
     - SAVE:
 
@@ -691,13 +694,87 @@ Only files with custom-written Python code have been verified with the validator
 | As a Site User I can click on links to the site's social media so that I can explore more of its content and context. | Social media links (icons) are displayed in the footer of all pages. Each link opens in new tab. |
 | As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral. | The number of likes is visible for all users on the recipe's detail page. Like fuctionality is accessible for olnly logged-in users though. |
 
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+<details>
+
+<summary>Render-blocking resources affecting Performance</summary>
+
+The performance of all website pages is affected by resources that block rendering. I contacted Tutor Assistance and they suggested to ignore the issue.
+
+![image](media/eliminate_render_blocking_resources.jpg)
+
+</details>
+
+<details>
+
+<summary>Issues affecting Best Practices</summary>
+
+Lighthouse gives only a score of 92 for Best Practices for almost all the pages, but this is a problem beyond my scope at the moment.
+
+![image](media/lighthouse_best_practices.jpg)
+
+</details>
+
+#### Home page 
+
+![image](media/lighthouse_home_page.jpg)
+
+#### Recipes list page
+
+![image](media/lighthouse_recipes_page.jpg)
+
+#### Recipe Detail page
+
+![image](media/lighthouse_recipe_detail.jpg)
+
+#### Add a Recipe page | Update a Recipe page
+
+![image](media/lighthouse_add_recipe.jpg)
+
+![image](media/lighthouse_update_recipe.jpg)
+
+<details>
+
+<summary>Why is Accessibility not 100?</summary>
+
+The element is provided by Summernote, and it is not something I can change.
+
+![image](media/frame_do_not_have_a_title.jpg)
+
+</details>
+
+#### Category page
+
+- There are some recipes within the selected category:
+
+  ![image](media/lighthouse_category_page.jpg)
+
+- There are NO recipes within the selected category:
+
+  ![image](media/lighthouse_category_page_no_recipes.jpg)
+
+#### Sign Up
+
+![image](media/lighthouse_signup.jpg)
+
+#### Login 
+
+![image](media/lighthouse_login.jpg)
+
+#### Logout
+
+![image](media/lighthouse_logout.jpg)
+
 
 ## Fixed Bugs
 
   - Static files were not loading in the deployed Heroku app. The local preview looked just the way it should, but checking the deployed site, none of the styling was there, and the images weren't loading.
     - **Fix**: Install [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) and put some lines of code in settings.py as mentioned in the link.
 
-  - Chosen colors (#71777ce6, whitesmoke and #ffc107) didn't have sufficient contrast ratio. 
+  - Chosen colors (`#71777ce6, whitesmoke and #ffc107`) didn't have sufficient contrast ratio. 
     - **Fix**: Use [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) provided by Lighthouse testing to find new colors working good together (see more in the Design section).
 
   - "Add a Recipe" form.
