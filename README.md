@@ -162,6 +162,13 @@ Whether you are uncertain about meal choices, a food-lover seeking culinary know
     - Enable logged-in users to like/unlike published recipes.
 
 
+### Structure
+
+The blog is divided into different pages. Some of the pages are accessible only for logged in users. The blog structure allows users to access recipes via the recipes page or by sorting them through different categories. All users can access detailed information about each recipe by clicking on the recipe card. Users who are logged in can publish, edit, and delete their own recipes, and interact with other recipes by liking and commenting on them.
+
+**For detailed information about all existing features see the section [Existing Features](#existing-features).**
+
+
 ## Design
 
 ### Colour Scheme
