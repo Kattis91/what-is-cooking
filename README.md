@@ -169,6 +169,65 @@ The blog is divided into different pages. Some of the pages are accessible only 
 **For detailed information about all existing features see the section [Existing Features](#existing-features).**
 
 
+### Skeleton
+
+I created wireframes using [Figma](https://www.figma.com/).
+
+<details>
+<summary>Home page</summary>
+
+LEFT: all users | RIGHT: logged-in users.
+
+![image](media/wireframes_home_page.jpg)
+
+</details>
+
+<details>
+<summary>Recipe page</summary>
+
+![image](media/wireframes_recipes_page.jpg)
+
+</details>
+
+<details>
+<summary>Recipe detail page</summary>
+
+LEFT: all users | RIGHT: logged-in users.
+
+![image](media/wireframes_recipe_detail_page.jpg)
+
+</details>
+
+<details>
+<summary>Add a Recipe page</summary>
+
+![image](media/wireframes_add_a_recipe_page.jpg)
+
+</details>
+
+<details>
+
+<summary>Sign Up</summary>
+
+![image](media/wireframes_sign_up.jpg)
+
+</details>
+
+<details>
+<summary>Login</summary>
+
+![image](media/wireframes_sign_in.jpg)
+
+</details>
+
+<details>
+<summary>Logout</summary>
+
+![image](media/wireframes_sign_out.jpg)
+
+</details>
+ 
+
 ## Design
 
 ### Colour Scheme
