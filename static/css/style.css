@@ -383,9 +383,15 @@ a {
         margin-top: 75px;
     }
 
+    .recipe-card:hover { 
+        -ms-transform: scale(1.0); 
+        -webkit-transform: scale(1.0); 
+        transform: scale(1.0); 
+    }
+
 }
 
-/* For small screen sizes below 450px width */
+/* For small screen sizes below 428px width */
 @media screen and (max-width: 428px) {
 
     .remain{
