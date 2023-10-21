@@ -226,11 +226,10 @@ LEFT: all users | RIGHT: logged-in users.
 ![image](media/wireframes_sign_out.jpg)
 
 </details>
- 
 
-## Design
+### Surface
 
-### Colour Scheme
+#### Colour Scheme
 
 The choice of colors depends on the background image chosen for home, sign up, login, and logout pages.
 
@@ -252,7 +251,7 @@ The choice of colors depends on the background image chosen for home, sign up, l
 
  - **`E1DDDD`** is used as the background color for all recipe-related pages including recipes, recipe details, add recipe, edit recipe and categories.
 
- ### Button styling
+#### Button styling
 
 All buttons throughout the pages have the same styling, ensuring uniformity and providing a seamless user experience. 
  
