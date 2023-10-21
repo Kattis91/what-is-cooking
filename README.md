@@ -9,9 +9,12 @@ This interactive platform is designed to be an inspiration for those days when y
   - [Planning](#planning)
   - [Final Result](#final-result)
 
-- [Design](#design)
-  - [Colour Scheme](#colour-scheme)
-  - [Button Styling](#button-styling)
+- [User Experience](#user-experience)
+  - [Strategy](#strategy)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+  - [Surface](#surface)
 
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
