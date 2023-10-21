@@ -71,6 +71,54 @@ At this stage, the ingredients an servings fields are missing.
 
 [Back to top ⇧](#table-of-contents)
 
+
+## User Experience
+
+I used the design thinking approach to create a clutter-free website with only necessary information, making it easy for users to navigate. 
+
+To maximize the user approach, I interviewed my friend Josefine throughout the process. Among other things, she provided valuable tips on displaying categories on each recipe card, which indeed makes the user experience better.
+
+
+Five planes of User Experience:
+
+### Strategy
+
+My User stories can be found [here](https://github.com/Kattis91/what-is-cooking/issues).
+
+Please, click [here](#testing-of-user-stories) if you want to come to the section where I test my User Stories.
+
+#### Key Project Goal
+
+Planning what to cook can be a struggle for many. The key project goal of the blog is to establish a visually appealing and user-friendly open-source recipe database. It should not be challenging for users to find what they are looking for. 
+
+Therefore, I have included **categories** on the homepage of the site: 
+
+  - It is a useful feature for users who have a specific food preference and do not want to waste time browsing through all the recipes. By clicking on a category, they can easily find dishes that meet their specific criteria, such as vegetarian dishes. This leads to a more efficient and enjoyable user experience.
+
+  - As for those who don't know what they want, seeing categories can help them narrow down their choices and ultimately get some inspiration and ideas.
+
+With easy-to-follow links, the site is highly navigable.
+
+#### Target Audience
+
+The best part of the blog is that it caters to almost everyone. Of course, you need to be old enough to be in the kitchen.
+
+Whether you are uncertain about meal choices, a food-lover seeking culinary knowledge, or simply a "hungry" person desiring to learn new recipes, tips, and cooking techniques, everybody is welcome!
+
+#### User Requirements and Expectations:
+
+- A brief and simple description of the site’s purpose.
+
+- Easy to navigate the site to find information.
+
+- A quick and thorough overview of the site's features and functionalities.
+
+- Links and functions work as expected.
+
+- Feedback when ineracting with the site.
+
+- Possibility to view the site on a range of device sizes.
+
 ## Design
 
 ### Colour Scheme
