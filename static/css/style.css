@@ -26,7 +26,7 @@ p, li {
 .view {
     background-color: #BAA6B1;
     --bs-btn-hover-bg: #BAA6B1;
-    --bs-btn-border-color: none;
+    --bs-btn-border-color: black;
     --bs-btn-active-bg: #BAA6B1;
     --bs-btn-hover-color: black;
 } 
@@ -316,6 +316,10 @@ label {
     max-width: 100%;
 }
 
+a {
+    color: #4B0082;
+}
+
 
 /* Media queries */
 
@@ -377,5 +381,14 @@ label {
 
     #msg-box {
         margin-top: 75px;
+    }
+
+}
+
+/* For small screen sizes below 450px width */
+@media screen and (max-width: 428px) {
+
+    .remain{
+        margin-top: 30px;
     }
 }
