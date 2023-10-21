@@ -119,6 +119,49 @@ Whether you are uncertain about meal choices, a food-lover seeking culinary know
 
 - Possibility to view the site on a range of device sizes.
 
+### Scope
+
+#### Content | Functionality Requirements:
+
+- Easily accessible navigation bar with the links that have easily understandable names.
+
+- Responsive design.
+
+- A brief and simple description of the site’s purpose.
+
+- A complete collection of recipes.
+
+- A thorough list of ingredients and step-by-step instructions to follow.
+
+- A possibility to sort recipes by categories.
+
+- A possibility to read comments.
+
+#### Authentication:
+
+- Add registration/login features that give the user access to extra functionality.
+
+- Add Logout functionality for safety reasons.
+
+#### Functionality for logged-in users:
+
+  - **CRUD functionality:**
+
+    - Implement feature that allows user to **C**reate recipes.
+
+    - Implement feature that allows user to **R**ead recipes.
+
+    - Implement feature that allows user to **U**pdate recipes.
+
+    - Implement feature that allows user to **D**elete recipes.
+
+  - **Comment and like feature:**
+
+    - Enable logged-in users to post comments on any of the published recipes.
+
+    - Enable logged-in users to like/unlike published recipes.
+
+
 ## Design
 
 ### Colour Scheme
