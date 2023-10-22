@@ -86,12 +86,11 @@ I used the design thinking approach to create a clutter-free website with only n
 
 To maximize the user approach, I interviewed my friend Josefine throughout the process. Among other things, she provided valuable tips on displaying categories on each recipe card, which indeed makes the user experience better.
 
-
-Five planes of User Experience:
+**Five planes of User Experience:**
 
 ### Strategy
 
-My User stories can be found [here](https://github.com/Kattis91/what-is-cooking/issues).
+My User Stories can be found [here](https://github.com/Kattis91/what-is-cooking/issues).
 
 Please, click [here](#testing-of-user-stories) if you want to come to the section where I test my User Stories.
 
@@ -321,7 +320,6 @@ I went with following colors:
 
   ![image](media/open_sans_font.jpg)
 
-
 ## Technologies Used
 
 ### Languages
@@ -377,6 +375,9 @@ I went with following colors:
   - [Lucidchart](https://www.lucidchart.com/pages/sv)
     - The diagramming application used to create ERD diagrams.
 
+  - [Am I responsive?](https://ui.dev/amiresponsive)
+    - used to see how the site looks on a range of devices.
+
 
 ## Features
 
@@ -390,7 +391,7 @@ I went with following colors:
 
 - Clicking on the Logo and "Home" will always redirect the user to the home page.
 
-- When the user clicks on "Recipes", they will be directed to a page containing all available recipes,
+- When the user clicks on "Recipes", they will be directed to a page containing all available recipes.
 
 - Logo and links to the home and recipes pages are **available for all users**. However, there are some differences in how the navigation bar looks for non-logged and logged-in users.
  
@@ -408,6 +409,12 @@ I went with following colors:
     - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
     - Clicking "Logout" directs users to the confirmation page.
+
+- On smaller devices, the navigation bar is displayed using a hamburger menu:
+
+  ![image](media/navbar_hamburger_menu.jpg) 
+
+  ![image](media/navbar_hamburger_menu_links.jpg)
 
 #### Welcome message
 
@@ -480,11 +487,11 @@ I went with following colors:
 
 - When the user clicks on Logout in the navbar, they are redirected to a page displaying a confirmation message above.
 
-  - Sign Out:
+  - SIGN OUT:
     - The user redirects to the home page.
     - A message indicating that the operation was successful is shown on the screen.
 
-  - Go Back:
+  - REMAIN LOGGED IN:
     - The user redirects to the home page.
 
 
@@ -502,7 +509,7 @@ I went with following colors:
   - estimated time of cooking;
   - "View Recipe" button.
 
-- By clicking on each recipe, the user redirects to a page containing detailed information about that specific recipe.
+- By clicking the "View Recipe" button, the user redirects to a page containing detailed information about that specific recipe.
 
 #### Recipe detail page
 
@@ -549,11 +556,11 @@ The recipe detail page includes the following information:
 
   - Comments section:
     
-    - There are some comments left:
+    - There are some comments on the recipe:
 
       ![image](media/comments.jpg)
     
-    - There are NO comments left:
+    - There are NO comments:
 
       ![image](media/no_comments.jpg)
 
@@ -647,7 +654,7 @@ The recipe detail page includes the following information:
 
   - **Add recipe page | Update Recipe page**
   
-    All errors listed by W3Validator are related to Summernote, and not any code written by me. Errors are the same for both "Add Recipe" page and "Update Recipe" page.Research conducted within the Code Institute community indicates that this is a common occurrence, and therefore it should be noted. However, no action needs to be taken in response.
+    All errors listed by W3Validator are related to Summernote, and not any code written by me. Errors are the same for both "Add Recipe" page and "Update Recipe" page. Research conducted within the Code Institute community indicates that this is a common occurrence, and therefore it should be noted. However, no action needs to be taken in response.
 
     <details>
 
@@ -777,7 +784,9 @@ Only files with custom-written Python code have been verified with the validator
 | Likes possibility for logged-in users | All logged-in users should be able to like/unlike all published recipes. The number of likes should increase when liking and decrease when pressing again. | Log in, go to the recipes page and click on the "View Recipe" button associated with the recipe that you want to view. Click on like button to like the recipe, click one more time to unlike.| The number of likes increase when liking and decrease when clicking like icon one more time. | Pass |
 | Comment possibility for logged-in users | All logged-in users should be able to comment all published recipes. A message saying "Your comment is awaiting approval..." should be displayed on the screen. | Log in, go to the recipes page and click on the "View Recipe" button associated with the recipe that you want to view. Write a comment and click "Submit". | "Your comment is awaiting approval..." message appears on the screen. | Pass |
 | Edit posibility for recipe authors | Recipe authors should be able to edit their recipes by updating the prepopulated form accessed through the "EDIT" button located under the recipe title. | Log in and publish a recipe. Click on the newly published recipe, then click "EDIT" to update and "SAVE". | The updated version of the recipe is published on the blog. | Pass |
+| EDIT -> CANCEL | Clicking the "CANCEL" button under the "Edit your Recipe" form, should take the user back to the detailed information about the recipe they wanted to update. | Click on your published recipe, then click "EDIT" and "CANCEL". | The user is redirected back to the detailed page. | Pass
 | Delete posibility for recipe authors | Recipe authors should be able to delete their recipes by clicking the "DELETE" button located under the recipe title. The user should be redirected to a confirmation page where they are asked whether they are sure they want to delete the recipe or not. | Log in and publish a recipe. Click on the newly published recipe, then click "DELETE" button and "DELETE RECIPE" button on the confirmation page. | The recipe is successfully deleted. | Pass |
+| DELETE -> GO BACK | Clicking the "GO BACK" button on the confirmation page, should take the user back to the detailed information about the recipe they wanted to delete. | Click on your published recipe, then click "DELETE" and then "GO BACK". | The user is redirected back to the detailed page. | Pass
 </details>
 
 <details> 
@@ -819,7 +828,7 @@ Only files with custom-written Python code have been verified with the validator
 |---------|--------|--------|--------|-----------|
 | Sign Out | By clicking on the Logout link, the user should be redirected to the confirmation page. | Click on the "Logout" link in the navigation bar. | The user is directed to the "Sign Out" page asking "Are you sure you want to sign out?". | Pass 
 | "Are you sure you want to sign out?". **Sign Out** | Choosing to sign out, the user should be signed out and directed to the homepage, where they can access links through the navigation menu available for all users. | Click the "Sign Out" button. | The user is directed to the homepage. "Home / Recipes / Add Recipe / Logout" links change to "Home / Recipes / Sign Up / Login". | Pass |
-| "Are you sure you want to sign out?". **Remain logged in** | Choosing to go back, the user should just be directed to the homepage. | Click the "Remain logged in" button. | The user is directed to the homepage. The user is still logged in. | Pass |
+| "Are you sure you want to sign out?". **Remain logged in** | Choosing to remain logged in, the user should just be directed to the homepage. | Click the "Remain logged in" button. | The user is directed to the homepage. The user is still logged in. | Pass |
 </details> 
 
 ### Automated Testing
@@ -959,7 +968,7 @@ Lighthouse gives only a score of 92 for Best Practices for almost all the pages,
 
 </details>
 
-#### Home page 
+#### Home page
 
 ![image](media/lighthouse_home_page.jpg)
 
@@ -1058,6 +1067,8 @@ The element is provided by Summernote, and it is not something I can change.
 
 - [Font Awesome](https://fontawesome.com/) was used to add the icons to the Logo and recipe detail page (estimated time, categories, servings, the number of likes, and the number of comments).
 
+- The recipes published by me are taken from [BBC Good Food](https://www.bbcgoodfood.com/recipes).
+
 ### Content
 
 - The main code of this project is based on the Code Institute tutorial ["I Think Therefore I Blog"](https://github.com/Code-Institute-Solutions/Django3blog) with changes made to suit my project.
@@ -1089,11 +1100,13 @@ I would like to aknowledge the following people:
 
   - Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap.
 
-  - My mentor Jubril for good briefings, feedback and tip.
+  - My mentor Jubril for good briefings, feedback and tip. 
+
+  - Daisy_mentor (#project-portfolio-4) for sharing information about closing completed User Stories.
 
   - Kay (the facilitator in my team) for always patiently answering all my questions during our Monday sessions &#128512;
 
-  - Karolis_5P (Peer Code Review) who took time to look at my project, check the functionality and come up with valuable feedback.
+  - Karolis_5P and Emma S-A_5P (Peer Code Review) who took time to look at my project, check the functionality and come up with valuable feedback.
 
 
 ## Deployment
