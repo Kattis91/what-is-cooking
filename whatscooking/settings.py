@@ -29,10 +29,10 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost', '8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
 
 # Application definition
 
@@ -125,16 +125,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -155,7 +155,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -172,3 +172,10 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        'fontNames': ['Open Sans'],
+        'fontNamesIgnoreCheck': ['Open Sans'],
+    },
+ }
