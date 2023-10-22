@@ -28,6 +28,7 @@ This interactive platform is designed to be an inspiration for those days when y
   - [Validator Testing](#validator-testing)
   - [Responsivness & Browser Compability Testing](#responsivness--browser-compability-testing)
   - [Manual Testing](#manual-testing)
+  - [Automated Testing](#automated-testing)
   - [Testing of User Stories](#testing-of-user-stories)
   - [Lighthouse Testing](#lighthouse)
 
@@ -816,6 +817,57 @@ Only files with custom-written Python code have been verified with the validator
 | "Are you sure you want to sign out?". **Sign Out** | Choosing to sign out, the user should be signed out and directed to the homepage, where they can access links through the navigation menu available for all users. | Click the "Sign Out" button. | The user is directed to the homepage. "Home / Recipes / Add Recipe / Logout" links change to "Home / Recipes / Sign Up / Login". | Pass |
 | "Are you sure you want to sign out?". **Remain logged in** | Choosing to go back, the user should just be directed to the homepage. | Click the "Remain logged in" button. | The user is directed to the homepage. The user is still logged in. | Pass |
 </details> 
+
+### Automated Testing
+
+As part of the project, I conducted automated testing towards the end.
+
+I have received guidance and instructions from the following sources:
+
+- The "Hello Django" walkthrough project;
+
+- This article: [Django Tutorial Part 10: Testing a Django web application](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests).
+
+To conduct testing, I added the following code ([source](https://stackoverflow.com/questions/47466185/got-an-error-creating-the-test-database-django-unittest)) to settings.py:
+
+````
+import sys
+if 'test' in sys.argv or 'test_coverage' in sys.argv: 
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+````
+**Result:**
+
+![image](media/automated_testing_result.jpg)
+
+#### Testing forms
+
+<details>
+
+<summary>Click here to see more details</summary>
+
+![image](media/automated_testing_forms.jpg)
+
+</details>
+
+#### Testing views
+
+<details>
+
+<summary>Click here to see more details</summary>
+
+![image](media/automated_testing_views.jpg)
+
+</details>
+
+#### Testing models
+
+<details>
+
+<summary>Click here to see more details</summary>
+
+![image](media/automated_testing.models.jpg)
+
+</details>
 
 ### Testing of User Stories
 
