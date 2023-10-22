@@ -13,25 +13,24 @@
 <div class="container">
     <div class="row">
         {% for recipe in recipe_list %}
-            <div class="recipes col-12 col-sm-6 col-lg-3">
-                <div class="card recipe-card h-100">
-                    {% if "placeholder" in recipe.featured_image.url %}
-                    <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="the default food image">
-                    {% else %}
-                    <img class="card-img-top" src="{{ recipe.featured_image.url }}" alt="image of the recipe">
-                    {% endif %}
-                    <div class="card-body">
-                        <h2 class="card-title">{{ recipe.title }}</h2>
-                        <p class="card-text">{{ recipe.created_on }}</p>
-                        <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
-                        <p><strong class="card-text"><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</strong></p>
-                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn view">View Recipe</a>
-                    </div>
+        <div class="recipes col-12 col-sm-6 col-lg-3">
+            <div class="card recipe-card h-100">
+                {% if "placeholder" in recipe.featured_image.url %}
+                <img class="card-img-top" src="https://res.cloudinary.com/dx0imlozl/image/upload/v1697048715/ekivemgtyulgjlem0gh9.jpg" alt="the default food image">
+                {% else %}
+                <img class="card-img-top" src="{{ recipe.featured_image.url }}" alt="image of the recipe">
+                {% endif %}
+                <div class="card-body">
+                    <h2 class="card-title">{{ recipe.title }}</h2>
+                    <p class="card-text">{{ recipe.created_on }}</p>
+                    <p><i class="fa-solid fa-utensils"></i> {{ recipe.category }}</p>
+                    <p><strong class="card-text"><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</strong></p>
+                    <a href="{% url 'recipe_detail' recipe.slug %}" class="btn view">View Recipe</a>
                 </div>
-            </div> 
+            </div>
+        </div> 
         {% endfor %}  
-        </div>   
-    </div> 
+    </div>   
     
     {% if is_paginated %}
     <nav aria-label="Page navigation">
@@ -41,11 +40,11 @@
             {% endif %}
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-
             {% endif %}
         </ul>
     </nav>
     {% endif %}
+</div> 
 
 {% endblock %}
 

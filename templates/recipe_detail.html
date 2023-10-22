@@ -23,8 +23,8 @@
         <div class="title-container col-12 col-lg-6 text-center align-self-center">
             <h1 id="title">{{ recipe.title }}</h1>
             {% if user.id == recipe.author.id %}
-                <a href="{% url 'update' recipe.slug %}" id="edit-button" class="btn links">Edit</a>
-                <a href="{% url 'delete' recipe.slug %}" id="delete-button" class="btn links">Delete</a>
+            <a href="{% url 'update' recipe.slug %}" id="edit-button" class="btn links">Edit</a>
+            <a href="{% url 'delete' recipe.slug %}" id="delete-button" class="btn links">Delete</a>
             {% endif %}
             <div id="info">
                 <p><i class="fa-regular fa-clock"></i> {{ recipe.estimated_time }} min</p>
@@ -67,9 +67,9 @@
         <div class="ingredients-container col-12 col-lg-6 mt-3 align-self-center">
             <h2 id="ingredients">Ingredients:</h2>
             <ul>
-            {% for ingredient in ingredients %}
-            <li>{{ ingredient }}</li> 
-            {% endfor %}
+                {% for ingredient in ingredients %}
+                <li>{{ ingredient }}</li> 
+                {% endfor %}
             </ul>
         </div>  
         <div class="instructions-container col-12 col-lg-6 mt-3">
@@ -117,6 +117,5 @@
         </div>
     </div>
 </div>
-
 
 {% endblock %}
