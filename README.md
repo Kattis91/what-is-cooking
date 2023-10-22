@@ -4,6 +4,10 @@
 
 This interactive platform is designed to be an inspiration for those days when you don't know what to cook or simply want to try something new.
 
+![image](media/am_i_responsive.jpg)
+
+Click [here](https://what-s-cooking-a7be1440512e.herokuapp.com/) to view the live site.
+
 # Table of Contents
 - [Database Diagram](#database-diagram)
   - [Planning](#planning)
