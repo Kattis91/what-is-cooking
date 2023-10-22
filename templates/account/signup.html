@@ -11,8 +11,7 @@
     <div class="card mb-3">
         <div class="card-body">
             <h1>{% trans "Sign Up" %}</h1>
-
-            <p>{% blocktrans %}Already have an account? If so, please <a href="{{ login_url }}" class="sign">sign in</a>.{% endblocktrans %}</p>
+            <p>{% blocktrans %}Have you already an account? If so, please <a href="{{ login_url }}" class="sign">sign in</a>.{% endblocktrans %}</p>
 
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
