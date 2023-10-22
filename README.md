@@ -320,6 +320,8 @@ I went with following colors:
 
   ![image](media/open_sans_font.jpg)
 
+[Back to top ⇧](#table-of-contents)
+
 ## Technologies Used
 
 ### Languages
@@ -378,6 +380,7 @@ I went with following colors:
   - [Am I responsive?](https://ui.dev/amiresponsive)
     - used to see how the site looks on a range of devices.
 
+[Back to top ⇧](#table-of-contents)
 
 ## Features
 
@@ -612,6 +615,8 @@ The recipe detail page includes the following information:
 - Add some other choices, like difficulty level, meal type, cuisine.
 
 - Enable users to log in using their social media accounts.
+
+[Back to top ⇧](#table-of-contents)
 
 ## Testing
 
@@ -1018,6 +1023,7 @@ The element is provided by Summernote, and it is not something I can change.
 
 ![image](media/lighthouse_logout.jpg)
 
+[Back to top ⇧](#table-of-contents)
 
 ## Fixed Bugs
 
@@ -1056,6 +1062,7 @@ The element is provided by Summernote, and it is not something I can change.
   - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
     - **Fix**: `Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM']` to settings.py
 
+[Back to top ⇧](#table-of-contents)
 
 ## Credits
 
@@ -1093,7 +1100,6 @@ The element is provided by Summernote, and it is not something I can change.
 
 - [Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate Django Secret Key.
 
-
 ### Acknowledgements
 
 I would like to aknowledge the following people:
@@ -1108,6 +1114,7 @@ I would like to aknowledge the following people:
 
   - Karolis_5P and Emma S-A_5P (Peer Code Review) who took time to look at my project, check the functionality and come up with valuable feedback.
 
+[Back to top ⇧](#table-of-contents)
 
 ## Deployment
 
@@ -1292,6 +1299,7 @@ I would like to aknowledge the following people:
 
 - Click the **"Enable Automatic Deploys"** button to make it possible for Heroku to rebuild the app a new change is pushed to GitHub repository.
 
+[Back to top ⇧](#table-of-contents)
 
 ## Development 
 
