@@ -14,6 +14,7 @@ Click [here](https://what-s-cooking-a7be1440512e.herokuapp.com/) to view the liv
   - [Final Result](#final-result)
 
 - [User Experience](#user-experience)
+  - [Agile](#agile)
   - [Strategy](#strategy)
   - [Scope](#scope)
   - [Structure](#structure)
@@ -86,11 +87,20 @@ I used the design thinking approach to create a clutter-free website with only n
 
 To maximize the user approach, I interviewed my friend Josefine throughout the process. Among other things, she provided valuable tips on displaying categories on each recipe card, which indeed makes the user experience better.
 
+### Agile
+
+I employed the agile methodology, starting from the planning stage and continuing until the final product was built. To ensure that I stayed organized and on track, I utilized a GitHub project and a [Kanban board](https://github.com/users/Kattis91/projects/3/views/1). Information about User Stories can be found in the subsection below⇩ 
+
 **Five planes of User Experience:**
 
 ### Strategy
 
-My User Stories can be found [here](https://github.com/Kattis91/what-is-cooking/issues).
+My User Stories can be found [here](https://github.com/Kattis91/what-is-cooking/issues). All User Stories include:
+ - Acceptance Criteria
+ - Tasks
+ - Labels (MoSCoW Priotarization)
+
+Some of the User Stories are part of an EPIC.
 
 Please, click [here](#testing-of-user-stories) if you want to come to the section where I test my User Stories.
 
