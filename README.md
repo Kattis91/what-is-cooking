@@ -33,6 +33,8 @@ Click [here](https://what-s-cooking-a7be1440512e.herokuapp.com/) to view the liv
   
 - [Fixed Bugs](#fixed-bugs)
 
+- [Known Issues](#known-issues)
+
 - [Credits](#credits)
   - [Media](#media)
   - [Content](#content)
@@ -677,6 +679,18 @@ Testing includes following:
     
   - **Forbidden (403). CSRF verification failed. Request aborted.** message was displayed when I was trying to log in to the admin site in the beginning of the project.
     - **Fix**: `Add CSRF_TRUSTED_ORIGINS=['https://*.YOUR_DOMAIN.COM']` to settings.py
+
+## Known issues
+
+Not really a bug, and maybe not even an issue, but like and comment icons don't match each other for logged in users. However, the liking functionality works as it should, so I leave it as is.
+
+- Logged-in users:
+
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698077238/likes_and_comments_logged_in_dd4lli.png)
+
+- Unlogged users: 
+  
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698077238/likes_and_comments_unlogged_in_zitubp.png)
 
 [Back to top ⇧](#table-of-contents)
 
