@@ -364,6 +364,7 @@ Users have the option to upload images in various sizes. To ensure consistency, 
 
   - [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html)
     - The library that allows the web app to serve its static files.
+    - "Whitenoise storage" was removed before final deployment as the app functioned fine without it.
 
   - [ElepantSQL](https://www.elephantsql.com/)
     - The database used by the deployed project on Heroku.
@@ -734,7 +735,7 @@ Not really a bug, and maybe not even an issue, but like and comment icons don't 
 
 I would like to aknowledge the following people:
 
-  - Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap.
+  - Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap. 
 
   - My mentor Jubril for good briefings, feedback and tip. 
 
@@ -743,6 +744,8 @@ I would like to aknowledge the following people:
   - Kay (the facilitator in my team) for always patiently answering all my questions during our Monday sessions &#128512;
 
   - Karolis_5P and Emma S-A_5P (Peer Code Review) who took time to look at my project, check the functionality and come up with valuable feedback.
+
+  - Tutor Assistance Team for helping me out with diverse things throughout the project.
 
 [Back to top ⇧](#table-of-contents)
 
