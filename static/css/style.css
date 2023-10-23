@@ -241,7 +241,7 @@ label {
 
 .recipes {
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 42px;
 }
     
 .card {
@@ -393,6 +393,10 @@ a {
         -ms-transform: scale(1.0); 
         -webkit-transform: scale(1.0); 
         transform: scale(1.0); 
+    }
+
+    .recipes {
+        margin-bottom: 25px;
     }
 
     p, li {
