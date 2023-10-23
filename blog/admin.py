@@ -16,7 +16,7 @@ class RecipeAdmin(SummernoteModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'content', 'created_on', 'approved')
+    list_display = ('name', 'recipe', 'content', 'created_on', 'approved')
     search_fields = ('name', 'email', 'content')
     list_filter = ('created_on', 'approved')
     actions = ['approve_comments']
