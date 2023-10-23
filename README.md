@@ -51,13 +51,13 @@ The database model diagram was designed using [Lucidchart]("https://www.lucidcha
 
 ### Planning
 
-![image](media/models_in_the_beginning.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697040883/static/images/models_in_the_beginning.c0b363f73f04.png)
 
 At this stage, the ingredients an servings fields are missing.
 
 ### Final Result
 
-![image](media/final_models.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697040885/static/images/final_models.ad88f2449a6e.png)
 
 #### Recipe Model
   - The main model that contains all the fields needed for the recipe to be complete. Of course you can add other fields (like cooking time, difficulty level, nutritional value, and so on), but that values are not vital for the site to work and can be added later.
@@ -189,14 +189,14 @@ I created wireframes using [Figma](https://www.figma.com/).
 
 LEFT: all users | RIGHT: logged-in users.
 
-![image](media/wireframes_home_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_home_page_yzr4qc.png)
 
 </details>
 
 <details>
 <summary>Recipe page</summary>
 
-![image](media/wireframes_recipes_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_recipes_page_ab1x0w.png)
 
 </details>
 
@@ -205,14 +205,14 @@ LEFT: all users | RIGHT: logged-in users.
 
 LEFT: all users | RIGHT: logged-in users.
 
-![image](media/wireframes_recipe_detail_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_recipe_detail_page_xrr53z.png)
 
 </details>
 
 <details>
 <summary>Add a Recipe page</summary>
 
-![image](media/wireframes_add_a_recipe_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_add_a_recipe_page_r1ea4a.png)
 
 </details>
 
@@ -220,21 +220,21 @@ LEFT: all users | RIGHT: logged-in users.
 
 <summary>Sign Up</summary>
 
-![image](media/wireframes_sign_up.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070605/wireframes_sign_up_xvkbyi.png)
 
 </details>
 
 <details>
 <summary>Login</summary>
 
-![image](media/wireframes_sign_in.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_sign_in_jds4rh.png)
 
 </details>
 
 <details>
 <summary>Logout</summary>
 
-![image](media/wireframes_sign_out.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070413/wireframes_sign_out_eahchw.png)
 
 </details>
 
@@ -244,7 +244,7 @@ LEFT: all users | RIGHT: logged-in users.
 
 The choice of colors depends on the background image chosen for home, sign up, login, and logout pages.
 
-![image](media/colour_scheme.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697465308/static/images/colour_scheme.20c06536a086.png)
 
  - **`9AA5AF`** is the primary color used throughout the pages:
    - Welcome message.
@@ -271,7 +271,7 @@ I went with following colors:
   - `#850000` that usually is associated with "NO" | "CANCEL" | "GO BACK".
   - `WHITE` for the text in order to get a sufficient contrast ratio.
 
-    ![image](media/buttons_edit_delete.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633882/static/images/buttons_edit_delete.e24beb2a6eb9.png)
   
 <details>
 
@@ -279,35 +279,35 @@ I went with following colors:
 
 - Sign up: 
     
-  ![image](media/sign_up_button.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633861/static/images/sign_up_button.0940135d3c68.png)
 
 - Sign in:
    
-  ![image](media/sign_in_button.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633870/static/images/sign_in_button.fbfe033373f6.png)
   
 - Logout:
 
-  ![image](media/buttons_sign_out.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070747/logout_buttons_hr62xk.png)
 
 - Add a recipe:
 
-  ![image](media/buttons_add_a_recipe_form.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633871/static/images/buttons_add_a_recipe_form.214a4d7e1147.png)
 
 - Update a recipe:
 
-  ![image](media/buttons_update_a_recipe.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633873/static/images/buttons_update_a_recipe.e9fd1ac91f38.png)
 
 - Delete confirmation:
 
-  ![image](media/buttons_delete_recipe.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633865/static/images/buttons_delete_recipe.1baafc8c42e4.png)
 
 - Edit | Delete:
 
-  ![image](media/buttons_edit_delete.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633882/static/images/buttons_edit_delete.e24beb2a6eb9.png)
 
 - Submit (when leaving a comment):
 
-  ![image](media/button_submit.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070830/submit_button_ia096k.png)
 
 </details>
 
@@ -318,11 +318,11 @@ I went with following colors:
 
 - I have used **"Bitter"** for all the headings throughout the pages.
 
-  ![image](media/bitter_font.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698064743/bitter_font_v556wt.png)
 
 - For the paragraphs I went with **"Opens Sans"**
 
-  ![image](media/open_sans_font.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698064743/open_sans_font_jga0iw.png)
 
 [Back to top ⇧](#table-of-contents)
 
@@ -404,14 +404,14 @@ I went with following colors:
  
   - **Non-logged users:**
 
-    ![image](media/navigation_bar_logout.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698065541/navigation_bar_logout_e5pziy.png)
     
     - The navigation bar contains links for the Logo, Home, Recipes, Sign Up, and Login pages.
     - Clicking "Sign Up" or "Login" directs users to the pages with respective forms.
 
   - **Logged-in users:**
     
-    ![image](media/navigation_bar_login.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698065541/navigation_bar_login_domjug.png)
 
     - The navigation bar contains links for the Logo, Home, Recipes, Add Recipe, and Logout pages.
     - Clicking "Add Recipe" takes the user to a page where they can fill in a form to publish a recipe.
@@ -419,13 +419,13 @@ I went with following colors:
 
 - On smaller devices, the navigation bar is displayed using a hamburger menu:
 
-  ![image](media/navbar_hamburger_menu.jpg) 
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698065541/navbar_hamburger_menu_mculka.png) 
 
-  ![image](media/navbar_hamburger_menu_links.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698065541/navbar_hamburger_menu_links_vdmfto.png)
 
 #### Welcome message
 
-![image](media/welcome_message.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697191595/static/images/welcome_message.2ef1f108f567.png)
 
 - This section welcomes users to the blog.
 
@@ -435,27 +435,27 @@ I went with following colors:
 
 #### Categories
 
-![image](media/categories.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698066224/categories_xsgfy3.png)
 
 - This section shows all the categories available right now.
 
 - Clicking on a category redirects the user to all recipes within that category. The "BACK" button takes the user back to the homepage.
   
   - There are some recipes available:
-    ![image](media/category_recipes.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563078/static/images/category_recipes.2be814ef0284.png)
 
   - No recipes are available within the selected category.
      
     - Logged-in users:
-      ![image](media/category_no_recipes_logged_in.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563051/static/images/category_no_recipes_logged_in.e770123eaa9d.png)
 
     - Unlogged users:
-      ![image](media/category_no_recipes_unlogged_users.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563075/static/images/category_no_recipes_unlogged_users.f8ebd9bdc2cb.png)
 
 
 #### Footer
 
-![image](media/footer.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697191592/static/images/footer.078e93c57a23.png)
 
 - This section contains links to the appropriate social media platforms. By clicking on them, they will open in a new tab.
 
@@ -463,7 +463,7 @@ I went with following colors:
 
 #### Sign Up
 
-![image](media/sign_up_form.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376101/static/images/sign_up_form.f49ed81b91fc.png)
 
 - The form enables users to register and create an account.
 
@@ -477,7 +477,7 @@ I went with following colors:
 
 #### Login
 
-![image](media/sign_in_form.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376103/static/images/sign_in_form.9a00efc66dfb.png)
 
 - The form enables users to log in.
 
@@ -490,7 +490,7 @@ I went with following colors:
 
 #### Logout
 
-![image](media/sign_out.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698066570/sign_out_oksgx5.png)
 
 - When the user clicks on Logout in the navbar, they are redirected to a page displaying a confirmation message above.
 
@@ -504,7 +504,7 @@ I went with following colors:
 
 #### Recipes page
 
-![image](media/recipes_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698066665/recipes_page_tjxtf4.png)
 
 - This page shows a list of all the published recipes.
 
@@ -528,7 +528,7 @@ The recipe detail page includes the following information:
     
     - Available for all users:
     
-      ![image](media/recipe_view_visitors.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376100/static/images/recipe_view_visitors.45a5b88174b1.png)
 
       - recipe title;
       - estimated time of cooking;
@@ -543,7 +543,7 @@ The recipe detail page includes the following information:
     
     - Extra functionality for the recipe authors:
    
-      ![image](media/recipe_view_author.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376095/static/images/recipe_view_author.7712060f0483.png)
 
       - EDIT
         - By clicking the "EDIT" button, the user is redirected to the page with a form where they can edit the recipe posted by them.
@@ -553,7 +553,7 @@ The recipe detail page includes the following information:
       - DELETE
         - By clicking the "DELETE" button, the user is redirected to the page where they get a question about whether they are sure that they want to delete the recipe.
        
-          ![image](media/delete_confirmation.jpg)
+          ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698066873/delete_confirmation_n6eny3.png)
           - The recipe gets deleted when the user clicks the "DELETE RECIPE" button. The user is redirected to the home page.
           - The user is redirected to the home page when clicked the "GO BACK" button.
 
@@ -565,15 +565,15 @@ The recipe detail page includes the following information:
     
     - There are some comments on the recipe:
 
-      ![image](media/comments.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376107/static/images/comments.c245aa6c507c.png)
     
     - There are NO comments:
 
-      ![image](media/no_comments.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376099/static/images/no_comments.937fab397a78.png)
 
     - Leave a comment (available ONLY for logged-in users):
 
-      ![image](media/leave_a_comment.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376117/static/images/leave_a_comment.d764d9137d00.png)
 
 #### Add a Recipe page
 
@@ -581,23 +581,23 @@ The recipe detail page includes the following information:
 
 - Available fields:
   - Title
-  ![image](media/form_title.png)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376105/static/images/form_title.92e76d13f3ee.png)
   - Category (Dropdown menu)
-  ![image](media/form_category.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376112/static/images/form_category.63f3dc7d46c1.png)
   - Image
-  ![image](media/form_featured_image.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376114/static/images/form_featured_image.969458f814d3.png)
   - Ingredients
-  ![image](media/form_ingredients.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376098/static/images/form_ingredients.1644f639b558.png)
   - Instructions (Summernote field)
-  ![image](media/form_instructions.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376106/static/images/form_instructions.6e139006d641.png)
   - Estimated time
-  ![image](media/form_estimated_time.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376116/static/images/form_estimated_time.f78b54b4e36b.png)
   - Servings
-  ![image](media/form_servings.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697376109/static/images/form_servings.b8ed7c47f0b4.png)
   
   - Buttons
 
-    ![image](media/buttons_add_a_recipe_form.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633871/static/images/buttons_add_a_recipe_form.214a4d7e1147.png)
    
     - SAVE:
 
@@ -654,15 +654,15 @@ Testing includes following:
     - The slug wouldn't generate for the recipes submitted via the form.
       - **Fix**: Import slugify and include the helper method into the Recipe model.
 
-        ![image](media/slugify.jpg)
+        ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563055/static/images/slugify.ef34fa449a66.png)
 
     - It was possible to choose zero and enter very large numbers into the estimated_time and servings fields.
       
-      ![image](media/max_value_validator.jpg)
+      ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563056/static/images/max_value_validator.49f534e0e390.png)
       
       - **Fix**: Add validate_nonzero function. Import and add MaxValueValidator.
         
-        ![image](media/validate_nozero.jpg)
+        ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697563050/static/images/validate_nozero.2cf483305233.png)
 
     - The layout of the recipe detail page was affected when a user entered a single long word. For example, the one long word typed in the Ingredients field overflowed into the Instructions field and continued beyond the right boundary of the page until the word was finished, causing the page's layout to break. 
       - **Fix**: 

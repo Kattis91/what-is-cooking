@@ -37,31 +37,31 @@ Validator: [W3C Validator](https://validator.w3.org/).
   
 - **Home Page**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Sign Up**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Login**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Logout**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Recipes Page**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Recipe detail page**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **Category**
     
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
     No errors or warnings to show for either of these three cases:
     - There are recipes within the selected category.
@@ -76,23 +76,23 @@ Validator: [W3C Validator](https://validator.w3.org/).
 
   <summary>Click here to see the errors.</summary>
     
-    ![image](media/summernote_errors.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067643/summernote_errors_fbeitr.jpg)
 
   </details>
 
 - **Delete recipe page**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 - **404.html**
 
-  ![image](media/html_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/html_validator_lme4as.png)
 
 ### CSS
 
 Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
   
-  ![image](media/jigsaw_validator.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/jigsaw_validator_cv3cdl.png)
 
 ### JavaScript 
 
@@ -100,7 +100,7 @@ Validator: [JSHint Validator](https://jshint.com/).
   - No errors were found when passing through the validator.
   - Validator gave warnings about one undefined variable(Bootstrap). No action is taken because this custom bootstrap variable does not need to be defined within the script.
 
-    ![image](media/jshint_undefined_variable.jpg)
+    ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067478/jshint_undefined_variable_popuog.png)
 
 ### Python 
 
@@ -108,7 +108,7 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 
 Only files with custom-written Python code have been verified with the validator. All the files tested got the result below.
 
-![image](media/ci_python_linter.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697580394/static/images/ci_python_linter.286469fc4bb0.png)
 
 - **admin.py** 
   - All clear, no errors found.
@@ -170,12 +170,12 @@ Only files with custom-written Python code have been verified with the validator
 
 | Feature | Expect | Action | Result |
 |---------|--------|--------|--------|
-| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](media/successfully_sign_up.jpg) |
-| Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](media/successfully_sign_up.jpg) | 
-| Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](media/successfull_sign_out.jpg) | 
-| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](media/successfully_posted_recipe.jpg) | 
-| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](media/successfully_updated_recipe.jpg) |
-| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](media/successfully_deleted_recipe.jpg) | 
+| Sign Up / Login | When a user successfully signs up, a message indicating success should appear and disappear automatically*. | Click the Sign Up link in the navbar. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633883/static/images/successfully_sign_up.49295a9b72d4.png) |
+| Login | When a user successfully logs in, a message indicating success should appear and disappear automatically*. | Click the Login link in the navbar. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633883/static/images/successfully_sign_up.49295a9b72d4.png) | 
+| Logout | When a user successfully logs out, a message indicating success should appear and disappear automatically*. | Click the Logout link in the navbar. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633877/static/images/successfull_sign_out.53051a45d433.png) | 
+| Posting a recipe | When a user successfully posts a recipe, a message indicating success should appear and disappear automatically*. | Go to the "Add Recipe" page, fill out each field accurately, and press "SAVE". | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633883/static/images/successfully_posted_recipe.e8901f32c626.png) | 
+| Updating a recipe | When a user successfully updates a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "EDIT" button, make some changes and press "UPDATE". | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633892/static/images/successfully_updated_recipe.70906eac43ec.png) |
+| Deleting a recipe | When a user successfully deletes a recipe, a message indicating success should appear and disappear automatically*. | Go to one of the recipes posted by you, click the "DELETE" button, and then "DELETE RECIPE" when being asked if you are sure. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633862/static/images/successfully_deleted_recipe.8f4288c27d72.png) | 
 </details>
 
 <details> 
@@ -276,7 +276,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 ````
 **Result:**
 
-![image](media/automated_testing_result.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067833/automated_testing_result_b3oizg.png)
 
 ### Testing forms
 
@@ -284,7 +284,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 
 <summary>Click here to see more details</summary>
 
-![image](media/automated_testing_forms.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067834/automated_testing_forms_awpnqi.png)
 
 </details>
 
@@ -294,7 +294,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 
 <summary>Click here to see more details</summary>
 
-![image](media/automated_testing_views.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067834/automated_testing_views_oegfse.png)
 
 </details>
 
@@ -304,7 +304,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 
 <summary>Click here to see more details</summary>
 
-![image](media/automated_testing.models.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698067833/automated_testing.models_tuhugm.png)
 
 </details>
 
@@ -329,7 +329,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 | As a Site User I can register an account so that I can access publishing, commenting, and liking features. | The user can easily register by creating a username and password. The email field is optional. Upon successful registration, the user is automatically logged in. |
 | As a Site User I can sign in with my username and password so that I can share my recipes and like/comment on others' | The user can log in using their registered username and password. The "Add Recipe" link appears in the navbar along with options to like/comment on recipes. |
 | As a logged-in user I can easily log out so that I can avoid somebody else accessing my account. | The user can easily log out. User needs to confirm that they want to log out before it is done. |
-| As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](media/username_already_exists.jpg) |
+| As a Site User I can get information whether an account with my chosen username already exists so that I can either use the login page instead (if it is my account) or choose another username. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068002/username_already_exists_nvhj0l.png) |
 
 ### EPIC: CRUD functionality:
 
@@ -352,7 +352,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 | User Story | How are they achieved? |
 |------------|------------------------|
 | As a Site User I can find navigation links at the top so that I easily can navigate the site. | Navbar links at the top of the page have easily understandable names. The navbar looks different for logged-in and unlogged users. Navbar is responsive and is presented in the form of a hamburger menu on smaller devices. |
-| As a Site User I can get corresponding feedback after taking an action so that I know whether my actions were successfully run or not. | ![image](media/successfully_sign_up.jpg) ![image](media/successfull_sign_out.jpg) ![image](media/successfully_posted_recipe.jpg) ![image](media/successfully_updated_recipe.jpg) ![image](media/successfully_deleted_recipe.jpg) |
+| As a Site User I can get corresponding feedback after taking an action so that I know whether my actions were successfully run or not. | ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633883/static/images/successfully_sign_up.49295a9b72d4.png) ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633877/static/images/successfull_sign_out.53051a45d433.png) ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633883/static/images/successfully_posted_recipe.e8901f32c626.png) ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633892/static/images/successfully_updated_recipe.70906eac43ec.png) ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1697633862/static/images/successfully_deleted_recipe.8f4288c27d72.png) |
 
 
 ### "Should_haves":
@@ -362,7 +362,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 | As a Site User I can choose between different categories so that I can decide what I would like to prepare and when. | All the categories are presented on the home page. Clicking on each category will take the user to a page that displays all the recipes within that category. If there are no recipes available in the selected category, the user will be presented with a clear message inviting them to be the first to post. |
 | As a logged-in User I can like/unlike others' recipes so that I can interact with the content. | All logged-in users are able like/unlike all published recipes. The number of likes increases when liking and decrease when pressing again. |
 | As a Site User I can view comments on an individual post so that I can read the conversation. | All the users can view comments that have been approved by the admin. If there are no comments yet, the user will be presented with a clear message about that. |
-| As a logged-in User I can leave comments on recipes so that I can share my opinion/ask questions. | The comment form is visible to all logged-in users. After submission, a comment needs to be approved by the admin before it appears on the site. ![image](media/comment_is_waiting_approval.jpg) |
+| As a logged-in User I can leave comments on recipes so that I can share my opinion/ask questions. | The comment form is visible to all logged-in users. After submission, a comment needs to be approved by the admin before it appears on the site. ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068240/comment_is_waiting_approval_l7bjut.png) |
 
 ### "Could_haves":
 
@@ -384,7 +384,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 The performance of all website pages is affected by resources that block rendering. I contacted Tutor Assistance and they suggested to ignore the issue.
 
-![image](media/eliminate_render_blocking_resources.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698069934/eliminate_render_blocking_resources_wk4arr.png)
 
 </details>
 
@@ -394,25 +394,25 @@ The performance of all website pages is affected by resources that block renderi
 
 Lighthouse gives only a score of 92 for Best Practices for almost all the pages, but this is a problem beyond my scope at the moment.
 
-![image](media/lighthouse_best_practices.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068353/lighthouse_best_practices_uzwdhj.png)
 
 </details>
 
 #### Home page
 
-![image](media/lighthouse_home_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068353/lighthouse_home_page_ulk9zl.png)
 
 #### Recipes list page
 
-![image](media/lighthouse_recipes_page.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068354/lighthouse_recipes_page_cx4jr0.png)
 
 #### Recipe Detail page
 
-![image](media/lighthouse_recipe_detail.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068354/lighthouse_recipe_detail_kysyli.png)
 
 #### Add a Recipe page | Update a Recipe page
 
-![image](media/lighthouse_add_recipe.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068352/lighthouse_add_recipe_bqiv2i.png)
 
 ![image](media/lighthouse_update_recipe.jpg)
 
@@ -422,7 +422,7 @@ Lighthouse gives only a score of 92 for Best Practices for almost all the pages,
 
 The element is provided by Summernote, and it is not something I can change.
 
-![image](media/frame_do_not_have_a_title.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698069738/lighthouse_frame_do_not_have_a_title_gdltfp.png)
 
 </details>
 
@@ -430,23 +430,23 @@ The element is provided by Summernote, and it is not something I can change.
 
 - There are some recipes within the selected category:
 
-  ![image](media/lighthouse_category_page.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698069738/lighthouse_category_page_smy2la.png)
 
 - There are NO recipes within the selected category:
 
-  ![image](media/lighthouse_category_page_no_recipes.jpg)
+  ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698069738/lighthouse_category_page_no_recipes_fkstds.png)
 
 #### Sign Up
 
-![image](media/lighthouse_signup.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068354/lighthouse_signup_vze8rr.png)
 
 #### Login 
 
-![image](media/lighthouse_login.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068353/lighthouse_login_krn9wx.png)
 
 #### Logout
 
-![image](media/lighthouse_logout.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068354/lighthouse_logout_pumvzi.png)
 
 [Back to top ⇧](#table-of-contents)
 
