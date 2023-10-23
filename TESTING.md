@@ -429,7 +429,7 @@ Lighthouse gives only a score of 92 for Best Practices for almost all the pages,
 
 ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698068352/lighthouse_add_recipe_bqiv2i.png)
 
-![image](media/lighthouse_update_recipe.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698078964/lighthouse_update_recipe.jpg._zbpvph.png)
 
 <details>
 
