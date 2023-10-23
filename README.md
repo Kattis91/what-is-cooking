@@ -648,6 +648,7 @@ Testing includes following:
 
   - Static files were not loading in the deployed Heroku app. The local preview looked just the way it should, but checking the deployed site, none of the styling was there, and the images weren't loading.
     - **Fix**: Install [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) and put some lines of code in settings.py as mentioned in the link.
+    - **Update**: The app is working without Whitenoise.
 
   - Chosen colors (`#71777ce6, whitesmoke and #ffc107`) didn't have sufficient contrast ratio. 
     - **Fix**: Use [Color Contrast Analyzer](https://dequeuniversity.com/rules/axe/4.7/color-contrast) provided by Lighthouse testing to find new colors working good together (see more in the Design section).
@@ -735,7 +736,7 @@ Not really a bug, and maybe not even an issue, but like and comment icons don't 
 
 I would like to aknowledge the following people:
 
-  - Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page) and helping me to update timeout function for alert messages due to utilizing the newer version of Bootstrap. 
+  - Sean from the Tutor Assistance team for teaching me about the CSS word-wrap Property (used on the recipe detail page), helping me with my models testing and with updating timeout function for alert messages due to utilizing the newer version of Bootstrap. 
 
   - My mentor Jubril for good briefings, feedback and tip. 
 
