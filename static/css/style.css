@@ -202,7 +202,7 @@ body {
 .categories:hover {
     background-color: #BAA6B1;
 }
-
+/* to zoom on categories when hovering over */
 .cat-boxes {
     --bs-card-bg: none; 
     transition: transform .1s;
@@ -247,7 +247,7 @@ label {
 .card {
     border: none;
 }
-
+/* to zoom on recipe cards when hovering over */
 .recipe-card {
     --bs-card-bg: none; 
     transition: transform .1s;
@@ -295,7 +295,7 @@ label {
     text-align: center;
     margin-bottom: 10px;
 }
-
+/* to break long words and wrap onto the next line */
 .title-container h1,
 .ingredients-container li, 
 .instructions-container p { 
@@ -316,12 +316,12 @@ label {
 .form {
     margin-top: 50px;
 }
-
+/* to keep summernote field within the form */
 #id_instructions_iframe {
     height: auto;
     max-width: 100%;
 }
-
+/* a link to the recipe image showed when choosing to update a recipe */
 a {
     color: #4B0082;
 }
@@ -329,7 +329,7 @@ a {
 
 /* Media queries */
 
-/* For larger screen sizes over 1300px width */
+/* For larger screen sizes over 1600px width */
 @media screen and (min-width: 1600px) {
 
     #msg-box {
@@ -388,7 +388,7 @@ a {
     #msg-box {
         margin-top: 75px;
     }
-
+    /* remove zoom for better user experience */
     .recipe-card:hover { 
         -ms-transform: scale(1.0); 
         -webkit-transform: scale(1.0); 
