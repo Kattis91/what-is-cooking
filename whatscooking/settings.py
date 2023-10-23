@@ -32,7 +32,8 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost',
+                 '8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
