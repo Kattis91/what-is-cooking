@@ -128,6 +128,21 @@ Only files with custom-written Python code have been verified with the validator
 - **blog/urls.py**
   - All clear, no errors found.
 
+- **settings.py**
+  - All clear, no errors found.
+
+- **Testing files**:
+  
+  - **test_forms.py**
+    - All clear, no errors found.
+  
+  - **test_models.py**
+    - All clear, no errors found.
+
+  - **test_views.py**
+    - All clear, no errors found.
+
+
 [Back to top ⇧](#table-of-contents)
 
 ## Responsivness & Browser Compability Testing
