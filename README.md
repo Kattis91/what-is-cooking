@@ -4,7 +4,7 @@
 
 This interactive platform is designed to be an inspiration for those days when you don't know what to cook or simply want to try something new.
 
-![image](media/am_i_responsive.jpg)
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698071210/am_i_responsive_tcp3td.png)
 
 Click [here](https://what-s-cooking-a7be1440512e.herokuapp.com/) to view the live site.
 
@@ -96,7 +96,7 @@ My User Stories can be found [here](https://github.com/Kattis91/what-is-cooking/
 
 Some of the User Stories are part of an EPIC.
 
-Please, click [here](#testing-of-user-stories) if you want to come to the section where I test my User Stories.
+Please, go to [TESTING.md](TESTING.md) if you want to come to the section where I test my User Stories.
 
 #### Key Project Goal
 
@@ -310,6 +310,12 @@ I went with following colors:
   ![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698070830/submit_button_ia096k.png)
 
 </details>
+
+#### Recipe images:
+
+Users have the option to upload images in various sizes. To ensure consistency, I made sure that all recipe cards on the same line had the same height. The size of the images doesn't affect the layout of the recipe detail page. All sections are uploaded correctly as they should be.
+
+![image](https://res.cloudinary.com/dx0imlozl/image/upload/v1698072781/images_of_different_sizes_cm5b33.png)
 
 #### Typography
 
@@ -688,7 +694,7 @@ Testing includes following:
 
 ### Content
 
-- The main code of this project is based on the Code Institute tutorial ["I Think Therefore I Blog"](https://github.com/Code-Institute-Solutions/Django3blog) with changes made to suit my project.
+- The main code of this project is based on the Code Institute tutorial ["I Think Therefore I Blog"](https://github.com/Code-Institute-Solutions/Django3blog) with changes made to suit my project. [Django Documentation](https://docs.djangoproject.com/en/4.2/) was used throughout the project.
 
 - I found Stack Overflow to be an excellent source of inspiration and a valuable channel for gaining knowledge. Things I learned and borrow from there:
  
