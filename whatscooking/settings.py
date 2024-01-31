@@ -28,12 +28,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['what-s-cooking-a7be1440512e.herokuapp.com', 'localhost',
-                 '8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
+                 '8000-kattis91-whatiscooking-stfon0hoyml.ws-eu107.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.8000-kattis91-whatiscooking-stfon0hoyml.ws-eu105.gitpod.io']
